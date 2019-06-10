@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'blog/view' => [
+    'blog' => [
         'controller' => 'blog',
-        'action' => 'view',
+        'action' => 'index',
     ],
     '' => [
-        'controller' => 'index',
-        'action' => 'view',
+        'controller' => 'main',
+        'action' => 'index',
     ],
 ];

@@ -23,14 +23,21 @@ class Router
 
     public function match()
     {
-        $url = trim($_SERVER['REQUEST_URI'], '/');
+        $url = explode('/', trim($_SERVER['REQUEST_URI'], '/'), 2);
+        if (count($url) > 1) {
+            $this->params['language'] = $url[0];
+            $urlPathPart = $url[1];
+        } else {
+            $urlPathPart = $url[0];
+
+        }
         foreach ($this->routes as $route => $params) {
             // если в адресе есть параметры, то они помещаются в $matches[1],
             // например в адресе blog/view/75/815 в $matches[1] будет передано 75/815
-            if (preg_match('~^' . $route . '(?:/([0-9/]+))*~', $url, $matches)) {
-                $this->params = $params;
+            if (preg_match('~^' . $route . '(?:/([0-9/]+))*~', $urlPathPart, $matches)) {
+                $this->params = array_merge($this->params, $params);
                 if (count($matches) > 1) {
-                    $this->args = explode($matches[1], '/');
+                    $this->params['args'] = $matches[1];
                 }
                 return true;
             }
@@ -44,7 +51,7 @@ class Router
             $path = 'app\controllers\\' . ucfirst($this->params['controller']) . 'Controller';
 
             if (class_exists($path)) {
-                $controller = new $path();
+                $controller = new $path($this->params);
                 $action = $this->params['action'] . 'Action';
                 if (method_exists($controller, $action)) {
                     $controller->$action();
