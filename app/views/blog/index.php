@@ -1,13 +1,19 @@
 <h1>Блог</h1>
+<!--article list-->
 <?php foreach ($articles as $article): ?>
-    <h3><?= $article['article_name']; ?></h3>
-    <h4><?= $article['category']; ?></h4>
-    <h5><?= date('d.m.Y', $article['publish_date']); ?></h5>
-    <p><?= $article['description']; ?></p>
-    <a href="../article/<?= $article['article_id']; ?>">Читать далее</a>
+    <!--article-->
+    <div>
+        <h3><?= $article['article_name']; ?></h3>
+        <h4><?= $article['category']; ?></h4>
+        <h5><?= date('d.m.Y', $article['publish_date']); ?></h5>
+        <p><?= $article['description']; ?></p>
+        <a href="../article/<?= $article['article_id']; ?>">Читать далее</a>
+    </div>
+    <!--end article-->
 <?php endforeach; ?>
-<br>
-<center>
+<!--end articlelist-->
+<!--pagination-->
+<div style="text-align: center">
     <?php for ($i = 1; $i <= $pages; $i++): ?>
         <?php if ($i == $page): ?>
             <b><?= $i; ?></b>
@@ -15,4 +21,5 @@
             <a href="./<?= $i ?>"><?= $i ?></a>
         <?php endif; ?>
     <?php endfor; ?>
-</center>
+</div>
+<!--end pagination-->
