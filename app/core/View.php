@@ -17,13 +17,31 @@ class View
 
     public function render($title, $vars = [])
     {
-        if (file_exists('app/views/' . $this->path . '.php')) {
+        extract($vars);
+        $path = 'app/views/' . $this->path . '.php';
+        if (file_exists($path)) {
             ob_start();
-            require 'app/views/' . $this->path . '.php';
+            require $path;
             $content = ob_get_clean();
             require 'app/views/layouts/' . $this->layout . '.php';
         } else {
-            'Вид не найден';
+            echo 'Вид не найден';
         }
+    }
+
+    public function redirect($url)
+    {
+        header('location:' . $url);
+        exit;
+    }
+
+    public static function errorCode($code)
+    {
+        $path = 'app/views/errors/' . $code . '.php';
+        if (file_exists($path)) {
+            http_response_code($code);
+            require $path;
+        }
+        exit;
     }
 }

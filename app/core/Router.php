@@ -23,18 +23,23 @@ class Router
 
     public function match()
     {
-        $url = explode('/', trim($_SERVER['REQUEST_URI'], '/'), 2);
+        $url = strtok($_SERVER['REQUEST_URI'], '?');
+        $url = explode('/', trim($url, '/'), 2);
         if (count($url) > 1) {
             $this->params['language'] = $url[0];
             $urlPathPart = $url[1];
         } else {
+            $this->params['language'] = 'ru';
             $urlPathPart = $url[0];
 
         }
+        if ($urlPathPart == 'ru' || $urlPathPart == '') {
+            View::redirect('/ru/main/'); //перенаправляем запрос вида '.io/ru/' и '.io/' на '.io/ru/main'
+            exit;
+        }
+
         foreach ($this->routes as $route => $params) {
-            // если в адресе есть параметры, то они помещаются в $matches[1],
-            // например в адресе blog/view/75/815 в $matches[1] будет передано 75/815
-            if (preg_match('~^' . $route . '(?:/([0-9/]+))*~', $urlPathPart, $matches)) {
+            if (preg_match('~^' . $route . '(?:/([0-9/]+))*$~', $urlPathPart, $matches)) {
                 $this->params = array_merge($this->params, $params);
                 if (count($matches) > 1) {
                     $this->params['args'] = $matches[1];
@@ -56,13 +61,13 @@ class Router
                 if (method_exists($controller, $action)) {
                     $controller->$action();
                 } else {
-                    echo 'action not found';
+                    View::errorCode(404);
                 }
             } else {
-                echo 'controller not found';
+                View::errorCode(404);
             }
         } else {
-            echo '404';
+            View::errorCode(404);
         }
     }
 
