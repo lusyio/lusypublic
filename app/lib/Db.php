@@ -20,7 +20,11 @@ class Db
         $stmt = $this->db->prepare($sql);
         if (!empty($params)) {
             foreach ($params as $key => $value) {
-                $stmt->bindValue($key, $value);
+                if (is_int($value)) {
+                    $stmt->bindValue($key, (int)$value, PDO::PARAM_INT);
+                } else {
+                    $stmt->bindValue($key, $value);
+                }
             }
         }
         $stmt->execute();

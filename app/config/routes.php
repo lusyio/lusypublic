@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'blog(?:/([0-9/]+)){1}' => [
+    'article/([0-9/]+){1}' => [
         'controller' => 'blog',
         'action' => 'article',
     ],
-    'blog' => [
+    'blog(?:/([0-9/]+))?' => [
         'controller' => 'blog',
         'action' => 'index',
     ],

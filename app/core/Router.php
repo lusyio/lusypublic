@@ -2,6 +2,8 @@
 
 namespace app\core;
 
+use Locale;
+
 class Router
 {
     protected $routes = [];
@@ -21,20 +23,26 @@ class Router
         $this->routes[$route] = $params;
     }
 
+    public function getLanguage()
+    {
+        $language = 'ru';
+        return $language;
+    }
+
     public function match()
     {
+        $language = $this->getLanguage();
         $url = strtok($_SERVER['REQUEST_URI'], '?');
         $url = explode('/', trim($url, '/'), 2);
         if (count($url) > 1) {
             $this->params['language'] = $url[0];
             $urlPathPart = $url[1];
         } else {
-            $this->params['language'] = 'ru';
+            $this->params['language'] = $language;
             $urlPathPart = $url[0];
-
         }
-        if ($urlPathPart == 'ru' || $urlPathPart == '') {
-            View::redirect('/ru/main/'); //перенаправляем запрос вида '.io/ru/' и '.io/' на '.io/ru/main'
+        if ($urlPathPart == $language || $urlPathPart == '') {
+            View::redirect('/' . $language . '/main/'); //перенаправляем запрос вида '.io/{язык}/' и '.io/' на '.io/{язык}/main'
             exit;
         }
 
@@ -52,6 +60,7 @@ class Router
 
     public function run()
     {
+        $this->getLanguage();
         if ($this->match()) {
             $path = 'app\controllers\\' . ucfirst($this->params['controller']) . 'Controller';
 

@@ -3,15 +3,28 @@
 namespace app\controllers;
 
 use app\core\Controller;
+use app\core\View;
 
 class BlogController extends Controller
 {
 
     public function indexAction()
     {
-        $articles = $this->model->getAllArticles();
+        if (!empty($this->params['args'])) {
+            $page = $this->params['args'];
+        } else {
+            $page = 1;
+        }
+        $pages = $this->model->countPages();
+        $articles = $this->model->getArticlesForPage($page);
+        if (count($articles) == 0 && $page != 1) {
+            View::redirect('../blog');
+            exit;
+        }
         $vars = [
-          'articles' => $articles,
+            'articles' => $articles,
+            'pages' => $pages,
+            'page' => $page,
         ];
         $this->view->render('Блог', $vars);
     }
@@ -21,7 +34,7 @@ class BlogController extends Controller
         $id = $this->params['args'];
         $article = $this->model->getArticle($id);
         $args = [
-          'article' => $article
+            'article' => $article
         ];
         $this->view->render($article['article_name'], $args);
     }
