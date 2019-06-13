@@ -41,3 +41,182 @@ img {
 .second .img3 {
 	margin-top: -140px;
 }
+
+.btn{
+    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2), 0 5px 15px 0 rgba(37, 44, 97, 0.15);
+}
+
+.items{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.item{
+    width: 30%;
+    max-width: 350px;
+    margin-bottom: 60px;
+    padding-right: 30px;
+}
+
+.item-title-text{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.item-title-icon{
+    vertical-align: middle;
+    margin-right: 15px;
+    max-height: 40px;
+    max-width: 40px;
+    width: 100%;
+}
+
+.item-content-text{
+    color: #3d3d3d;
+    line-height: 1.4;
+}
+
+
+.functions-content{
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    color: #3d3d3d;
+}
+
+.about-content{
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    color: #3d3d3d;
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.about-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 50%;
+}
+
+.about-item{
+    position: relative;
+    padding-right: 40px;
+    padding-left: 35px;
+    margin-bottom: 70px;
+}
+
+.about-icon{
+    position: absolute;
+    width: 20px;
+    left: 0;
+    top: 6px;
+}
+
+.about-question-title{
+    margin-top: 0;
+    color: #4D61FC;
+}
+
+.about-question-content p {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    line-height: 1.4;
+}
+
+pricing-content{
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    color: #3d3d3d;
+}
+
+.container-small{
+    max-width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+}
+
+.pricing {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: black;
+    background: #f0f1f1;
+    text-align: center;
+}
+
+.price {
+    transition: 0.5s;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.price:hover {
+    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39);
+}
+
+.price-title {
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 75px;
+    background-image: url(/public/images/pricing_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 250px;
+}
+
+.price-title p {
+    font-size: 25px;
+}
+
+.price-title  {
+    font-size: 50px;
+}
+
+.price-title sub {
+    vertical-align: middle;
+    font-size: 17px;
+}
+
+.price-title sup {
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.price-content {
+    font-size: 17px;
+    color: #3d3d3d;
+}
+
+.price-content ul li {
+    padding-top: 28px;
+    padding-bottom: 12px;
+    margin: 0 auto;
+    max-width: 175px;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.price-footer {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.price-footer > .btn{
+    color: #007bff !important;
+}
+
+.price-footer .btn:hover{
+    color: white !important;
+}
