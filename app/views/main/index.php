@@ -253,9 +253,75 @@
     </div>
 </div>
 
-<div class="second container pt-5 pb-5">
-    <div class="text-center">
-        <h2>Письмо от основателя</h2>
+<div class="second pt-5 pb-5">
+    <div class="container text-center">
+        <h1>Письмо от основателя</h1>
         <p>Перечень функций</p>
+    </div>
+</div>
+
+
+<div class="container-small pt-5 pb-5 text-center">
+    <h1 class="blog-title">Знания</h1>
+    <p class="blog-content">Блоги</p>
+</div>
+<div class="container pb-5" style="    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+    max-width: 1080px;">
+    <div class="blog-items">
+        <a href="#" class="blog-item">
+            <div class="blog-img"
+                 style="background-image: url(https://fd.ru/images/articles/157937/93c0ee1707b653ee7255113522a5a896.jpg);">
+                <div class="blog-text">
+                    <h3 class="blog-text-title">
+                        Что такое система канбан
+                    </h3>
+                    <div class="blog-info">
+                        Канбан — система управления снабжением и производством, в основе которой лежит концепция
+
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="blog-item">
+            <div class="blog-img">
+                <div class="blog-text">
+                    <h3>
+
+                    </h3>
+                    <div class="blog-info">
+
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="blog-item">
+            <div class="blog-img">
+                <div class="blog-text">
+                    <h3>
+
+                    </h3>
+                    <div class="blog-info">
+
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="blog-links">
+        <a href="../blog/" class="blog-link">
+            <span class="blog-link-text">Узнать больше в блоге</span>
+        </a>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-text">
+                © 2019 LUSY
+            </div>
+        </div>
     </div>
 </div>
