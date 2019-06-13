@@ -11,7 +11,7 @@ class Db
     public function __construct()
     {
         $config = require 'app/config/db.php';
-        $dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
+        $dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'] . ';charset=utf8';
         $this->db = new PDO($dsn, $config['user'], $config['pass']);
     }
 
