@@ -29,7 +29,7 @@ class View
         }
     }
 
-    public function redirect($url)
+    public static function redirect($url)
     {
         header('location:' . $url);
         exit;

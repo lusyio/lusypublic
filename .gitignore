@@ -153,3 +153,4 @@ fabric.properties
 # PhpStorm directory
 .idea
 
+app/config/db.php

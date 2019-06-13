@@ -13,4 +13,17 @@ return [
         'controller' => 'main',
         'action' => 'index',
     ],
+    'price' => [
+        'controller' => 'main',
+        'action' => 'price',
+    ],
+    'chart' => [
+        'controller' => 'chart',
+        'action' => 'index',
+    ],
+    'possibilities' => [
+        'controller' => 'main',
+        'action' => 'possibilities',
+    ],
+
 ];
