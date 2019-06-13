@@ -1,0 +1,43 @@
+p {
+	line-height: 1.78;
+}
+img {
+	max-width: 100%;
+}
+.navbar-brand {
+    letter-spacing: 2px;
+}
+.navbar-nav .nav-link {
+	font-weight: 100;
+	margin-left: 20px;
+}
+.lead-text {
+    font-size: 3.3rem;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+.main {
+	margin-top: 80px;
+}
+.main h1 {
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 30px;
+}
+.main img {
+    box-shadow: rgba(13, 28, 60, 0.06) 0px 4px 44px 0px;
+    margin-top: 40px;
+}
+.second {
+	background-color: #f6f8fa;
+}
+.second .img1 {
+	
+}
+.second .img2 {
+	margin-top: -70px;
+}
+.second .img3 {
+	margin-top: -140px;
+}
