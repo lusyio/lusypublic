@@ -153,3 +153,4 @@ fabric.properties
 .idea
 
 app/config/db.php
+app/config/db.php
