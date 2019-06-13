@@ -9,6 +9,7 @@ class Router
     protected $routes = [];
     protected $params = [];
     protected $args = [];
+    protected $languages = ['ru', 'en'];
 
     public function __construct()
     {
@@ -34,20 +35,25 @@ class Router
         $language = $this->getLanguage();
         $url = strtok($_SERVER['REQUEST_URI'], '?');
         $url = explode('/', trim($url, '/'), 2);
-        if (count($url) > 1) {
+
+        if (in_array($url[0], $this->languages)) {
             $this->params['language'] = $url[0];
-            $urlPathPart = $url[1];
+            if (count($url) == 1) {
+                View::redirect('/' . $this->params['language'] . '/main/'); //перенаправляем запрос вида '.io/{язык}/' на '.io/{язык}/main'
+                exit;
+            } else {
+                $urlPathPart = $url[1];
+                if ($this->params['language'] == 'en' && $urlPathPart != 'main') {
+                    View::redirect('/' . $this->params['language'] . '/main/'); //перенаправляем запрос вида '.io/en/....' на '.io/en/main'
+                }
+            }
         } else {
-            $this->params['language'] = $language;
-            $urlPathPart = $url[0];
-        }
-        if ($urlPathPart == $language || $urlPathPart == '') {
-            View::redirect('/' . $language . '/main/'); //перенаправляем запрос вида '.io/{язык}/' и '.io/' на '.io/{язык}/main'
+            View::redirect('/' . $language . '/main/'); //перенаправляем запрос вида '.io/.../' и '.io/' на '.io/{язык}/main'
             exit;
         }
 
         foreach ($this->routes as $route => $params) {
-            if (preg_match('~^' . $route . '(?:/([0-9/]+))*$~', $urlPathPart, $matches)) {
+            if (preg_match('~^' . $route . '$~', $urlPathPart, $matches)) {
                 $this->params = array_merge($this->params, $params);
                 if (count($matches) > 1) {
                     $this->params['args'] = $matches[1];
@@ -60,10 +66,8 @@ class Router
 
     public function run()
     {
-        $this->getLanguage();
         if ($this->match()) {
             $path = 'app\controllers\\' . ucfirst($this->params['controller']) . 'Controller';
-
             if (class_exists($path)) {
                 $controller = new $path($this->params);
                 $action = $this->params['action'] . 'Action';
