@@ -8,7 +8,7 @@
             <h4><?= $article['category']; ?></h4>
             <h5><?= date('d.m.Y', $article['publish_date']); ?></h5>
             <p><?= $article['description']; ?></p>
-            <a href="./article/<?= $article['article_id']; ?>">Читать далее</a>
+            <a href="../article/<?= $article['article_id']; ?>">Читать далее</a>
         </div>
         <!--end article-->
     <?php endforeach; ?>
