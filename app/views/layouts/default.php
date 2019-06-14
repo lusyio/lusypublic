@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-2">
-                <a class="navbar-brand text-body text-uppercase font-weight-bold visible-lg mt-1" href="../">LUSY</a>
+                <a class="navbar-brand text-body text-uppercase font-weight-bold visible-lg mt-1" href="/<?= $this->route['language']; ?>/">LUSY</a>
             </div>
             <div class="col-sm-7">
                 <nav class="navbar navbar-expand-lg p-0 pt-1">
@@ -29,19 +29,19 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="../possibilities/">Возможности</a>
+                                <a class="nav-link" href="/<?= $this->route['language']; ?>/possibilities/">Возможности</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Демо</a>
+                                <a class="nav-link" href="/<?= $this->route['language']; ?>/#">Демо</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Чарт компаний</a>
+                                <a class="nav-link" href="/<?= $this->route['language']; ?>/#">Чарт компаний</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="../price/">Стоимость</a>
+                                <a class="nav-link" href="/<?= $this->route['language']; ?>/price/">Стоимость</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../blog/">Знания</a>
+                                <a class="nav-link" href="/<?= $this->route['language']; ?>/blog/">Знания</a>
                             </li>
                         </ul>
                     </div>

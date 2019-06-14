@@ -38,17 +38,17 @@ class Router
 
         if (in_array($url[0], $this->languages)) {
             $this->params['language'] = $url[0];
-            if (count($url) == 1) {
-                View::redirect('/' . $this->params['language'] . '/main/'); //перенаправляем запрос вида '.io/{язык}/' на '.io/{язык}/main'
-                exit;
-            } else {
+            if (count($url) > 1) {
                 $urlPathPart = $url[1];
-                if ($this->params['language'] == 'en' && $urlPathPart != 'main') {
-                    View::redirect('/' . $this->params['language'] . '/main/'); //перенаправляем запрос вида '.io/en/....' на '.io/en/main'
+                if ($this->params['language'] == 'en' && $urlPathPart != '') { //для заглушки англоязычной версии
+                    View::redirect('/' . $this->params['language'] . '/'); //перенаправляем запрос вида '.io/en/....' на '.io/en/'
+                    exit;
                 }
+            } else {
+                $urlPathPart = 'main';
             }
         } else {
-            View::redirect('/' . $language . '/main/'); //перенаправляем запрос вида '.io/.../' и '.io/' на '.io/{язык}/main'
+            View::redirect('/' . $language . '/'); //перенаправляем запрос вида '.io/.../' и '.io/' на '.io/{язык}/'
             exit;
         }
 
