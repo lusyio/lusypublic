@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-2">
-                <a class="navbar-brand text-body text-uppercase font-weight-bold visible-lg mt-1" href="/">LUSY</a>
+                <a class="navbar-brand text-body text-uppercase font-weight-bold visible-lg mt-1" href="../">LUSY</a>
             </div>
             <div class="col-sm-7">
                 <nav class="navbar navbar-expand-lg p-0 pt-1">

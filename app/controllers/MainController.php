@@ -17,7 +17,11 @@ class MainController extends Controller
             $this->model = $this->loadModel($this->params['controller']);
         }
         // ---конец заглушки для английской части сайта
-        $this->view->render('Главная страница');
+        $lastArticles = $this->model->getLastArticles(3);
+        $vars = [
+            'articles' => $lastArticles,
+        ];
+        $this->view->render('Главная страница', $vars);
     }
 
     public function priceAction()
