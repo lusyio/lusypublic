@@ -271,7 +271,7 @@
     max-width: 1080px;">
     <div class="blog-items">
         <?php foreach ($articles as $article): ?>
-        <a href="../article/<?= $article['article_id']; ?>" class="blog-item">
+        <a href="/<?= $article['language']; ?>/article/<?= $article['url']; ?>" class="blog-item">
             <div class="blog-img"
                  style="background-image: url(https://fd.ru/images/articles/157937/93c0ee1707b653ee7255113522a5a896.jpg);">
                 <div class="blog-text">
@@ -287,7 +287,7 @@
         <?php endforeach; ?>
     </div>
     <div class="blog-links">
-        <a href="../blog/" class="blog-link">
+        <a href="/<?= $this->route['language']; ?>/blog/" class="blog-link">
             <span class="blog-link-text">Узнать больше в блоге</span>
         </a>
     </div>

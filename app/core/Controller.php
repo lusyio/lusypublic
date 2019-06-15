@@ -14,6 +14,7 @@ abstract class Controller
         $this->params = $params;
         $this->view = new View($params);
         $this->model = $this->loadModel($params['controller']);
+        $this->model->setLanguage($params['language']);
     }
 
     public function loadModel($name)

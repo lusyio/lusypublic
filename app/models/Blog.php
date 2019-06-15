@@ -15,7 +15,11 @@ class Blog extends Model
 
     public function getAllArticles()
     {
-        $articles = $this->db->allRows('SELECT article_id, article_number, language, article_name, article_text, category, description, publish_date FROM blog ORDER BY publish_date DESC');
+        $language = $this->language;
+        $params = [
+            ':language' => $language,
+        ];
+        $articles = $this->db->allRows('SELECT article_id, url, language, article_name, article_text, category, description, publish_date FROM blog WHERE language = :language ORDER BY publish_date DESC', $params);
         return $articles;
     }
 
@@ -30,20 +34,24 @@ class Blog extends Model
     {
         $limit = $this->ARTICLES_PER_PAGE;
         $offset = ($page - 1) * $limit;
+        $language = $this->language;
         $params = [
             ':limit' => $limit,
             ':offset' => $offset,
+            ':language' => $language,
         ];
-        $articles = $this->db->allRows('SELECT article_id, article_number, language, article_name, article_text, category, description, publish_date FROM blog ORDER BY publish_date DESC LIMIT :limit OFFSET :offset', $params);
+        $articles = $this->db->allRows('SELECT article_id, url, language, article_name, article_text, category, description, publish_date FROM blog WHERE language = :language ORDER BY publish_date DESC LIMIT :limit OFFSET :offset', $params);
         return $articles;
     }
 
     public function getArticle($articleId)
     {
+        $language = $this->language;
         $params = [
             ':articleId' => $articleId,
+            ':language' => $language,
         ];
-        $article = $this->db->firstRow('SELECT article_id, article_number, language, article_name, article_text, category, description, publish_date FROM blog WHERE article_id = :articleId', $params);
+        $article = $this->db->firstRow('SELECT article_id, url, language, article_name, article_text, category, description, publish_date FROM blog WHERE url = :articleId AND language = :language ', $params);
         return $article;
     }
 }

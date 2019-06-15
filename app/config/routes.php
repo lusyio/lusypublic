@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'article/([0-9/]+){1}' => [
+    'article/([0-9a-zA-Z\-/]+){1}' => [
         'controller' => 'blog',
         'action' => 'article',
     ],
