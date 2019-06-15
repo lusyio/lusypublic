@@ -19,7 +19,7 @@ class Blog extends Model
         $params = [
             ':language' => $language,
         ];
-        $articles = $this->db->allRows('SELECT article_id, url, language, article_name, article_text, category, description, publish_date FROM blog WHERE language = :language ORDER BY publish_date DESC', $params);
+        $articles = $this->db->allRows('SELECT article_id, url, language, article_name, article_text, category, description, img_small, publish_date FROM blog WHERE language = :language ORDER BY publish_date DESC', $params);
         return $articles;
     }
 
@@ -40,7 +40,7 @@ class Blog extends Model
             ':offset' => $offset,
             ':language' => $language,
         ];
-        $articles = $this->db->allRows('SELECT article_id, url, language, article_name, article_text, category, description, publish_date FROM blog WHERE language = :language ORDER BY publish_date DESC LIMIT :limit OFFSET :offset', $params);
+        $articles = $this->db->allRows('SELECT article_id, url, language, article_name, article_text, category, description, img_small, publish_date FROM blog WHERE language = :language ORDER BY publish_date DESC LIMIT :limit OFFSET :offset', $params);
         return $articles;
     }
 
@@ -51,7 +51,7 @@ class Blog extends Model
             ':articleId' => $articleId,
             ':language' => $language,
         ];
-        $article = $this->db->firstRow('SELECT article_id, url, language, article_name, article_text, category, description, publish_date FROM blog WHERE url = :articleId AND language = :language ', $params);
+        $article = $this->db->firstRow('SELECT article_id, url, language, article_name, article_text, category, description, img_small, publish_date FROM blog WHERE url = :articleId AND language = :language ', $params);
         return $article;
     }
 }

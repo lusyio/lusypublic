@@ -249,6 +249,51 @@ pricing-content{
     line-height: 1.4;
 }
 
+.blog-list .article {
+    border-radius: 5px;
+    display: block;
+    background: white;
+    position: relative;
+    -webkit-transition: box-shadow .15s ease-out,opacity .15s ease-out,.15s margin-left .15s ease-out,.15s visibility .15s,-webkit-transform .15s ease-out;
+    transition: transform .15s ease-out,box-shadow .15s ease-out,opacity .15s ease-out,.15s margin-left .15s ease-out,.15s visibility .15s;
+    transition: transform .15s ease-out,box-shadow .15s ease-out,opacity .15s ease-out,.15s margin-left .15s ease-out,.15s visibility .15s,-webkit-transform .15s ease-out;
+    box-shadow: 0 10px 15px rgba(14,21,47,.05);
+}
+
+.blog-list .article:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    z-index: 1;
+    box-shadow: 0 22px 50px rgba(14,21,47,.2);
+}
+.blog-list .article img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+}
+
+.blog-list .articleinside {
+    padding: 0px 20px 0px;
+}
+.blog-list .articleinside h2 {
+    line-height: 1.4;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #111111;
+}
+.blog-list .article hr {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.blog-list .articlefot {
+    padding: 10px 20px;
+    font-weight: 300;
+    font-size: 14px;
+}
+.blog-list a:hover {
+    text-decoration: none;
+}
+
 .blog-items{
     display: flex;
     justify-content: center;
@@ -301,6 +346,7 @@ pricing-content{
 .blog-info{
     color: #636363;
     line-height: 1.4;
+    font-size: 14px;
 }
 
 .blog-links{

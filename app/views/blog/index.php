@@ -1,20 +1,42 @@
-<div class="container">
-    <h1>Блог</h1>
-    <!--article list-->
-    <?php foreach ($articles as $article): ?>
-        <!--article-->
-        <div>
-            <h3><?= $article['article_name']; ?></h3>
-            <h4><?= $article['category']; ?></h4>
-            <h5><?= date('d.m.Y', $article['publish_date']); ?></h5>
-            <p><?= $article['description']; ?></p>
-            <a href="/<?= $article['language']; ?>/article/<?= $article['url']; ?>">Читать далее</a>
-        </div>
-        <!--end article-->
-    <?php endforeach; ?>
-    <!--end articlelist-->
+<div class="container blog-list">
+    <h1 class="mt-5">Блог</h1>
+    <p class="mt-3 mb-4">Пишем для вас полезные статьи по теме управления, маркетинга, продаж, чтобы повысить
+        эффективность вашего
+        бизнеса! Кстати, мы можем написать статью о вашем бизнесе - свяжитесь с нами по почте <a
+                href="mailto:info@lusy.io">info@lusy.io</a> и мы вместе сделаем классный материал!</p>
+    <div class="row">
+        <!--article list-->
+        <?php foreach ($articles as $article): ?>
+            <!--article-->
+            <div class="col-sm-4">
+                <a href="/<?= $article['language']; ?>/blog/<?= $article['url']; ?>">
+                    <div class="article mb-3">
+                        <img src="/public/<?php if (!empty($article['img_small'])) {
+                            echo 'upload/' . $article['img_small'];
+                        } else {
+                            echo 'images/default_small.jpg';
+                        } ?>" title=" <?= $article['article_name']; ?>">
+                        <div class="articleinside">
+                            <h2 class="blog-text-title">
+                                <?= $article['article_name']; ?>
+                            </h2>
+                            <div class="blog-info">
+                                <?= mb_substr($article['description'], 0, 80); ?>...
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="articlefot text-secondary">
+                            <?= $article['category'] . ' | ' . date("d.m.Y", $article['publish_date']); ?>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--end article-->
+        <?php endforeach; ?>
+        <!--end articlelist-->
+    </div>
     <!--pagination-->
-    <div style="text-align: center">
+    <div class="d-none" style="text-align: center">
         <?php for ($i = 1; $i <= $pages; $i++): ?>
             <?php if ($i == $page): ?>
                 <b><?= $i; ?></b>

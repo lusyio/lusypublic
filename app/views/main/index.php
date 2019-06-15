@@ -265,25 +265,32 @@
     <h1 class="blog-title">Знания</h1>
     <p class="blog-content">Блоги</p>
 </div>
-<div class="container pb-5" style="    margin-right: auto;
-    margin-left: auto;
-    padding: 0 15px;
-    max-width: 1080px;">
-    <div class="blog-items">
+<div class="container blog-list pb-5">
+    <div class="row">
         <?php foreach ($articles as $article): ?>
-        <a href="/<?= $article['language']; ?>/article/<?= $article['url']; ?>" class="blog-item">
-            <div class="blog-img"
-                 style="background-image: url(https://fd.ru/images/articles/157937/93c0ee1707b653ee7255113522a5a896.jpg);">
-                <div class="blog-text">
-                    <h3 class="blog-text-title">
-                        <?= $article['article_name']; ?>
-                    </h3>
-                    <div class="blog-info">
-                        <?= mb_substr($article['description'], 0, 80); ?>
+            <div class="col-sm-4">
+                <a href="/<?= $article['language']; ?>/blog/<?= $article['url']; ?>">
+                    <div class="article mb-3">
+                        <img src="/public/<?php if (!empty($article['img_small'])) {
+                            echo 'upload/' . $article['img_small'];
+                        } else {
+                            echo 'images/default_small.jpg';
+                        } ?>" title=" <?= $article['article_name']; ?>">
+                        <div class="articleinside">
+                            <h2 class="blog-text-title">
+                                <?= $article['article_name']; ?>
+                            </h2>
+                            <div class="blog-info">
+                                <?= mb_substr($article['description'], 0, 80); ?>...
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="articlefot text-secondary">
+                            <?= $article['category'] . ' | ' . date("d.m.Y", $article['publish_date']); ?>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-        </a>
         <?php endforeach; ?>
     </div>
     <div class="blog-links">
