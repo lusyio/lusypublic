@@ -21,7 +21,7 @@
                                 <?= $article['article_name']; ?>
                             </h2>
                             <div class="blog-info">
-                                <?= mb_substr($article['description'], 0, 80); ?>...
+                                <?= $article['description']; ?>
                             </div>
                         </div>
                         <hr>

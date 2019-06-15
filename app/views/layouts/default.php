@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="/public/css/custom.css">
 
-    <title>LUSY <?php echo $title; ?></title>
+    <title><?php echo $title; ?></title>
 </head>
 <body>
 <div class="top-sidebar pt-2 pb-2">
