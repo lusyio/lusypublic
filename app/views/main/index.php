@@ -281,7 +281,7 @@
                                 <?= $article['article_name']; ?>
                             </h2>
                             <div class="blog-info">
-                                <?= $article['description']; ?>
+                                <p><?= $article['description']; ?></p>
                             </div>
                         </div>
                         <hr>
