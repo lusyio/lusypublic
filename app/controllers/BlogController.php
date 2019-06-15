@@ -33,6 +33,10 @@ class BlogController extends Controller
     {
         $id = $this->params['args'];
         $article = $this->model->getArticle($id);
+        if (!$article) {
+            View::errorCode(404);
+            exit;
+        }
         $args = [
             'article' => $article
         ];
