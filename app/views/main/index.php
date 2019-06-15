@@ -299,13 +299,3 @@
         </a>
     </div>
 </div>
-
-<div class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-text">
-                © 2019 LUSY
-            </div>
-        </div>
-    </div>
-</div>
