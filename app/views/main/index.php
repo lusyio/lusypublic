@@ -15,15 +15,44 @@
 <div class="second pt-5 pb-5">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 d-none">
-                Ваша компания будет расти, только если вы будете думать о ее развитии. Погружаясь в рутину, нет
+            <div class="col-sm-12 mb-5">
+                <p class="lead-text-small">Думайте о развитии компании.<br>Рутину мы возьмем на себя.</p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="blockExcellence position-relative">
+                    <i class="fas fa-users"></i>
+                    <img class="rounded-circle" src="/public/images/land1.jpg"/>
+                </div>
+                <h5 class="mt-4 font-weight-bold">Пригласите сотрудников</h5>
+                <p class="mt-3">В системе управления Lusy.io нет ограничений на количество сотрудников - пригласите всех!</p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="blockExcellence position-relative">
+                    <i class="fas fa-plus"></i>
+                    <img class="rounded-circle" src="/public/images/land2.jpg"/>
+                </div>
+                <h5 class="mt-4 font-weight-bold">Назначьте задачи</h5>
+                <p class="mt-3">Разгрузите свою голову, e-mail и мессенджеры - напишите название задачи, назначьте исполнителя и срок.</p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="blockExcellence position-relative">
+                    <i class="fas fa-trophy"></i>
+                    <img class="rounded-circle" src="/public/images/land3.jpg"/>
+                </div>
+                <h5 class="mt-4 font-weight-bold">Кайфуйте! Всё под контролем!</h5>
+                <p class="mt-3">Ни одна ваша идея теперь не останется без реализации и контроля. Теперь вы - супер<i>бизнес</i>мен.</p>
+            </div>
+
+            <p class="d-none">Ваша компания будет расти, только если вы будете думать о ее развитии. Погружаясь в
+                рутину, нет
                 движения. Можно покзаать путь к решение рутины - шаг первый это внедрить систему управления зарегав
                 сотрудников. Второй шаг - постановка задач и контроль сроков - теперь голова свободна. Учет событий
                 мотивация - люди работают вы спокойны и движетесь вперед. В итоге вы имеет контроль над процессами в
-                телефоне, не думаете о напоминаии сортудникам и ваш взор направлен вперед, где вашу команию ждет успех.
-            </div>
+                телефоне, не думаете о напоминаии сортудникам и ваш взор направлен вперед, где вашу команию ждет
+                успех.</p>
         </div>
     </div>
+</div>
 </div>
 
 <div class="container-small pt-5 pb-5">

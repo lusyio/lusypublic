@@ -15,9 +15,15 @@ img {
 	margin-left: 20px;
 }
 .lead-text {
-    font-size: 3.3rem;
+    font-size: 60px;
     letter-spacing: 0px;
     line-height: 1.2;
+    font-weight: 600;
+}
+.lead-text-small {
+    font-size: 32px;
+    letter-spacing: 0px;
+    line-height: 1.4;
     font-weight: 600;
 }
 .main {
@@ -65,7 +71,21 @@ img {
 .btn{
     box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2), 0 5px 15px 0 rgba(37, 44, 97, 0.15);
 }
+.blockExcellence {
+    max-width: 230px;
+    margin: auto;
+}
 
+.blockExcellence img {
+    box-shadow: rgba(13, 28, 60, 0.06) 0px 4px 44px 0px;
+}
+.blockExcellence i {
+    position: absolute;
+    right: -30px;
+    color: rgba(95, 95, 95, 0.1);
+    font-size: 7em;
+    top: -30px;
+}
 .items{
     padding: 0;
     margin: 0;
