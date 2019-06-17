@@ -402,3 +402,10 @@ pricing-content{
 .blog-link:hover{
     background-color: #cbddfd;
 }
+
+@media (min-width: 768px) {
+    .firstNav {
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+    }
+}
