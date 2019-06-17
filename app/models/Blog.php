@@ -51,7 +51,7 @@ class Blog extends Model
             ':articleId' => $articleId,
             ':language' => $language,
         ];
-        $article = $this->db->firstRow('SELECT article_id, url, language, article_name, article_text, category, description, img_small, publish_date FROM blog WHERE url = :articleId AND language = :language ', $params);
+        $article = $this->db->firstRow('SELECT article_id, url, language, article_name, article_text, category, description, img_full, img_small, publish_date FROM blog WHERE url = :articleId AND language = :language ', $params);
         return $article;
     }
 }
