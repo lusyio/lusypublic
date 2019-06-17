@@ -42,7 +42,8 @@
                 <h5 class="mt-4 font-weight-bold">Кайфуйте! Всё под контролем!</h5>
                 <p class="mt-3">Ни одна ваша идея теперь не останется без реализации и контроля. Теперь вы - супер<i>бизнес</i>мен.</p>
             </div>
-
+            <hr class="w-100 mt-4">
+            <div class="mx-auto mt-3"><a href="https://s.lusy.io/reg/" class="btn btn-primary">Начать пользоваться бесплатно</a></div>
             <p class="d-none">Ваша компания будет расти, только если вы будете думать о ее развитии. Погружаясь в
                 рутину, нет
                 движения. Можно покзаать путь к решение рутины - шаг первый это внедрить систему управления зарегав
@@ -55,13 +56,13 @@
 </div>
 </div>
 
-<div class="container-small pt-5 pb-5">
+<div class="container-small pt-5 pb-5 d-none">
     <div class="text-center">
         <h1 class="functions-title">Сильная основа для устойчивого роста 💪</h1>
         <p class="functions-content">Тут можно что-то делать и что-то будет</p>
     </div>
 </div>
-<div class="container pb-5">
+<div class="container pb-5 d-none">
     <ul class="items">
         <li class="item">
             <div>
@@ -156,7 +157,7 @@
     </ul>
 </div>
 
-<div class="second pt-5 pb-5">
+<div class="second pt-5 pb-5 d-none">
     <div class="container-small text-center pb-5">
         <h1 class="pricing-title">Сколько это стоит?</h1>
         <p class="pricing-content">2 тарифа с человеческим объяснением ценообразования</p>
@@ -205,11 +206,11 @@
     </div>
 </div>
 
-<div class="container-small pt-5 pb-5 text-center">
+<div class="container-small pt-5 pb-5 text-center d-none">
     <h1 class="about-title">Вы спрашиваете - мы отвечаем 💬</h1>
     <p class="about-content">Тут вопросики</p>
 </div>
-<div class="container pb-5">
+<div class="container pb-5 d-none">
     <div class="about-container">
         <ul class="about-list">
             <li class="about-item">
@@ -282,7 +283,7 @@
     </div>
 </div>
 
-<div class="second pt-5 pb-5">
+<div class="second pt-5 pb-5 d-none">
     <div class="container text-center">
         <h1>Письмо от основателя</h1>
         <p>Перечень функций</p>
