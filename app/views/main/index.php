@@ -46,7 +46,8 @@
                 </p>
             </div>
             <hr class="w-100 mt-4">
-            <div class="mx-auto mt-3"><a href="https://s.lusy.io/reg/" class="btn btn-primary">Начать ставить задачи прямо сейчас</a></div>
+            <div class="mx-auto mt-3"><a href="https://s.lusy.io/reg/" class="btn btn-primary">Начать ставить задачи
+                    прямо сейчас</a></div>
         </div>
     </div>
 </div>
@@ -97,18 +98,118 @@
     <div class="row">
         <div class="col-sm-8 offset-sm-2">
             <hr class="w-100 mt-4">
-            <div class="mx-auto mt-4">
-                <center><a href="https://s.lusy.io/reg/" class="btn btn-primary">Посмотреть, как это выглядит на практике</a></center>
+            <div class="d-flex justify-content-center mt-4">
+                <a href="https://s.lusy.io/reg/" class="btn btn-primary">Посмотреть, как это выглядит на
+                    практике</a>
             </div>
         </div>
     </div>
 </div>
 
-<div class="second pt-5 pb-5 d-none">
+<div class="second pt-5 pb-5">
     <div class="container">
         <p class="lead-text-small text-center">Достижения, мотивация, игра!</p>
+        <div class="row mb-3">
+            <div class="col-sm-8 offset-sm-2">
+                <p class="text-center">Мы создали "достижения", которые сможете получать вы и ваши сотрудники. Как
+                    премировать за это в жизни - решать уже вам! Вдохните жизнь в рабочую рутину!</p>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="award mr-3 text-center">
+                <div>
+                    <div class="circle" data-value="0.00"></div>
+                    <div class="award-star bg-secondary">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                </div>
+                <h5 class="text-uppercase font-weight-bold">Знакомство</h5>
+                <small class="text-muted mt-3">Заполнил профиль</small>
+                <hr>
+                <span class="badge badge-secondary">не достигнуто</span>
+            </div>
+            <div class="award mr-3 text-center">
+                <div>
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}" data-value="0.20"></div>
+                    <div class="award-star bg-secondary">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                </div>
+                <h5 class="text-uppercase font-weight-bold">Акула бизнеса</h5>
+                <small class="text-muted mt-3">Назначил 50 задач</small>
+                <hr>
+                <span class="badge badge-secondary">10/50</span>
+            </div>
+            <div class="award mr-3 text-center">
+                <div>
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 123, 255, 1)&quot;}" data-value="1.00"></div>
+                    <div class="award-star bg-primary">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <h5 class="text-uppercase font-weight-bold">Приглашатор</h5>
+                <small class="text-muted mt-3">Пригласил 1 сотрудника</small>
+                <hr>
+                <span class="badge badge-primary">20.05.2019</span>
+            </div>
+            <div class="award mr-3 text-center">
+                <div>
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}" data-value="0.10"></div>
+                    <div class="award-star bg-secondary">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                </div>
+                <h5 class="text-uppercase font-weight-bold">LVL100 B0$$</h5>
+                <small class="text-muted mt-3">Назначил 100 задач</small>
+                <hr>
+                <span class="badge badge-secondary">10/100</span>
+            </div>
+            <div class="award mr-3 text-center">
+                <div>
+                    <div class="circle" data-value="0.00"></div>
+                    <div class="award-star bg-secondary">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                </div>
+                <h5 class="text-uppercase font-weight-bold">Знакомство</h5>
+                <small class="text-muted mt-3">Заполнил профиль</small>
+                <hr>
+                <span class="badge badge-secondary">не достигнуто</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <hr class="w-100 mt-4">
+                <div class="d-flex justify-content-center mt-4">
+                    <a href="https://s.lusy.io/reg/" class="btn btn-primary">Получить первую медаль за регистрацию компании</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<script src="https://s.lusy.io/assets/js/circle-progress.min.js"></script>
+
+
+<script>
+    $('.circle-sm').circleProgress({
+        size: 45,
+        fill: {
+            gradient: ["red", "orange"]
+        }
+    });
+
+    $('.circle-md').circleProgress({
+        size: 75,
+        fill: {
+            gradient: ["red", "orange"]
+        }
+    });
+
+    $('.circle').circleProgress({
+        size: 75
+    });
+</script>
 
 
 <div class="pt-5 pb-5 d-none">
@@ -119,7 +220,7 @@
 </div>
 
 
-<div class="second pt-5 pb-5">
+<div class="second pt-5 pb-5 d-none">
     <div class="container-small text-center pb-5">
         <h1 class="pricing-title">Сколько это стоит?</h1>
         <p class="pricing-content">2 тарифа с человеческим объяснением ценообразования</p>
