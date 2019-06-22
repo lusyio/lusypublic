@@ -15,7 +15,7 @@ img {
 	margin-left: 20px;
 }
 .lead-text {
-    font-size: 60px;
+    font-size: 54px;
     letter-spacing: 0px;
     line-height: 1.2;
     font-weight: 600;
@@ -29,7 +29,7 @@ img {
 .main {
 	margin-top: 80px;
 }
-.main h1 {
+.main p {
     font-size: 20px;
     font-weight: 100;
     margin-top: 30px;
@@ -85,6 +85,15 @@ img {
     color: rgba(95, 95, 95, 0.1);
     font-size: 7em;
     top: -30px;
+}
+.functions .blockExcellence img {
+    width: 80%;
+}
+.functions i {
+    right: 10px;
+    color: rgba(95, 95, 95, 0.1);
+    font-size: 4em;
+    top: -10px;
 }
 .items{
     padding: 0;

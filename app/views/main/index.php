@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row justify-content-sm-center">
             <div class="col-sm-8 text-center">
-                <p class="lead-text">Освободите место для великих свершений</p>
-                <h1>Lusy.io - система постановки и контроля задач</h1>
+                <h1 class="lead-text">Система постановки задач с игровыми элементами</h1>
+                <p>Просто, ничего лишнего, с наградами и легкостью в работе.</p>
                 <a href="https://s.lusy.io/reg/" class="btn btn-primary mt-3">Начать пользоваться</a>
             </div>
             <div class="col-sm-12">
@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 mb-5">
-                <p class="lead-text-small">Думайте о развитии компании.<br>Рутину мы возьмем на себя.</p>
+                <p class="lead-text-small text-center">Думайте о развитии компании<br>Рутину мы возьмем на себя</p>
             </div>
             <div class="col-sm-4 text-center">
                 <div class="blockExcellence position-relative">
@@ -56,7 +56,7 @@
 
 <div class="container pt-5 pb-5">
     <div class="text-center">
-        <p class="lead-text-small">Всё понятно с одного взгляда</p>
+        <p class="lead-text-small">Уведомления, понятные с первого взгляда</p>
         <div class="d-flex mt-4 justify-content-center">
             <div class="mr-5">
                 <div class="text-primary mb-2 font-weight-bold" style="font-size: 1.5em;">
@@ -108,7 +108,7 @@
 
 <div class="second pt-5 pb-5">
     <div class="container">
-        <p class="lead-text-small text-center">Достижения, мотивация, игра!</p>
+        <p class="lead-text-small text-center">Достижения + соревнование = система мотивации!</p>
         <div class="row mb-3">
             <div class="col-sm-8 offset-sm-2">
                 <p class="text-center">Мы создали "достижения", которые сможете получать вы и ваши сотрудники. Как
@@ -131,7 +131,8 @@
             </div>
             <div class="award mr-3 text-center">
                 <div>
-                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}" data-value="0.20"></div>
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                         data-value="0.20"></div>
                     <div class="award-star bg-secondary">
                         <i class="fas fa-handshake"></i>
                     </div>
@@ -143,7 +144,8 @@
             </div>
             <div class="award mr-3 text-center">
                 <div>
-                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 123, 255, 1)&quot;}" data-value="1.00"></div>
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 123, 255, 1)&quot;}"
+                         data-value="1.00"></div>
                     <div class="award-star bg-primary">
                         <i class="fas fa-user"></i>
                     </div>
@@ -155,7 +157,8 @@
             </div>
             <div class="award mr-3 text-center">
                 <div>
-                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}" data-value="0.10"></div>
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                         data-value="0.10"></div>
                     <div class="award-star bg-secondary">
                         <i class="fas fa-handshake"></i>
                     </div>
@@ -182,7 +185,8 @@
             <div class="col-sm-6 offset-sm-3">
                 <hr class="w-100 mt-4">
                 <div class="d-flex justify-content-center mt-4">
-                    <a href="https://s.lusy.io/reg/" class="btn btn-primary">Получить первую медаль за регистрацию компании</a>
+                    <a href="https://s.lusy.io/reg/" class="btn btn-primary">Получить первую медаль за регистрацию
+                        компании</a>
                 </div>
             </div>
         </div>
@@ -192,35 +196,48 @@
 
 
 <script>
-    $('.circle-sm').circleProgress({
-        size: 45,
-        fill: {
-            gradient: ["red", "orange"]
-        }
-    });
-
-    $('.circle-md').circleProgress({
-        size: 75,
-        fill: {
-            gradient: ["red", "orange"]
-        }
-    });
-
     $('.circle').circleProgress({
         size: 75
     });
 </script>
 
 
-<div class="pt-5 pb-5 d-none">
+<div class="pt-5 pb-5 functions">
     <div class="container text-center">
-        <h1>Письмо от основателя</h1>
-        <p>Перечень функций</p>
+        <p class="lead-text-small text-center">Основные функции</p>
+        <p>В Lusy.io есть всё, чтобы перевести управление компанией в цифровой вид</p>
+        <div class="row mt-5">
+        <?php
+        $i = 0;
+        $functions[] = array('name' => 'Постановка задач','desc' => 'Пришла идея? Сразу в работу! Ставьте задачи на лету','img' => 'land1','icon' => 'fas fa-plus');
+        $functions[] = array('name' => 'Контроль сроков','desc' => 'Наглядно выводим дедлайны и выделяем цветом','img' => 'land2','icon' => 'fas fa-clock');
+        $functions[] = array('name' => 'Просрочки не пройдут','desc' => 'Просрочки горят в уведомлениях, в задачах..везде!','img' => 'land1','icon' => 'fas fa-fire-alt');
+        $functions[] = array('name' => 'Достижения','desc' => 'Вовлейкате сотрудников в процесс в игровой форме!','img' => 'land1','icon' => 'fas fa-trophy');
+        $functions[] = array('name' => 'Диалоги и общий чат','desc' => 'Обсудить и не потерять? Общайтесь в диалогах!','img' => 'land1','icon' => 'fas fa-comments');
+        $functions[] = array('name' => 'Раздел Компания','desc' => 'Сравним, у кого больше выполненных задач?','img' => 'land1','icon' => 'fas fa-users');
+        $functions[] = array('name' => 'Журнал событий','desc' => 'Ничего не потеряется - ведь есть журнал событий','img' => 'land1','icon' => 'fas fa-bell');
+        $functions[] = array('name' => 'Рабочий стол','desc' => 'Быстрый переход к задачам и отображение уведомлений','img' => 'land1','icon' => 'fas fa-home');
+
+        foreach ($functions as $n) { ?>
+        <?php if ($i == 4 or $i == 8 or $i == 12) { ?></div><div class="row mt-5"> <?php } ?>
+
+            <div class="col-sm-3 text-center">
+                <div class="blockExcellence position-relative">
+                    <i class="<?=$n['icon']?>"></i>
+                    <img class="rounded-circle" src="/public/images/<?=$n['img']?>.jpg"/>
+                </div>
+                <h5 class="mt-4 font-weight-bold"><?=$n['name']?></h5>
+                <p class="mt-3"><?=$n['desc']?></p>
+            </div>
+        <?php
+        $i++;
+        } ?>
+        </div>
     </div>
 </div>
 
 
-<div class="second pt-5 pb-5 d-none">
+<div class="second pt-5 pb-5">
     <div class="container-small text-center pb-5">
         <h1 class="pricing-title">Сколько это стоит?</h1>
         <p class="pricing-content">2 тарифа с человеческим объяснением ценообразования</p>
@@ -269,42 +286,3 @@
     </div>
 </div>
 
-
-<div class="container-small pt-5 pb-5 text-center">
-    <h1 class="blog-title">Знания</h1>
-    <p class="blog-content">Блоги</p>
-</div>
-<div class="container blog-list pb-5">
-    <div class="row">
-        <?php foreach ($articles as $article): ?>
-            <div class="col-sm-4">
-                <a href="/<?= $article['language']; ?>/blog/<?= $article['url']; ?>">
-                    <div class="article mb-3">
-                        <img src="/public/<?php if (!empty($article['img_small'])) {
-                            echo 'upload/' . $article['img_small'];
-                        } else {
-                            echo 'images/default_small.jpg';
-                        } ?>" title=" <?= $article['article_name']; ?>">
-                        <div class="articleinside">
-                            <h2 class="blog-text-title">
-                                <?= $article['article_name']; ?>
-                            </h2>
-                            <div class="blog-info">
-                                <p><?= $article['description']; ?></p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="articlefot text-secondary">
-                            <?= $article['category'] . ' | ' . date("d.m.Y", $article['publish_date']); ?>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        <?php endforeach; ?>
-    </div>
-    <div class="blog-links">
-        <a href="/<?= $this->route['language']; ?>/blog/" class="blog-link">
-            <span class="blog-link-text">Узнать больше в блоге</span>
-        </a>
-    </div>
-</div>
