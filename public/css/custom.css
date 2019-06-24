@@ -1,5 +1,8 @@
-body{
+body {
     -webkit-font-smoothing: antialiased;
+    background-image: url(/public/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 p {
 	line-height: 1.78;
@@ -13,12 +16,39 @@ img {
 .navbar-nav .nav-link {
 	font-weight: 100;
 	margin-left: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.2s all;
+}
+.btn-primary {
+    background: #284c8e;
+    border: none !important;
+    border-radius: 15px;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+.btn-primary:hover {
+    background: #13387c;
+}
+.nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+    transition: 0.2s all;
+}
+.form-control {
+    height: calc(2.5em + .75rem + 2px);
+}
+#email {
+    padding-left: 20px;
 }
 .lead-text {
-    font-size: 54px;
-    letter-spacing: 0px;
+    font-size: 52px;
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: 900;
+}
+.lead-text-big {
+    font-size: 40px;
+    letter-spacing: 0px;
+    line-height: 1.4;
+    font-weight: 900;
 }
 .lead-text-small {
     font-size: 32px;
@@ -26,17 +56,32 @@ img {
     line-height: 1.4;
     font-weight: 600;
 }
+.lead-text-under {
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+}
 .main {
 	margin-top: 80px;
 }
 .main p {
-    font-size: 20px;
-    font-weight: 100;
-    margin-top: 30px;
+    font-size: 23px;
+    color: #e1e1e1;
+    line-height: 1.4;
+    margin-top: 20px;
+}
+.formreg {
+    max-width: 500px;
+    margin: auto;
+}
+.formreg .form-control {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 .main img {
-    box-shadow: rgba(13, 28, 60, 0.06) 0px 4px 44px 0px;
-    margin-top: 40px;
+    box-shadow: rgba(13, 28, 60, 0.3) 0px 4px 44px 0px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .second {
 	background-color: #f6f8fa;
@@ -75,9 +120,24 @@ img {
     max-width: 230px;
     margin: auto;
 }
-
+.number {
+    position: absolute;
+    font-size: 15em;
+    color: rgba(40, 76, 141, 0.1);
+    font-weight: 700;
+    left: -70px;
+    top: 20px;
+    z-index: 1;
+}
+.lead-text-small2 {
+    font-size: 14px;
+    max-width: 80%;
+    margin: auto;
+}
 .blockExcellence img {
     box-shadow: rgba(13, 28, 60, 0.06) 0px 4px 44px 0px;
+    z-index: 2;
+    position: relative;
 }
 .blockExcellence i {
     position: absolute;
@@ -422,22 +482,33 @@ pricing-content{
     display: block;
     padding: 20px 10px;
     width: 210px;
+    margin-right: -15px;
     background: white;
     position: relative;
     -webkit-transition: box-shadow .15s ease-out,opacity .15s ease-out,.15s margin-left .15s ease-out,.15s visibility .15s,-webkit-transform .15s ease-out;
     transition: transform .15s ease-out,box-shadow .15s ease-out,opacity .15s ease-out,.15s margin-left .15s ease-out,.15s visibility .15s;
     transition: transform .15s ease-out,box-shadow .15s ease-out,opacity .15s ease-out,.15s margin-left .15s ease-out,.15s visibility .15s,-webkit-transform .15s ease-out;
-    box-shadow: 0 10px 15px rgba(14,21,47,.05);
+    box-shadow: 0 22px 50px rgba(14,21,47,.15);
+    z-index: 10;
 }
-
+.aw2 {
+    top: 20px;
+    z-index: 11;
+}
+.aw3 {
+    top: 40px;
+    z-index: 12;
+}
 .award:hover {
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
-    z-index: 1;
-    box-shadow: 0 22px 50px rgba(14,21,47,.2);
+    box-shadow: 0 22px 50px rgba(14,21,47,.3);
 }
 .award hr {
     width: 70px;
+}
+.award h5 {
+    font-weight: 900;
 }
 .award .bg-secondary {
     background-color: rgba(0, 0, 0, .3) !important;

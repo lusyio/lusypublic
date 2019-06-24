@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/public/css/custom.css">
+    <link rel="stylesheet" href="/public/css/custom.css?ver=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title><?php echo $title; ?></title>
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-2">
-                <a class="navbar-brand text-body text-uppercase font-weight-bold visible-lg mt-1" href="/<?= $this->route['language']; ?>/">LUSY</a>
+                <a class="navbar-brand text-white text-uppercase font-weight-bold visible-lg mt-1" href="/<?= $this->route['language']; ?>/">LUSY</a>
             </div>
             <div class="col-sm-7">
                 <nav class="navbar navbar-expand-lg p-0 pt-1">
@@ -49,12 +49,12 @@
                 <div class="float-right">
                     <nav class="navbar navbar-expand-lg" style="margin-top: -3px">
                         <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://s.lusy.io/login/">Войти</a>
+                            </li>
                             <li class="nav-item active">
                                 <a class="nav-link btn btn-primary text-white"
                                    href="https://s.lusy.io/reg/">Регистрация</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link btn btn-outline-primary" href="https://s.lusy.io/login/">Войти</a>
                             </li>
                         </ul>
                     </nav>
