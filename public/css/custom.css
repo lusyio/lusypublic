@@ -70,6 +70,9 @@ img {
     line-height: 1.4;
     margin-top: 20px;
 }
+.noty {
+    font-size: 2em;
+}
 .formreg {
     max-width: 500px;
     margin: auto;
@@ -135,7 +138,7 @@ img {
     margin: auto;
 }
 .blockExcellence img {
-    box-shadow: rgba(13, 28, 60, 0.06) 0px 4px 44px 0px;
+    box-shadow: rgba(13, 28, 60, 0.16) 0px 4px 44px 0px;
     z-index: 2;
     position: relative;
 }

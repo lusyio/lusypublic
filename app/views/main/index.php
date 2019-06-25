@@ -74,30 +74,30 @@
 </div>
 
 
-<div class="container pt-5 pb-5 d-none">
+<div class="container pt-5 pb-5">
     <div class="text-center">
-        <p class="lead-text-small">Уведомления, понятные с первого взгляда</p>
-        <div class="d-flex mt-4 justify-content-center">
-            <div class="mr-5">
-                <div class="text-primary mb-2 font-weight-bold" style="font-size: 1.5em;">
+        <p class="lead-text-big">Вовремя узнавай обо всех событиях</p>
+        <div class="d-flex mt-5 justify-content-center">
+            <div class="mr-4">
+                <div class="text-primary font-weight-bold noty">
                     <i class="far fa-bell"></i> 12
                 </div>
                 <small class="text-secondary">Задачи</small>
             </div>
-            <div class="mr-5">
-                <div class="text-danger mb-2 font-weight-bold" style="font-size: 1.5em;">
+            <div class="mr-4 ml-4">
+                <div class="text-danger font-weight-bold noty">
                     <i class="fas fa-fire-alt"></i> 3
                 </div>
                 <small class="text-secondary">Просроченные</small>
             </div>
-            <div class="mr-5">
-                <div class="text-warning mb-2 font-weight-bold" style="font-size: 1.5em;">
+            <div class="mr-4 ml-4">
+                <div class="text-warning font-weight-bold noty">
                     <i class="far fa-comment"></i> 1
                 </div>
                 <small class="text-secondary">Комментарии</small>
             </div>
-            <div>
-                <div class="text-success mb-2 font-weight-bold" style="font-size: 1.5em;">
+            <div class="ml-4 mr-4">
+                <div class="text-success font-weight-bold noty">
                     <i class="far fa-envelope"></i> 5
                 </div>
                 <small class="text-secondary">Сообщения</small>
@@ -106,22 +106,24 @@
     </div>
     <div class="row mt-5">
         <div class="col-sm-4 offset-sm-2">
-            <p>Мы поставили для себя цель сделать уведомления понятными и рабочими.</p>
-            <p>На экране вы всегда видите 4 индикатора событий, которые обновляются в реальном времени.</p>
+            <p class="lead-text-under text-left">Появилась новая задача, сотрудник
+                не успевает закончить работу в срок, вам поступило
+                новое сообщение или комментарий?</p>
         </div>
         <div class="col-sm-4">
-            <p>С первого взгляда вы можете понять, с чем взаимодействовать - требуют ли задачи внимания или вам написали
-                комментарий?</p>
-            <p>Чтобы ни было - вы сразу поймете, что появилось нового в системе.</p>
+            <p class="lead-text-under text-left">Все события отображаются в режиме онлайн + дублируются на электронную
+                почту, если это необходимо.</p>
         </div>
     </div>
+</div>
+
+<div class="container pt-5 pb-5 d-none">
     <div class="row">
-        <div class="col-sm-8 offset-sm-2">
-            <hr class="w-100 mt-4">
-            <div class="d-flex justify-content-center mt-4">
-                <a href="https://s.lusy.io/reg/" class="btn btn-primary">Посмотреть, как это выглядит на
-                    практике</a>
-            </div>
+        <div class="col-sm-6">
+            sdf
+        </div>
+        <div class="col-sm-4">
+            sdf
         </div>
     </div>
 </div>
