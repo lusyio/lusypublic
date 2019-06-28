@@ -5,13 +5,16 @@
                 <h1 class="lead-text text-white">Твой личный помощник<br>в управлении компанией</h1>
                 <p>Сосредоточься на росте бизнеса и долгосрочных целях,<br>а рутинные задачи Люси возьмет на себя</p>
                 <div class="justify-content-center mt-5">
+
+                    <form method="post" action="https://s.lusy.io/reg/">
                     <div class="input-group mb-3 mt-3 formreg">
-                        <input type="text" id="email" class="form-control" placeholder="your_mail@domain.com"
+                        <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
                                aria-label="your_mail@domain.com" aria-describedby="button-addon2">
                         <div class="input-group-append">
-                            <button class="btn btn-primary" type="button" id="button-addon2">Попробовать</button>
+                            <button class="btn btn-primary" type="submit" id="button-addon2">Попробовать</button>
                         </div>
                     </div>
+                    </form>
                 </div>
             </div>
             <div class="col-sm-12">
@@ -247,12 +250,14 @@
         </div>
     </div>
     <div class="justify-content-center">
+        <form method="post" action="https://s.lusy.io/reg/">
         <div class="input-group mb-3 mt-3 formreg">
-            <input type="text" id="email2" class="form-control" placeholder="your_mail@domain.com"
+            <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
                    aria-label="your_mail@domain.com" aria-describedby="button-addon2">
             <div class="input-group-append">
                 <button class="btn btn-primary" type="button" id="button-addon2">Попробовать</button>
             </div>
         </div>
+        </form>
     </div>
 </div>
