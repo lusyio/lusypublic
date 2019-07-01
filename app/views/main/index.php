@@ -23,7 +23,7 @@
         </div>
     </div>
 </div>
-<div class="pt-5 pb-5 mt-3">
+<div class="pt-5 pb-5 mt-3" id="steps">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 mb-5">
@@ -77,29 +77,29 @@
 </div>
 
 
-<div class="container pt-5 pb-5">
+<div class="container pt-5 pb-5" id="noty">
     <div class="text-center">
         <p class="lead-text-big">Вовремя узнавай обо всех событиях</p>
         <div class="d-flex mt-5 justify-content-center">
-            <div class="mr-4">
+            <div class="mr-4 notyBlock">
                 <div class="text-primary font-weight-bold noty">
                     <i class="far fa-bell"></i> 12
                 </div>
                 <small class="text-secondary">Задачи</small>
             </div>
-            <div class="mr-4 ml-4">
+            <div class="mr-4 ml-4 notyBlock">
                 <div class="text-danger font-weight-bold noty">
                     <i class="fas fa-fire-alt"></i> 3
                 </div>
                 <small class="text-secondary">Просроченные</small>
             </div>
-            <div class="mr-4 ml-4">
+            <div class="mr-4 ml-4 notyBlock">
                 <div class="text-warning font-weight-bold noty">
                     <i class="far fa-comment"></i> 1
                 </div>
                 <small class="text-secondary">Комментарии</small>
             </div>
-            <div class="ml-4 mr-4">
+            <div class="ml-4 mr-4 notyBlock">
                 <div class="text-success font-weight-bold noty">
                     <i class="far fa-envelope"></i> 5
                 </div>
@@ -131,7 +131,7 @@
     </div>
 </div>
 
-<div class="pt-5 pb-5">
+<div class="pt-5 pb-5" id="awards">
     <div class="container">
         <p class="lead-text-big text-center">Достижения, мотивация, игра!</p>
         <div class="row mb-3">
@@ -143,7 +143,7 @@
         </div>
 
         <div class="d-flex justify-content-center">
-            <div class="award text-center">
+            <div class="award text-center aw1">
                 <div>
                     <div class="circle" data-value="0.00"></div>
                     <div class="award-star bg-secondary">
@@ -194,7 +194,7 @@
                 <hr>
                 <span class="badge badge-secondary">10/100</span>
             </div>
-            <div class="award text-center mr-0">
+            <div class="award text-center mr-0 aw1">
                 <div>
                     <div class="circle" data-value="0.00"></div>
                     <div class="award-star bg-secondary">
@@ -226,7 +226,7 @@
     });
 </script>
 
-<div class="container pt-5 pb-5">
+<div class="container pt-5 pb-5" id="mobile">
     <div class="row">
         <div class="col-sm-5 offset-sm-1">
             <p class="lead-text-big mt-5">Полный контроль<br>в любом месте</p>
@@ -235,7 +235,7 @@
                 прямо с телефона где бы ты не находился</p>
         </div>
         <div class="col-sm-6">
-            <img src="/public/images/mobile.jpg" style=" max-width: 120%;">
+            <img src="/public/images/mobile.jpg">
         </div>
     </div>
 </div>

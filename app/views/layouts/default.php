@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/public/css/custom.css?ver=2">
+    <link rel="stylesheet" href="/public/css/custom.css?ver=3">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title><?php echo $title; ?></title>
@@ -48,10 +48,10 @@
             </div>
             <div class="col-sm-3">
                 <div class="collapse float-right mainNav">
-                    <nav class="navbar navbar-expand-lg" style="margin-top: -3px">
+                    <nav class="navbar navbar-expand-lg">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="https://s.lusy.io/login/">Войти</a>
+                                <a class="nav-link login" href="https://s.lusy.io/login/">Войти</a>
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link btn btn-primary text-white"

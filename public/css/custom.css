@@ -583,10 +583,16 @@ pricing-content{
 .visible-sm {
     display: none;
 }
+.float-right .navbar {
+    margin-top: -3px
+}
 @media (min-width: 768px) {
     .firstNav {
         margin-left: 0px !important;
         padding-left: 0px !important;
+    }
+    #mobile img {
+        width: 120%;
     }
 }
 
@@ -594,11 +600,20 @@ pricing-content{
     .hidden-sm {
         display: none;
     }
+    .bg {
+        max-height: 600px;
+    }
     .visible-sm {
         display: initial;
     }
     .lead-text {
         font-size: 40px;
+    }
+    .lead-text-big {
+        font-size: 35px;
+    }
+    .lead-text-under {
+        font-size: 18px;
     }
     .main p {
         font-size: 18px;
@@ -611,6 +626,73 @@ pricing-content{
         padding-right: 15px !important;
     }
     .main img {
-        margin-top: 30px;
+        margin-top: 20px;
+    }
+    .navbar-nav .nav-link {
+        margin-left: 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .mainNav {
+        float: left !important;
+        width: 100%;
+    }
+    .float-right .navbar {
+        margin-top: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .float-right .navbar-nav {
+        width: 100%;
+    }
+    .float-right .navbar-nav .btn-primary {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    .login {
+        border-bottom: 0px !important;
+        color: #284c8e !important;
+        background: #ffffff;
+        border: none !important;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2), 0 5px 15px 0 rgba(37, 44, 97, 0.15);
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        font-weight: bold !important;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .main .mt-5 {
+        margin-top: 20px !important;
+    }
+    #steps .col-sm-4 {
+        margin-bottom: 30px;
+    }
+    #noty .d-flex {
+        display: inline-block !important;
+    }
+    #noty .row {
+        clear: both;
+    }
+    #noty .lead-text-under {
+        margin-bottom: 15px;
+    }
+    .notyBlock {
+        margin: 0px !important;
+        width: 50%;
+        float: left;
+        padding-bottom: 15px;
+    }
+    .aw1 {
+        display: none;
+    }
+    #awards .d-flex {
+        width: 300%;
+        margin-left: -100%;
+    }
+    #mobile, #mobile .text-left {
+        text-align: center !important;
+    }
+    #mobile img {
+        margin-top: 20px;
     }
 }
