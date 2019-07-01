@@ -46,8 +46,8 @@
                     </div>
                 </nav>
             </div>
-            <div class="col-sm-3">
-                <div class="collapse float-right mainNav">
+            <div class="col-sm-3 navbar-expand-lg">
+                <div class="collapse navbar-collapse float-right mainNav">
                     <nav class="navbar navbar-expand-lg">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
