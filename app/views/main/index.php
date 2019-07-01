@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row justify-content-sm-center">
             <div class="col-sm-8 text-center">
-                <h1 class="lead-text text-white">Твой личный помощник<br>в управлении компанией</h1>
-                <p>Сосредоточься на росте бизнеса и долгосрочных целях,<br>а рутинные задачи Люси возьмет на себя</p>
+                <h1 class="lead-text text-white">Твой личный помощник<br class="hidden-sm"><span class="visible-sm"> </span>в управлении компанией</h1>
+                <p>Сосредоточься на росте бизнеса и долгосрочных целях,<br class="hidden-sm"><span class="visible-sm"> </span>а рутинные задачи Люси возьмет на себя</p>
                 <div class="justify-content-center mt-5">
 
                     <form method="post" action="https://s.lusy.io/reg/">

@@ -12,7 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title><?php echo $title; ?></title>
 </head>
-<body>
+<body class="position-relative">
+<div class="bg"></div>
 <div class="top-sidebar pt-2 pb-2">
     <div class="container">
         <div class="row">
@@ -22,12 +23,12 @@
             <div class="col-sm-7">
                 <nav class="navbar navbar-expand-lg p-0 pt-1">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            data-target=".mainNav" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <i class="fas fa-bars text-white"></i>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse mainNav">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
                                 <a class="nav-link firstNav" href="/<?= $this->route['language']; ?>/#">Возможности</a>
@@ -46,7 +47,7 @@
                 </nav>
             </div>
             <div class="col-sm-3">
-                <div class="float-right">
+                <div class="collapse float-right mainNav">
                     <nav class="navbar navbar-expand-lg" style="margin-top: -3px">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">

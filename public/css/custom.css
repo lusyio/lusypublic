@@ -1,11 +1,23 @@
-body {
+html, body {
+    height: 100%;
+}
+.bg {
     -webkit-font-smoothing: antialiased;
     background-image: url(/public/images/bg.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 p {
 	line-height: 1.78;
+}
+.navbar-toggler {
+    border: 1px solid white;
+    position: absolute;
+    right: 0px;
+    top: -35px;
 }
 img {
 	max-width: 100%;
@@ -568,10 +580,37 @@ pricing-content{
     border-radius: 50%;
     border: 1px solid white;
 }
-
+.visible-sm {
+    display: none;
+}
 @media (min-width: 768px) {
     .firstNav {
         margin-left: 0px !important;
         padding-left: 0px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hidden-sm {
+        display: none;
+    }
+    .visible-sm {
+        display: initial;
+    }
+    .lead-text {
+        font-size: 40px;
+    }
+    .main p {
+        font-size: 18px;
+    }
+    .main {
+        margin-top: 30px;
+    }
+    .btn-primary {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .main img {
+        margin-top: 30px;
     }
 }
