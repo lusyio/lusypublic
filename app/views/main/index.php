@@ -225,7 +225,82 @@
         thickness: 2
     });
 </script>
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://s.lusy.io/assets/css/swiper.min.css">
+<style>
+    .swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 210px;
+        height: 340px;
+    }
+</style>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="award text-center aw3">
+                <div>
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(40, 167, 69, 1)&quot;}"
+                         data-value="1.00"></div>
+                    <div class="award-star bg-success">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <h5>Всегда первый</h5>
+                <small class="mt-3">Зарегистрироваться до окончания времени - <span id="timer">19:23</span></small>
+                <hr>
+                <span class="badge badge-success">Достигнуто</span>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="award text-center aw3">
+                <div>
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(40, 167, 69, 1)&quot;}"
+                         data-value="1.00"></div>
+                    <div class="award-star bg-success">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <h5>Всегда первый</h5>
+                <small class="mt-3">Зарегистрироваться до окончания времени - <span id="timer">19:23</span></small>
+                <hr>
+                <span class="badge badge-success">Достигнуто</span>
+            </div>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
 
+<!-- Swiper JS -->
+<script src="https://s.lusy.io/assets/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+    swiper.slideTo(2, false,false);
+</script>
 <div class="container pt-5 pb-5" id="mobile">
     <div class="row">
         <div class="col-sm-5 offset-sm-1">

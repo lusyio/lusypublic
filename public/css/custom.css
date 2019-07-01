@@ -586,6 +586,9 @@ pricing-content{
 .float-right .navbar {
     margin-top: -3px
 }
+.swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-right {
+    background-image: none !important;
+}
 @media (min-width: 768px) {
     .firstNav {
         margin-left: 0px !important;
