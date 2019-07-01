@@ -589,6 +589,9 @@ pricing-content{
 .swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-right {
     background-image: none !important;
 }
+.swiper-slide .award {
+    margin-right: 0px !important;
+}
 @media (min-width: 768px) {
     .firstNav {
         margin-left: 0px !important;
@@ -613,7 +616,7 @@ pricing-content{
         font-size: 40px;
     }
     .lead-text-big {
-        font-size: 35px;
+        font-size: 30px;
     }
     .lead-text-under {
         font-size: 18px;
@@ -697,5 +700,11 @@ pricing-content{
     }
     #mobile img {
         margin-top: 20px;
+    }
+    .pt-5 {
+        padding-top: 15px !important;
+    }
+    .pb-5 {
+        padding-bottom: 15px !important;
     }
 }

@@ -2,18 +2,20 @@
     <div class="container">
         <div class="row justify-content-sm-center">
             <div class="col-sm-8 text-center">
-                <h1 class="lead-text text-white">Твой личный помощник<br class="hidden-sm"><span class="visible-sm"> </span>в управлении компанией</h1>
-                <p>Сосредоточься на росте бизнеса и долгосрочных целях,<br class="hidden-sm"><span class="visible-sm"> </span>а рутинные задачи Люси возьмет на себя</p>
+                <h1 class="lead-text text-white">Твой личный помощник<br class="hidden-sm"><span
+                            class="visible-sm"> </span>в управлении компанией</h1>
+                <p>Сосредоточься на росте бизнеса и долгосрочных целях,<br class="hidden-sm"><span
+                            class="visible-sm"> </span>а рутинные задачи Люси возьмет на себя</p>
                 <div class="justify-content-center mt-5">
 
                     <form method="post" action="https://s.lusy.io/reg/">
-                    <div class="input-group mb-3 mt-3 formreg">
-                        <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
-                               aria-label="your_mail@domain.com" aria-describedby="button-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary" type="submit" id="button-addon2">Попробовать</button>
+                        <div class="input-group mb-3 mt-3 formreg">
+                            <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
+                                   aria-label="your_mail@domain.com" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit" id="button-addon2">Попробовать</button>
+                            </div>
                         </div>
-                    </div>
                     </form>
                 </div>
             </div>
@@ -131,7 +133,7 @@
     </div>
 </div>
 
-<div class="pt-5 pb-5" id="awards">
+<div class="pt-5 pb-5 hidden-sm" id="awards">
     <div class="container">
         <p class="lead-text-big text-center">Достижения, мотивация, игра!</p>
         <div class="row mb-3">
@@ -216,15 +218,7 @@
         </div>
     </div>
 </div>
-<script src="https://s.lusy.io/assets/js/circle-progress.min.js"></script>
 
-
-<script>
-    $('.circle').circleProgress({
-        size: 75,
-        thickness: 2
-    });
-</script>
 <!-- Link Swiper's CSS -->
 <link rel="stylesheet" href="https://s.lusy.io/assets/css/swiper.min.css">
 <style>
@@ -233,6 +227,7 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
     .swiper-slide {
         background-position: center;
         background-size: cover;
@@ -241,43 +236,89 @@
     }
 </style>
 <!-- Swiper -->
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <div class="award text-center aw3">
-                <div>
-                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(40, 167, 69, 1)&quot;}"
-                         data-value="1.00"></div>
-                    <div class="award-star bg-success">
-                        <i class="fas fa-user"></i>
+<div class="visible-sm">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="award text-center">
+                    <div>
+                        <div class="circle" data-value="0.00"></div>
+                        <div class="award-star bg-secondary">
+                            <i class="fas fa-handshake"></i>
+                        </div>
                     </div>
+                    <h5>Знакомство</h5>
+                    <small class="mt-3">Заполнил профиль</small>
+                    <hr>
+                    <span class="badge badge-secondary">не достигнуто</span>
                 </div>
-                <h5>Всегда первый</h5>
-                <small class="mt-3">Зарегистрироваться до окончания времени - <span id="timer">19:23</span></small>
-                <hr>
-                <span class="badge badge-success">Достигнуто</span>
             </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="award text-center aw3">
-                <div>
-                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(40, 167, 69, 1)&quot;}"
-                         data-value="1.00"></div>
-                    <div class="award-star bg-success">
-                        <i class="fas fa-user"></i>
+            <div class="swiper-slide">
+                <div class="award text-center">
+                    <div>
+                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                             data-value="0.20"></div>
+                        <div class="award-star bg-secondary">
+                            <i class="fas fa-handshake"></i>
+                        </div>
                     </div>
+                    <h5>Акула бизнеса</h5>
+                    <small class="mt-3">Назначил 50 задач</small>
+                    <hr>
+                    <span class="badge badge-secondary">10/50</span>
                 </div>
-                <h5>Всегда первый</h5>
-                <small class="mt-3">Зарегистрироваться до окончания времени - <span id="timer">19:23</span></small>
-                <hr>
-                <span class="badge badge-success">Достигнуто</span>
             </div>
-        </div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-</div>
+            <div class="swiper-slide">
+                <div class="award text-center">
+                    <div>
+                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(40, 167, 69, 1)&quot;}"
+                             data-value="1.00"></div>
+                        <div class="award-star bg-success">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <h5>Всегда первый</h5>
+                    <small class="mt-3">Зарегистрироваться до окончания времени - <span id="timer">19:23</span></small>
+                    <hr>
+                    <span class="badge badge-success">Достигнуто</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="award text-center">
+                    <div>
+                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                             data-value="0.10"></div>
+                        <div class="award-star bg-secondary">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                    </div>
+                    <h5>LVL100 B0$$</h5>
+                    <small class="mt-3">Назначил 100 задач</small>
+                    <hr>
+                    <span class="badge badge-secondary">10/100</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="award text-center">
+                    <div>
+                        <div class="circle" data-value="0.00"></div>
+                        <div class="award-star bg-secondary">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                    </div>
+                    <h5>Знакомство</h5>
+                    <small class="mt-3">Заполнил профиль</small>
+                    <hr>
+                    <span class="badge badge-secondary">не достигнуто</span>
+                </div>
+            </div>
 
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
 <!-- Swiper JS -->
 <script src="https://s.lusy.io/assets/js/swiper.min.js"></script>
 
@@ -293,13 +334,13 @@
             stretch: 0,
             depth: 100,
             modifier: 1,
-            slideShadows : true,
+            slideShadows: true,
         },
         pagination: {
             el: '.swiper-pagination',
         },
     });
-    swiper.slideTo(2, false,false);
+    swiper.slideTo(2, false, false);
 </script>
 <div class="container pt-5 pb-5" id="mobile">
     <div class="row">
@@ -326,13 +367,23 @@
     </div>
     <div class="justify-content-center">
         <form method="post" action="https://s.lusy.io/reg/">
-        <div class="input-group mb-3 mt-3 formreg">
-            <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
-                   aria-label="your_mail@domain.com" aria-describedby="button-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-primary" type="button" id="button-addon2">Попробовать</button>
+            <div class="input-group mb-3 mt-3 formreg">
+                <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
+                       aria-label="your_mail@domain.com" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" id="button-addon2">Попробовать</button>
+                </div>
             </div>
-        </div>
         </form>
     </div>
 </div>
+
+<script src="https://s.lusy.io/assets/js/circle-progress.min.js"></script>
+
+
+<script>
+    $('.circle').circleProgress({
+        size: 75,
+        thickness: 2
+    });
+</script>
