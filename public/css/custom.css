@@ -9,6 +9,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: absolute;
+    top: -200px;
 }
 p {
 	line-height: 1.78;
@@ -76,7 +77,13 @@ img {
 .main {
 	margin-top: 80px;
 }
-.main p {
+.main h1 {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.main .lead-text-under {
     font-size: 23px;
     color: #e1e1e1;
     line-height: 1.4;
@@ -110,12 +117,21 @@ img {
 .second .img3 {
 	margin-top: -140px;
 }
-
-.footer{
-    background-color: #303030;
-    padding: 40px 0;
+.card {
+    box-shadow: rgba(13, 28, 60, 0.10) 0px 4px 10px 0px;
+    border: none !important;
 }
-
+.footer{
+    background: #4168a9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4168a9, #76a4e1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4168a9, #76a4e1);
+    padding: 40px 0px;
+}
+.underFooter {
+    background: #214073;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #214073, #5c8dce);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #214073, #5c8dce);
+}
 .footer-content{
     display: flex;
     justify-content: space-between;
@@ -344,7 +360,9 @@ pricing-content{
 .price-footer .btn:hover{
     color: white !important;
 }
-
+.text-secondary a {
+    color: #6c757d!important;
+}
 .blog-content{
     margin-left: auto;
     margin-right: auto;
@@ -619,9 +637,6 @@ pricing-content{
         font-size: 30px;
     }
     .lead-text-under {
-        font-size: 18px;
-    }
-    .main p {
         font-size: 18px;
     }
     .main {

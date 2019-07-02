@@ -1,10 +1,15 @@
+<style>.bg {
+        top: 0
+    }</style>
 <div class="main">
     <div class="container">
         <div class="row justify-content-sm-center">
             <div class="col-sm-8 text-center">
-                <h1 class="lead-text text-white">Твой личный помощник<br class="hidden-sm"><span
-                            class="visible-sm"> </span>в управлении компанией</h1>
-                <p>Сосредоточься на росте бизнеса и долгосрочных целях,<br class="hidden-sm"><span
+                <h1>Система постановки задач</h1>
+                <p class="lead-text text-white">Твой личный помощник<br class="hidden-sm"><span
+                            class="visible-sm"> </span>в управлении компанией</p>
+                <p class="lead-text-under">Сосредоточься на росте бизнеса и долгосрочных целях,<br
+                            class="hidden-sm"><span
                             class="visible-sm"> </span>а рутинные задачи Люси возьмет на себя</p>
                 <div class="justify-content-center mt-5">
 
@@ -175,11 +180,11 @@
                     <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(40, 167, 69, 1)&quot;}"
                          data-value="1.00"></div>
                     <div class="award-star bg-success">
-                        <i class="fas fa-user"></i>
+                        <i class="fas fas fa-medal"></i>
                     </div>
                 </div>
-                <h5>Всегда первый</h5>
-                <small class="mt-3">Зарегистрироваться до окончания времени - <span id="timer">19:23</span></small>
+                <h5>Красавчик</h5>
+                <small class="mt-3">Месяц без просрочек</small>
                 <hr>
                 <span class="badge badge-success">Достигнуто</span>
             </div>
@@ -198,15 +203,16 @@
             </div>
             <div class="award text-center mr-0 aw1">
                 <div>
-                    <div class="circle" data-value="0.00"></div>
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                         data-value="0.26"></div>
                     <div class="award-star bg-secondary">
-                        <i class="fas fa-handshake"></i>
+                        <i class="fas fas fa-star"></i>
                     </div>
                 </div>
-                <h5>Знакомство</h5>
-                <small class="mt-3">Заполнил профиль</small>
+                <h5>Гуру</h5>
+                <small class="mt-3">Завершил 500 задач</small>
                 <hr>
-                <span class="badge badge-secondary">не достигнуто</span>
+                <span class="badge badge-secondary">130/500</span>
             </div>
         </div>
         <div class="row mt-5">
@@ -274,11 +280,11 @@
                         <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(40, 167, 69, 1)&quot;}"
                              data-value="1.00"></div>
                         <div class="award-star bg-success">
-                            <i class="fas fa-user"></i>
+                            <i class="fas fas fa-medal"></i>
                         </div>
                     </div>
-                    <h5>Всегда первый</h5>
-                    <small class="mt-3">Зарегистрироваться до окончания времени - <span id="timer">19:23</span></small>
+                    <h5>Красавчик</h5>
+                    <small class="mt-3">Месяц без просрочек</small>
                     <hr>
                     <span class="badge badge-success">Достигнуто</span>
                 </div>
@@ -301,15 +307,16 @@
             <div class="swiper-slide">
                 <div class="award text-center">
                     <div>
-                        <div class="circle" data-value="0.00"></div>
+                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                             data-value="0.26"></div>
                         <div class="award-star bg-secondary">
-                            <i class="fas fa-handshake"></i>
+                            <i class="fas fas fa-star"></i>
                         </div>
                     </div>
-                    <h5>Знакомство</h5>
-                    <small class="mt-3">Заполнил профиль</small>
+                    <h5>Гуру</h5>
+                    <small class="mt-3">Завершил 500 задач</small>
                     <hr>
-                    <span class="badge badge-secondary">не достигнуто</span>
+                    <span class="badge badge-secondary">130/500</span>
                 </div>
             </div>
 
@@ -375,6 +382,8 @@
                 </div>
             </div>
         </form>
+        <p class="text-center text-secondary">Перейти к <a href="/<?= $this->route['language']; ?>/price/">платным
+                тарифам</a></p>
     </div>
 </div>
 
