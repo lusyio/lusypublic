@@ -35,7 +35,8 @@
                                 <a class="nav-link d-none" href="/<?= $this->route['language']; ?>/#">Возможности</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link firstNav" href="/<?= $this->route['language']; ?>/news/">Жизнь проекта</a>
+                                <a class="nav-link firstNav" href="/<?= $this->route['language']; ?>/news/">Жизнь
+                                    проекта</a>
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link" href="/<?= $this->route['language']; ?>/price/">Стоимость</a>
@@ -77,7 +78,13 @@
             <div class="row">
                 <div class="col-sm-10 offset-sm-1 text-white">
                     <p class="lead-text-big mb-1">Lusy.io</p>
-                    <h2 class="small">система постановки и контроля задач</h2>
+                    <h2 class="small mb-5">система постановки и контроля задач</h2>
+
+                    <p><a
+                                href="https://lusy.io/licenzionnoe-soglashenie-dogovor-publichnoj-oferty.pdf"
+                                class="btn-link text-white" target="_blank">Оферта
+                            рекуррентных
+                            платежей</a></p>
                 </div>
             </div>
         </div>
