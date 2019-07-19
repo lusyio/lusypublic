@@ -504,7 +504,32 @@ pricing-content{
     background-color: #cbddfd;
 }
 
+.my-chart{
+    height: 45px !important;
+    width: 90px !important;
+    transform: scale(1.5);
+}
 
+.chartjs-render-monitor{
+    width: 130px !important;
+    height: 65px !important;
+}
+
+.chart-container:not(:first-of-type){
+    margin-top: 15px;
+}
+
+.chart-body{
+    height: 85px;
+}
+
+.chart-body:first-of-type{
+    z-index: 10;
+}
+
+.chart-align{
+    vertical-align: -30%;
+}
 
 .circle {
     height: 80px;
