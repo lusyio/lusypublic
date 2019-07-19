@@ -31,8 +31,7 @@
                                 </div>
                                 <div class="col-1">
                                     <span class="chart-align">
-                                        <img src="/public/images/about-icon.svg"
-                                             style="border-radius: 12px;width:40px; height: 40px">
+
                                     </span>
                                 </div>
                                 <div class="col-2">
@@ -47,10 +46,7 @@
                                     </span>
                                 </div>
                                 <div class="col-3">
-                                    <div class="leader-container">
 
-                                    </div>
-<!--                                    <canvas id="myChart" class="my-chart"></canvas>-->
                                 </div>
                                 <div class="col-1">
                                     <span class="chart-align"
@@ -69,8 +65,7 @@
                                 </div>
                                 <div class="col-1">
                                     <span class="chart-align">
-                                        <img src="/public/images/about-icon.svg"
-                                             style="border-radius: 12px;width:40px; height: 40px">
+
                                     </span>
                                 </div>
                                 <div class="col-2">
@@ -88,7 +83,6 @@
                                     <div class="leader-container">
 
                                     </div>
-<!--                                    <canvas id="myChart1" class="my-chart"></canvas>-->
                                 </div>
                                 <div class="col-1">
                                     <span class="chart-align"
@@ -104,150 +98,3 @@
         </div>
     </div>
 </div>
-
-<script type="text/javascript">
-    // var ctx = document.getElementById('myChart').getContext('2d');
-    // var ctx1 = document.getElementById('myChart1').getContext('2d');
-    // var chart1 = new Chart(ctx1,
-
-    function createConfig(leaderBoard, data) {
-        return {
-            // The type of chart we want to create
-            type: 'line',
-
-            // The data for our dataset
-            data:
-                {
-                    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-                    datasets:
-                        [{
-                            fill: false,
-                            backgroundColor: 'rgb(255,255,255)',
-                            borderColor: leaderBoard,
-                            data: data
-                        }]
-                }
-            ,
-
-            // Configuration options go here
-            options: {
-                responsive: true,
-                layout:
-                    {
-                        padding: {}
-                    }
-                ,
-                title: {
-                    display: false,
-                }
-                ,
-                label: {
-                    display: false
-                }
-                ,
-                legend: {
-                    display: false
-                }
-                ,
-                scales: {
-                    xAxes: [{
-                        display: false
-                    }],
-                    yAxes:
-                        [{
-                            display: false,
-                            ticks: {
-                                suggestedMin: -2
-                            }
-                        }]
-                }
-                ,
-                elements: {
-                    line: {
-                        borderWidth: 5
-                    }
-                    ,
-                    point: {
-                        radius: 0,
-                        hitRadius:
-                            10,
-                    }
-                }
-            }
-        };
-    }
-
-    window.onload = function () {
-        [
-            'rgb(13,166,82)',
-            'rgb(166,16,31)'
-        ].forEach(function (leaderBoard, data) {
-            data = [0, 10, 5, 2, 20, 22, 41];
-            var container = document.querySelector('.leader-container');
-            var div = document.createElement('div');
-            div.classList.add('chart-container');
-
-            var canvas = document.createElement('canvas');
-            div.appendChild(canvas);
-            container.appendChild(div);
-
-            var ctx = canvas.getContext('2d');
-            var config = createConfig(leaderBoard, data);
-            new Chart(ctx, config);
-
-        })
-    };
-
-    // var chart = new Chart(ctx, {
-    //     // The type of chart we want to create
-    //     type: 'line',
-    //
-    //     // The data for our dataset
-    //     data: {
-    //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    //         datasets: [{
-    //             fill: false,
-    //             backgroundColor: 'rgb(255,255,255)',
-    //             borderColor: 'rgb(45,166,77)',
-    //             data: [0, 10, 5, 2, 20, 30, 45]
-    //         }]
-    //     },
-    //
-    //     // Configuration options go here
-    //     options: {
-    //         responsive: true,
-    //         layout: {
-    //             padding: {}
-    //         },
-    //         title: {
-    //             display: false,
-    //         },
-    //         label: {
-    //             display: false
-    //         },
-    //         legend: {
-    //             display: false
-    //         },
-    //         scales: {
-    //             xAxes: [{
-    //                 display: false
-    //             }],
-    //             yAxes: [{
-    //                 display: false,
-    //                 ticks: {
-    //                     suggestedMin: -2
-    //                 }
-    //             }]
-    //         },
-    //         elements: {
-    //             line: {
-    //                 borderWidth: 5
-    //             },
-    //             point: {
-    //                 radius: 0,
-    //                 hitRadius: 10,
-    //             }
-    //         }
-    //     }
-    // });
-</script>
