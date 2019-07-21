@@ -31,14 +31,13 @@
 
                     <div class="collapse navbar-collapse mainNav">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link d-none" href="/<?= $this->route['language']; ?>/#">Возможности</a>
+                            <li class="nav-item">
+                                <a class="nav-link firstNav" href="/<?= $this->route['language']; ?>/possibilities/">Возможности</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link firstNav" href="/<?= $this->route['language']; ?>/news/">Жизнь
-                                    проекта</a>
+                                <a class="nav-link" href="/<?= $this->route['language']; ?>/chart/">Чарт компаний</a>
                             </li>
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <a class="nav-link" href="/<?= $this->route['language']; ?>/price/">Стоимость</a>
                             </li>
                             <li class="nav-item">
