@@ -29,5 +29,9 @@ return [
         'controller' => 'news',
         'action' => 'index',
     ],
+    'register' => [
+        'controller' => 'register',
+        'action' => 'main',
+    ],
 
 ];
