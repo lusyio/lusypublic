@@ -1,4 +1,7 @@
 @import "register.css";
+@import "messages.css";
+@import "files.css";
+@import "noty.css";
 
 html, body {
     height: 100%;

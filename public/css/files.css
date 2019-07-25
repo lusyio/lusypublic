@@ -1,0 +1,59 @@
+.files {
+    border-radius: 0px !important;
+}
+.file-list .fa-circle {
+    font-size: 5px;
+    vertical-align: middle;
+    line-height: 2;
+}
+
+.file-list {
+    padding: 0.8rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+.files:last-of-type .file-list {
+    padding: 0.8rem;
+    border-bottom: 0;
+}
+
+.iconFiles {
+    top: 0.3rem;
+}
+
+.deleteFile{
+    display: none;
+}
+
+.file-list:hover > .deleteFile{
+    display: block;
+}
+.file-width-storage{
+    max-width:90% !important;
+}
+
+.delete-file-icon:hover {
+    border-radius: 100%;
+    color: #898989;
+    cursor: pointer;
+}
+
+.delete-file-icon:active {
+    color: #898989;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
+
+}
+.custom-file {
+    font-size: 2rem;
+    color: #898989;
+
+}
+.text-ligther {
+     color: #c6c9dc;
+ }
+.mb-3.file-name{
+    color: #898989;
+}

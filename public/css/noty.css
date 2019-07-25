@@ -1,0 +1,44 @@
+.alerts{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.topsidebar-noty{
+    margin: 0 2px;
+    padding: 10px 0;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    min-width: 60px;
+    cursor: pointer;
+}
+
+.topsidebar-noty-content{
+    border-radius: 50%;
+}
+
+.topsidebar-noty:hover{
+    background: rgba(20,23,28,.05);
+    border-color: rgba(20,23,28,.05);
+}
+.svg-icon {
+    height: 35px;
+    width: 35px;
+    position: relative;
+    top: -1px;
+}
+.svg-icon path {
+    fill: #27406a;
+}
+.badge-topsidebar{
+    border: none;
+    min-width: 19px;
+    border-radius: 15px;
+    position: absolute;
+    top: -7px;
+    right: -5px;
+}
+
+.counters-topsidebar{
+    justify-content: center;
+}

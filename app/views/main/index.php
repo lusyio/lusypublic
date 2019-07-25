@@ -75,7 +75,7 @@
                 <p class="mt-3 lead-text-small2">Все твои идеи реализуются в срок
                     и находятся под полным контролем,
                     Люси следит за их исполнением!
-                    Теперь ты - супер<i>бизнес</i>мен.
+                    Теперь ты - супер<i>бизнес</i>мен
                 </p>
             </div>
         </div>
@@ -87,32 +87,79 @@
 <div class="container pt-5 pb-5" id="noty">
     <div class="text-center">
         <p class="lead-text-big">Вовремя узнавай обо всех событиях</p>
-        <div class="d-flex mt-5 justify-content-center">
-            <div class="mr-4 notyBlock">
-                <div class="text-primary font-weight-bold noty">
-                    <i class="far fa-bell"></i> 12
+        <div class="d-flex counters-topsidebar">
+            <a href="#" class="text-decoration-none topsidebar-noty-content mr-5">
+                <div data-toggle="tooltip" data-placement="bottom" title="События"
+                     class="topsidebar-noty">
+                    <div class="position-relative">
+                        <img class="svg-icon" src="/public/svg/alarm.svg">
+                        <span class="badge badge-primary badge-topsidebar" id="notificationBadge">
+                                    <small class="text-white" id="notificationCount"></small>1
+                                    </span>
+                    </div>
                 </div>
-                <small class="text-secondary">Задачи</small>
-            </div>
-            <div class="mr-4 ml-4 notyBlock">
-                <div class="text-danger font-weight-bold noty">
-                    <i class="fas fa-fire-alt"></i> 3
+            </a>
+            <a href="#" class="text-decoration-none topsidebar-noty-content mr-5">
+                <div data-toggle="tooltip" data-placement="bottom" title="Просроченные"
+                     class="topsidebar-noty">
+                    <div class="position-relative">
+                        <img class="svg-icon" src="/public/svg/fire.svg">
+                        <span class="badge badge-danger badge-topsidebar" id="overdueBadge">
+                                    <small class="text-white" id="overdueCount"></small>2
+                                </span>
+                    </div>
                 </div>
-                <small class="text-secondary">Просроченные</small>
-            </div>
-            <div class="mr-4 ml-4 notyBlock">
-                <div class="text-warning font-weight-bold noty">
-                    <i class="far fa-comment"></i> 1
+            </a>
+            <a href="#"
+               class="text-decoration-none topsidebar-noty-content mr-5">
+                <div data-toggle="tooltip" data-placement="bottom" title="Комментарии"
+                     class="topsidebar-noty">
+                    <div class="position-relative">
+                        <img class="svg-icon" src="/public/svg/feedback.svg">
+                        <span class="badge text-white badge-warning badge-topsidebar" id="commentBadge">
+                                    <small class="text-white" id="commentCount"></small>2
+                                </span>
+                    </div>
                 </div>
-                <small class="text-secondary">Комментарии</small>
-            </div>
-            <div class="ml-4 mr-4 notyBlock">
-                <div class="text-success font-weight-bold noty">
-                    <i class="far fa-envelope"></i> 5
+            </a>
+            <a href="#" class="text-decoration-none topsidebar-noty-content">
+                <div data-toggle="tooltip" data-placement="bottom" title="Сообщения"
+                     class="topsidebar-noty">
+                    <div class="position-relative">
+                        <img class="svg-icon" src="/public/svg/paper-plane.svg">
+                        <span class="badge badge-success badge-topsidebar" id="messagesBadge">
+                                    <small class="text-white" id="messagesCount"></small>8
+                                </span>
+                    </div>
                 </div>
-                <small class="text-secondary">Сообщения</small>
-            </div>
+            </a>
         </div>
+<!--        <div class="d-flex mt-5 justify-content-center">-->
+<!--            <div class="mr-4 notyBlock">-->
+<!--                <div class="text-primary font-weight-bold noty">-->
+<!--                    <i class="far fa-bell"></i> 12-->
+<!--                </div>-->
+<!--                <small class="text-secondary">Задачи</small>-->
+<!--            </div>-->
+<!--            <div class="mr-4 ml-4 notyBlock">-->
+<!--                <div class="text-danger font-weight-bold noty">-->
+<!--                    <i class="fas fa-fire-alt"></i> 3-->
+<!--                </div>-->
+<!--                <small class="text-secondary">Просроченные</small>-->
+<!--            </div>-->
+<!--            <div class="mr-4 ml-4 notyBlock">-->
+<!--                <div class="text-warning font-weight-bold noty">-->
+<!--                    <i class="far fa-comment"></i> 1-->
+<!--                </div>-->
+<!--                <small class="text-secondary">Комментарии</small>-->
+<!--            </div>-->
+<!--            <div class="ml-4 mr-4 notyBlock">-->
+<!--                <div class="text-success font-weight-bold noty">-->
+<!--                    <i class="far fa-envelope"></i> 5-->
+<!--                </div>-->
+<!--                <small class="text-secondary">Сообщения</small>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
     <div class="row mt-5">
         <div class="col-sm-4 offset-sm-2">
@@ -122,7 +169,7 @@
         </div>
         <div class="col-sm-4">
             <p class="lead-text-under text-left">Все события отображаются в режиме онлайн + дублируются на электронную
-                почту, если это необходимо.</p>
+                почту, если это необходимо</p>
         </div>
     </div>
 </div>
@@ -134,6 +181,207 @@
         </div>
         <div class="col-sm-4">
             sdf
+        </div>
+    </div>
+</div>
+
+<div class="container pt-5 pb-5" id="messages">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-1">
+
+            <a class="text-decoration-none text-dark" href="#">
+                <div class="card mb-3 dialog-mail">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-2 pl-2">
+                                <div class="user-pic position-relative" style="width:60px">
+                                    <img src="/public/images/avatar/4-alter.jpg"
+                                         class="avatar-img rounded-circle w-100">
+                                    <span class="online-indicator mobile-online-indicator">
+                                            <i class="fas fa-circle mr-1 ml-1 onlineIndicator mail text-success"></i>
+                                        </span>
+                                </div>
+                            </div>
+                            <div class="col text-area-message">
+                                <p class="mb-2 font-weight-bold ">Дмитрий Ричби </p>
+                                <span>Вы:  вот так на портретке айпада делать?</span>
+                            </div>
+                            <span class="date mr-2">25.07 12:26</span>
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+            <a class="text-decoration-none text-dark" href="#">
+                <div class="card mb-3 dialog-mail">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-2 pl-2">
+                                <div class="user-pic position-relative" style="width:60px">
+                                    <img src="/public/images/avatar/4200007-alter.jpg"
+                                         class="avatar-img rounded-circle w-100">
+                                    <span class="online-indicator mobile-online-indicator">
+                                            <i class="fas fa-circle mr-1 ml-1 onlineIndicator mail text-success"></i>
+                                        </span>
+                                </div>
+                            </div>
+                            <div class="col text-area-message">
+                                <p class="mb-2 font-weight-bold ">Дельшод Великолепный </p>
+                                <span>Вы:  Прива как дел</span>
+                            </div>
+                            <span class="date mr-2">25.07 4:20</span>
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+            <a class="text-decoration-none text-dark" href="#">
+                <div class="card mb-3 dialog-mail">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-2 pl-2">
+                                <div class="user-pic position-relative" style="width:60px">
+                                    <img src="/public/images/avatar/2-alter.jpg"
+                                         class="avatar-img rounded-circle w-100">
+                                    <span class="online-indicator mobile-online-indicator">
+                                            <i class="fas fa-circle mr-1 ml-1 onlineIndicator mail text-success"></i>
+                                        </span>
+                                </div>
+                            </div>
+                            <div class="col text-area-message">
+                                <p class="mb-2 font-weight-bold ">Игорь Горыныч </p>
+                                <span>Вы:  test123</span>
+                            </div>
+                            <span class="date mr-2">24.07 12:35</span>
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+            <a class="text-decoration-none text-dark" href="#">
+                <div class="card mb-3 dialog-mail">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-2 pl-2">
+                                <span class="companyAvatar user-pic position-relative"><i
+                                            class="fas fa-headset fa-fw"></i></span>
+                            </div>
+                            <div class="col text-area-message">
+                                <p class="mb-2 font-weight-bold ">Служба поддержки </p>
+                                <span> Внимание, внимание! Сообщаем, что у нас заработала система обратной связи. Если у вас есть жалобы, предложения, идеи - не держите в себе!</span>
+                            </div>
+                            <span class="date mr-2">19.07 16:05</span>
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="col-sm-5">
+            <p class="lead-text-big mt-5">Общайся<br>внутри системы</p>
+            <p class="lead-text-under text-left mt-4">Веди переписки по задачам внутри системы, не боясть потерять
+                важную информацию. </p>
+            <p class="lead-text-under text-left mt-4">Система комментариев под задачами и внутренний чат компаний
+                позваляют держать руку на пульсе событий</p>
+        </div>
+    </div>
+</div>
+
+<div class="container pt-5 pb-5" id="files">
+    <div class="row">
+        <div class="col-sm-5 offset-sm-1">
+            <p class="lead-text-big mt-5">Делись файлами<br>и документами</p>
+            <p class="lead-text-under text-left mt-4">Ни один документ больше не затеряется в глубинах почтового ящика.
+                Все самые важные файлы будут оставаться всегда под рукой и на видном месте.</p>
+            <p class="lead-text-under text-left mt-4">А также вы можете использовать облачные хранилища Google Drive и DropBox </p>
+        </div>
+        <div class="col-sm-6">
+            <div class="card files">
+                <div class="card-body file-list">
+                <span data-toggle="tooltip" data-placement="bottom" title=""
+                      class="text-ligther deleteFile float-right position-absolute"
+                      style="right: 5px; top: 0;z-index: 10;" data-original-title="Удалить файл">
+                    <i val="66" class="fas fa-times-circle delete-file-icon"></i>
+                </span>
+                    <div class="row">
+                        <div class="col-2 col-lg-1 iconFiles">
+                            <i class="far fa-file-image custom-file"></i>
+                        </div>
+                        <div class="col file-width-storage">
+                            <a href="#" class="h6 mb-3 file-name">Снимок экрана 2019-07-10 в 12.06.16.png</a>
+                            <span class="text-ligther ml-1"> <i class="fas fa-hdd mr-1 ml-1"></i> 20 КБ</span>
+                            <span class="text-ligther ml-1"> <i class="fas fa-circle mr-1 ml-1"></i> 10.07.2019</span>
+                            <a href="#" class="text-ligther">
+                                Дмитрий Ричби прикрепил к комментарию к задаче 'Новый чарт на dashboard' </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card files">
+                <div class="card-body file-list">
+                <span data-toggle="tooltip" data-placement="bottom" title=""
+                      class="text-ligther deleteFile float-right position-absolute"
+                      style="right: 5px; top: 0;z-index: 10;" data-original-title="Удалить файл">
+                    <i val="95" class="fas fa-times-circle delete-file-icon"></i>
+                </span>
+                    <div class="row">
+                        <div class="col-2 col-lg-1 iconFiles">
+                            <i class="far fa-file-image custom-file"></i>
+                        </div>
+                        <div class="col file-width-storage">
+                            <a href="/public/images/jopa.jpg"
+                               class="h6 mb-3 file-name">бэкэнд.jpg</a>
+                            <span class="text-ligther ml-1"> <i class="fas fa-hdd mr-1 ml-1"></i> 193 КБ</span>
+                            <span class="text-ligther ml-1"> <i class="fas fa-circle mr-1 ml-1"></i> 25.07.2019</span>
+                            <span class="text-ligther">
+                                Дельшод Великолепный прикрепил к диалогу                             </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card files">
+                <div class="card-body file-list">
+                <span data-toggle="tooltip" data-placement="bottom" title=""
+                      class="text-ligther deleteFile float-right position-absolute"
+                      style="right: 5px; top: 0;z-index: 10;" data-original-title="Удалить файл">
+                    <i val="66" class="fas fa-times-circle delete-file-icon"></i>
+                </span>
+                    <div class="row">
+                        <div class="col-2 col-lg-1 iconFiles">
+                            <i class="far fa-file-image custom-file"></i>
+                        </div>
+                        <div class="col file-width-storage">
+                            <a href="#" class="h6 mb-3 file-name">Снимок экрана 2019-07-10 в 12.06.16.png</a>
+                            <span class="text-ligther ml-1"> <i class="fab fa-dropbox mr-1 ml-1"></i> 20 КБ</span>
+                            <span class="text-ligther ml-1"> <i class="fas fa-circle mr-1 ml-1"></i> 10.07.2019</span>
+                            <a href="#" class="text-ligther">
+                                Максим Уважаемый прикрепил к комментарию к задаче 'Новый чарт на dashboard' </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card files">
+                <div class="card-body file-list">
+                <span data-toggle="tooltip" data-placement="bottom" title=""
+                      class="text-ligther deleteFile float-right position-absolute"
+                      style="right: 5px; top: 0;z-index: 10;" data-original-title="Удалить файл">
+                    <i val="66" class="fas fa-times-circle delete-file-icon"></i>
+                </span>
+                    <div class="row">
+                        <div class="col-2 col-lg-1 iconFiles">
+                            <i class="far fa-file-image custom-file"></i>
+                        </div>
+                        <div class="col file-width-storage">
+                            <a href="/public/images/photoreport.jpg" class="h6 mb-3 file-name">Фотоотчет о 20минутной работе.png</a>
+                            <span class="text-ligther ml-1"> <i class="fab fa-google-drive mr-1 ml-1"></i> 20 КБ</span>
+                            <span class="text-ligther ml-1"> <i class="fas fa-circle mr-1 ml-1"></i> 10.07.2019</span>
+                            <a href="#" class="text-ligther">
+                                Игорь Горыныч прикрепил к комментарию к задаче 'Новый чарт на dashboard' </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -369,7 +617,7 @@
         <div class="col-sm-8 offset-sm-2 mt-3 mb-3">
             <p class="lead-text-under">В бесплатном тарифе есть всё для эффективной работы всей команды!
                 Пользуйся сервисом сколько нужно, приглашай любое количество
-                сотрудников, ставь неограниченное число задач.</p>
+                сотрудников, ставь неограниченное число задач</p>
         </div>
     </div>
     <div class="justify-content-center">
@@ -389,7 +637,11 @@
 
 <script src="https://s.lusy.io/assets/js/circle-progress.min.js"></script>
 
-
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 <script>
     $('.circle').circleProgress({
         size: 75,
