@@ -88,7 +88,7 @@
     <div class="text-center">
         <p class="lead-text-big">Вовремя узнавай обо всех событиях</p>
         <div class="d-flex counters-topsidebar">
-            <a href="#" class="text-decoration-none topsidebar-noty-content mr-5">
+            <a href="#" class="text-decoration-none topsidebar-noty-content topdisebar-margin">
                 <div data-toggle="tooltip" data-placement="bottom" title="События"
                      class="topsidebar-noty">
                     <div class="position-relative">
@@ -99,7 +99,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#" class="text-decoration-none topsidebar-noty-content mr-5">
+            <a href="#" class="text-decoration-none topsidebar-noty-content topdisebar-margin">
                 <div data-toggle="tooltip" data-placement="bottom" title="Просроченные"
                      class="topsidebar-noty">
                     <div class="position-relative">
@@ -111,7 +111,7 @@
                 </div>
             </a>
             <a href="#"
-               class="text-decoration-none topsidebar-noty-content mr-5">
+               class="text-decoration-none topsidebar-noty-content topdisebar-margin">
                 <div data-toggle="tooltip" data-placement="bottom" title="Комментарии"
                      class="topsidebar-noty">
                     <div class="position-relative">
@@ -134,32 +134,6 @@
                 </div>
             </a>
         </div>
-<!--        <div class="d-flex mt-5 justify-content-center">-->
-<!--            <div class="mr-4 notyBlock">-->
-<!--                <div class="text-primary font-weight-bold noty">-->
-<!--                    <i class="far fa-bell"></i> 12-->
-<!--                </div>-->
-<!--                <small class="text-secondary">Задачи</small>-->
-<!--            </div>-->
-<!--            <div class="mr-4 ml-4 notyBlock">-->
-<!--                <div class="text-danger font-weight-bold noty">-->
-<!--                    <i class="fas fa-fire-alt"></i> 3-->
-<!--                </div>-->
-<!--                <small class="text-secondary">Просроченные</small>-->
-<!--            </div>-->
-<!--            <div class="mr-4 ml-4 notyBlock">-->
-<!--                <div class="text-warning font-weight-bold noty">-->
-<!--                    <i class="far fa-comment"></i> 1-->
-<!--                </div>-->
-<!--                <small class="text-secondary">Комментарии</small>-->
-<!--            </div>-->
-<!--            <div class="ml-4 mr-4 notyBlock">-->
-<!--                <div class="text-success font-weight-bold noty">-->
-<!--                    <i class="far fa-envelope"></i> 5-->
-<!--                </div>-->
-<!--                <small class="text-secondary">Сообщения</small>-->
-<!--            </div>-->
-<!--        </div>-->
     </div>
     <div class="row mt-5">
         <div class="col-sm-4 offset-sm-2">
@@ -188,12 +162,43 @@
 <div class="container pt-5 pb-5" id="messages">
     <div class="row">
         <div class="col-sm-6 offset-sm-1">
+            <div class="dialog-container">
 
-            <a class="text-decoration-none text-dark" href="#">
-                <div class="card mb-3 dialog-mail">
+                <div class="card shadow-none d-none">
+                    <div class="card-header text-center bg-message border-0">
+                        <div class="position-absolute">
+                            <a data-toggle="tooltip" data-placement="bottom" title="" class="text-left" href="../" data-original-title="Назад к диалогам"><i class="fas fa-arrow-left icon-invite"></i></a>
+                        </div>
+                        <div>
+                            <span class="mb-0 h5">Lusy.io
+                    <i class="fas fa-circle mr-1 ml-1 onlineIndicator text-success"></i>
+                </span>
+                        </div>
+                    </div>
+                    <div class="card-body p-0" id="chatBox" style="height: 450px">
+                        <div data-message-id="132" class="rounded-0 message not-my-message ">
+                            <div class="row">
+                                <div class="col-2 col-lg-2">
+                                    <a class="avatar-chat" href="#"><img src="/public/images/avatar/4-alter.jpg" class="avatar-conversation"></a>
+                                </div>
+                                <div class="col pl-2 message-width">
+                                    <span class="date">19.07 в 16:05                    </span>
+                                    <p class="m-0" style="color: #000; font-size: 14px; font-weight: 400">Внимание, внимание! Сообщаем, что у нас заработала система обратной связи. Если у вас есть жалобы, предложения, идеи - не держите в себе!</p>
+                                </div>
+                            </div>
+                        </div>                        </div>
+                </div>
+
+
+                <div class="text-center position-absolute spinner-mes">
+                    <div class="spinner-border" style="width: 3rem; height: 3rem;color: #e4e4e4;margin-top: 35%;" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <div class="card mb-3 dialog-mail" val="1">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-2 pl-2">
+                            <div class="col-3 col-lg-2 pl-2">
                                 <div class="user-pic position-relative" style="width:60px">
                                     <img src="/public/images/avatar/4-alter.jpg"
                                          class="avatar-img rounded-circle w-100">
@@ -211,12 +216,10 @@
 
                     </div>
                 </div>
-            </a>
-            <a class="text-decoration-none text-dark" href="#">
-                <div class="card mb-3 dialog-mail">
+                <div class="card mb-3 dialog-mail" val="2">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-2 pl-2">
+                            <div class="col-3 col-lg-2 pl-2">
                                 <div class="user-pic position-relative" style="width:60px">
                                     <img src="/public/images/avatar/4200007-alter.jpg"
                                          class="avatar-img rounded-circle w-100">
@@ -234,12 +237,10 @@
 
                     </div>
                 </div>
-            </a>
-            <a class="text-decoration-none text-dark" href="#">
-                <div class="card mb-3 dialog-mail">
+                <div class="card mb-3 dialog-mail" val="3">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-2 pl-2">
+                            <div class="col-3 col-lg-2  pl-2">
                                 <div class="user-pic position-relative" style="width:60px">
                                     <img src="/public/images/avatar/2-alter.jpg"
                                          class="avatar-img rounded-circle w-100">
@@ -257,12 +258,10 @@
 
                     </div>
                 </div>
-            </a>
-            <a class="text-decoration-none text-dark" href="#">
-                <div class="card mb-3 dialog-mail">
+                <div class="card mb-3 dialog-mail" val="4">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-2 pl-2">
+                            <div class="col-3 col-lg-2  pl-2">
                                 <span class="companyAvatar user-pic position-relative"><i
                                             class="fas fa-headset fa-fw"></i></span>
                             </div>
@@ -275,8 +274,8 @@
 
                     </div>
                 </div>
-            </a>
 
+            </div>
         </div>
         <div class="col-sm-5">
             <p class="lead-text-big mt-5">Общайся<br>внутри системы</p>
@@ -288,13 +287,35 @@
     </div>
 </div>
 
+<script>
+    $('.dialog-mail').on('click', function () {
+        var val = $(this).attr('val');
+        $('.spinner-mes').show();
+        $.ajax({
+            url: '/ajax.php',
+            type: 'POST',
+            data: {
+                ajax: 'message',
+                dialog: val
+            },
+            success: function (data) {
+                setTimeout(function () {
+                    $('.dialog-container').html(data);
+                    $('.spinner-mes').hide();
+                }, 500)
+            },
+        });
+    });
+</script>
+
 <div class="container pt-5 pb-5" id="files">
     <div class="row">
         <div class="col-sm-5 offset-sm-1">
             <p class="lead-text-big mt-5">Делись файлами<br>и документами</p>
             <p class="lead-text-under text-left mt-4">Ни один документ больше не затеряется в глубинах почтового ящика.
                 Все самые важные файлы будут оставаться всегда под рукой и на видном месте.</p>
-            <p class="lead-text-under text-left mt-4">А также вы можете использовать облачные хранилища Google Drive и DropBox </p>
+            <p class="lead-text-under text-left mt-4">А также вы можете использовать облачные хранилища Google Drive и
+                DropBox </p>
         </div>
         <div class="col-sm-6">
             <div class="card files">
@@ -373,7 +394,8 @@
                             <i class="far fa-file-image custom-file"></i>
                         </div>
                         <div class="col file-width-storage">
-                            <a href="/public/images/photoreport.jpg" class="h6 mb-3 file-name">Фотоотчет о 20минутной работе.png</a>
+                            <a href="/public/images/photoreport.jpg" class="h6 mb-3 file-name">Фотоотчет о 20минутной
+                                работе.png</a>
                             <span class="text-ligther ml-1"> <i class="fab fa-google-drive mr-1 ml-1"></i> 20 КБ</span>
                             <span class="text-ligther ml-1"> <i class="fas fa-circle mr-1 ml-1"></i> 10.07.2019</span>
                             <a href="#" class="text-ligther">

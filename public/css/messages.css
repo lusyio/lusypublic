@@ -15,6 +15,27 @@
     -webkit-transform: scale(1.02);
     -ms-transform: scale(1.02);
     transform: scale(1.02);
+    cursor: pointer;
+}
+
+.bg-message{
+    background-color: #fcfcfc;
+    box-shadow: none !important;
+}
+
+.onlineIndicator{
+    font-size: 13px;
+    vertical-align: middle;
+    color: #dcdcdc;
+}
+
+.spinner-mes{
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: white;
+    opacity: 0.5;
+    display: none;
 }
 
 .user-pic .avatar-img {
@@ -62,4 +83,136 @@ span.date{
 }
 .user-pic {
     left: 10px;
+}
+
+#chatBox {
+    position: relative;
+    /*height: calc(100vh - 315px);*/
+    background-color: #fcfcfc;
+
+    overflow: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+
+}
+
+#chatBox::-webkit-scrollbar {
+    width: 0 !important;
+    background: transparent !important;
+    display: none !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
+
+.message-width span.date {
+    color: #adadad;
+}
+.my-message:hover span.date {
+    color: #7b7b7b;
+}
+
+.my-message {
+    border-radius: 10px;
+    padding: 1rem;
+    flex-flow: wrap;
+}
+
+.my-message{
+    margin-left: 32%;
+}
+
+.my-message .col-2{
+    margin-right: 10px;
+}
+
+.not-my-message{
+    margin-right: 32%;
+}
+
+.not-my-message .col-2{
+    margin-left: 10px;
+    margin-right: 2px;
+    padding-left: 0!important;
+}
+
+.my-message .message-width{
+    border-radius: 15px;
+    border-bottom-right-radius: 0;
+    background-color: #f2f2f2;
+}
+
+.message-width{
+    min-width: 15%;
+    max-width: fit-content;
+    padding: 15px 20px !important;
+    border: 1px solid #e4e4e4;
+    /* border-color: #e4e4e4; */
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+}
+
+.message-width span.date {
+    min-width: 78px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    font-size: 12px;
+    bottom: -22px !important;
+    top: unset;
+}
+
+.my-message .col-2 {
+    order: 2;
+}
+
+.my-message .col-2 {
+    margin-right: 10px;
+}
+
+.no-messages{
+    font-size: 20px;
+    text-align: center;
+    color: #65686c;
+    top: 50%;
+    position: absolute;
+    font-weight: 200;
+    padding: 0!important;
+    width: 100%;
+}
+
+#mes{
+    border: none !important;
+    background-color: #ecf1f7;
+    padding: 15px 20px;
+    border-radius: 12px;
+    resize:none;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.not-my-message {
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.not-my-message .date {
+    left: 0;
+}
+
+.avatar-chat {
+    position: absolute;
+    bottom: 0;
+}
+.message-width span.date {
+    color: #adadad;
+}
+.message:hover span.date {
+    color: #7b7b7b;
+}
+.avatar-conversation {
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    border-radius: 12px;
 }

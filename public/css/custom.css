@@ -463,7 +463,6 @@ pricing-content{
     background-repeat: no-repeat;
 }
 
-
 .blog-text{
     padding: 10px 15px 20px;
     width: 100%;
@@ -476,6 +475,22 @@ pricing-content{
     line-height: 1.3;
     color: #303030;
     font-size: 1.17em;
+}
+
+.name-company{
+    font-weight: 700;
+    color: #28416b;
+}
+
+
+.logIcon {
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    line-height: 2.6;
+    position: relative;
 }
 
 .blog-info{
@@ -528,8 +543,32 @@ pricing-content{
     height: 85px;
 }
 
+.badge-company-primary {
+    background-color: #5d95db !important;
+    color: white;
+}
+
+.badge-company-dark {
+    background-color: #343a40 !important;
+    color: white;
+}
+
 .chart-body:first-of-type{
     z-index: 10;
+}
+
+.about-company{
+    transition: 200ms;
+    padding-left: 10px;
+    padding-right: 10px;
+    right: 10px;
+    top: 25px;
+    color: #c2c2c4;
+}
+
+.about-company:hover{
+    background-color: #f8f9fa;
+    cursor: pointer;
 }
 
 .chart-align{
@@ -538,6 +577,37 @@ pricing-content{
 
 .circle {
     height: 80px;
+}
+
+.sort span {
+    color: #c6c9dc;
+    vertical-align: -50%;
+}
+
+.sort .logIcon {
+    color: #c6c9dc;
+    background: #f2f2f2;
+    cursor: pointer;
+}
+
+.logIcon.check:hover{
+    color: white;
+    background: #99c371;
+}
+
+.logIcon.exclamation:hover{
+    color: white;
+    background: #d04d5f;
+}
+
+.logIcon.comment:hover{
+    color: white;
+    background: #ecc367;
+}
+
+.logIcon.plane:hover{
+    color: white;
+    background: #6097d8;
 }
 
 .award {
@@ -562,6 +632,8 @@ pricing-content{
     top: 40px;
     z-index: 12;
 }
+
+
 .award:hover {
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
@@ -657,6 +729,14 @@ pricing-content{
     .bg {
         max-height: 600px;
     }
+
+    .topdisebar-margin{
+        margin-right: 1rem;
+    }
+
+    .task-box{
+        display: none;
+    }
     .visible-sm {
         display: initial;
     }
@@ -718,9 +798,13 @@ pricing-content{
     #steps .col-sm-4 {
         margin-bottom: 30px;
     }
-    #noty .d-flex {
-        display: inline-block !important;
+    .card.pl-4.pr-4.shadow-none{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
+    /*#noty .d-flex {*/
+    /*    display: inline-block !important;*/
+    /*}*/
     #noty .row {
         clear: both;
     }
