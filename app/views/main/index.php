@@ -164,37 +164,77 @@
         <div class="col-sm-6 offset-sm-1">
             <div class="dialog-container">
 
-                <div class="card shadow-none d-none">
-                    <div class="card-header text-center bg-message border-0">
-                        <div class="position-absolute">
-                            <a data-toggle="tooltip" data-placement="bottom" title="" class="text-left" href="../" data-original-title="Назад к диалогам"><i class="fas fa-arrow-left icon-invite"></i></a>
-                        </div>
-                        <div>
+                <div class="chat">
+                    <div class="card shadow-none">
+                        <div class="card-header text-center bg-message border-0">
+                            <div class="position-absolute">
+                                <a data-toggle="tooltip" data-placement="bottom" title="" class="text-left" href="../" data-original-title="Назад к диалогам"><i class="fas fa-arrow-left icon-invite"></i></a>
+                            </div>
+                            <div>
                             <span class="mb-0 h5">Lusy.io
                     <i class="fas fa-circle mr-1 ml-1 onlineIndicator text-success"></i>
                 </span>
+                            </div>
+                        </div>
+                        <div class="card-body p-0" id="chatBox">
+                            <div data-message-id="132" class="rounded-0 message not-my-message ">
+                                <div class="row">
+                                    <div class="col-2 col-lg-2">
+                                        <a class="avatar-chat" href="#"><img src="/public/images/avatar/4-alter.jpg" class="avatar-conversation"></a>
+                                    </div>
+                                    <div class="col pl-2 message-width">
+                                        <span class="date">19.07 в 16:05                    </span>
+                                        <p class="m-0" style="color: #000; font-size: 14px; font-weight: 400">Внимание, внимание! Сообщаем, что у нас заработала система обратной связи. Если у вас есть жалобы, предложения, идеи - не держите в себе!</p>
+                                    </div>
+                                </div>
+                            </div>                        </div>
+                    </div>
+                    <div class="card bg-message">
+                        <div class="card-body pb-0 pl-2 pr-2">
+                            <form>
+                                <div class="d-flex send-mes-block">
+                                    <div class="form-group w-100 text-area d-flex">
+                                        <span class="btn btn-light btn-file border d-none">
+                                            <i class="fas fa-file-upload custom-date mr-2"></i>
+                                            <span class="attach-file text-muted">Выберите файл</span>
+                                            <input id="sendFiles" type="file" multiple="">
+                                        </span>
+                                        <textarea style="overflow: hidden; display: block; position: absolute; top: 0px; left: -9999px; padding: 80px; height: 54px; width: 809px; line-height: 24px; text-decoration: none solid rgb(73, 80, 87); letter-spacing: 0px;" class="form-control" rows="1" placeholder="Введите сообщение" autofocus="" tabindex="-1"></textarea><textarea style="overflow: hidden; display: block;" class="form-control" id="mes" name="mes" rows="1" placeholder="Введите сообщение" autofocus=""></textarea>
+                                        <div class="position-relative">
+                                            <button type="button" class="btn rounded-circle text-white" id="sendBtn">
+                                                <span id="sendMesName"><i class="fas fa-paper-plane"></i></span>
+                                                <div class="spinner-border spinner-border-sm text-white" role="status" style="display: none;">
+                                                    <span class="sr-only">Loading...</span>
+                                                </div>
+                                            </button>
+                                            <div class="send-mes-tooltip">
+                                                <div class="card">
+                                                    <div class="send-mes-tooltip-body">
+                                                        <div style="font-size: 13px">
+                                                            <b>Enter</b>
+                                                            — Отправить сообщение
+                                                            <br>
+                                                            <b>Ctrl+Enter</b>
+                                                            — Новая строка
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="file-name container-files" style="display: none;padding-left: 34px;"></div>
                         </div>
                     </div>
-                    <div class="card-body p-0" id="chatBox" style="height: 450px">
-                        <div data-message-id="132" class="rounded-0 message not-my-message ">
-                            <div class="row">
-                                <div class="col-2 col-lg-2">
-                                    <a class="avatar-chat" href="#"><img src="/public/images/avatar/4-alter.jpg" class="avatar-conversation"></a>
-                                </div>
-                                <div class="col pl-2 message-width">
-                                    <span class="date">19.07 в 16:05                    </span>
-                                    <p class="m-0" style="color: #000; font-size: 14px; font-weight: 400">Внимание, внимание! Сообщаем, что у нас заработала система обратной связи. Если у вас есть жалобы, предложения, идеи - не держите в себе!</p>
-                                </div>
-                            </div>
-                        </div>                        </div>
                 </div>
-
 
                 <div class="text-center position-absolute spinner-mes">
                     <div class="spinner-border" style="width: 3rem; height: 3rem;color: #e4e4e4;margin-top: 35%;" role="status">
                         <span class="sr-only">Loading...</span>
                     </div>
                 </div>
+                <div class="chat-2">
                 <div class="card mb-3 dialog-mail" val="1">
                     <div class="card-body">
                         <div class="row">
@@ -274,6 +314,7 @@
 
                     </div>
                 </div>
+                </div>
 
             </div>
         </div>
@@ -291,20 +332,25 @@
     $('.dialog-mail').on('click', function () {
         var val = $(this).attr('val');
         $('.spinner-mes').show();
-        $.ajax({
-            url: '/ajax.php',
-            type: 'POST',
-            data: {
-                ajax: 'message',
-                dialog: val
-            },
-            success: function (data) {
-                setTimeout(function () {
-                    $('.dialog-container').html(data);
-                    $('.spinner-mes').hide();
-                }, 500)
-            },
-        });
+        setTimeout(function () {
+            $('.chat-2').hide();
+            $('.spinner-mes').hide();
+            $('.chat').show();
+        }, 500);
+        // $.ajax({
+        //     url: '/ajax.php',
+        //     type: 'POST',
+        //     data: {
+        //         ajax: 'message',
+        //         dialog: val
+        //     },
+        //     success: function (data) {
+        //         setTimeout(function () {
+        //             $('.dialog-container').html(data);
+        //             $('.spinner-mes').hide();
+        //         }, 500)
+        //     },
+        // });
     });
 </script>
 
