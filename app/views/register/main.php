@@ -5,7 +5,7 @@
 <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 <div class="">
     <div class="container pt-5">
-        <h1 class="lead-text text-white text-center mb-3 mt-5">
+        <h1 class="lead-text text-dark text-center mb-3 mt-5">
             Регистрация
         </h1>
         <div class="row justify-content-center">
@@ -157,8 +157,8 @@
             </div>
         </div>
         <div class="text-center pb-3">
-            <p class="text-white text-center">
-                Уже зарегистрированы? <a href="https://s.lusy.io/login/" class="text-white">Авторизация</a>
+            <p class="text-dark text-center">
+                Уже зарегистрированы? <a href="https://s.lusy.io/login/" class="text-dark">Авторизация</a>
             </p>
         </div>
         <p class="text-center position-absolute" style="left: 0; right: 0; bottom: 0"><a

@@ -28,27 +28,38 @@ p {
 img {
 	max-width: 100%;
 }
+.logo {
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 9px;
+    background: #4776E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 5px;
+    box-shadow: rgba(1, 144, 187, 0.12) 0px 9px 5px -2px;
+}
 .navbar-brand {
     letter-spacing: 2px;
 }
 .navbar-nav .nav-link {
-	font-weight: 100;
 	margin-left: 20px;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(52, 58, 64, 0.6);
     transition: 0.2s all;
 }
 .btn-primary {
-    background: #284c8e;
+    background: #5156d8;
     border: none !important;
     border-radius: 15px;
     padding-left: 25px !important;
     padding-right: 25px !important;
 }
 .btn-primary:hover {
-    background: #13387c;
+    background: #353aaf;
 }
 .nav-link:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
     transition: 0.2s all;
 }
 .form-control {
@@ -61,6 +72,7 @@ img {
     font-size: 52px;
     line-height: 1.2;
     font-weight: 900;
+    color: #1d1d1d !important;
 }
 .lead-text-big {
     font-size: 40px;
@@ -73,11 +85,6 @@ img {
     letter-spacing: 0px;
     line-height: 1.4;
     font-weight: 600;
-}
-.lead-text-under {
-    margin: auto;
-    font-size: 20px;
-    text-align: center;
 }
 .main {
 	margin-top: 80px;
@@ -99,7 +106,6 @@ img {
 }
 .formreg {
     max-width: 500px;
-    margin: auto;
 }
 .formreg .form-control {
     border-top-left-radius: 15px;

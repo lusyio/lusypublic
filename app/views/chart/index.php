@@ -2,7 +2,7 @@
 <div class="position-relative">
     <div class="d-none2">
         <div class="container">
-            <h1 class="text-white mt-5 pb-5">Таблица лидеров</h1>
+            <h1 class="text-dark mt-5 pb-5">Таблица лидеров</h1>
             <div class="card pl-4 pr-4 shadow-none pb-5">
                 <div class="card-body">
                     <p class="mt-3">Описание работы лидерборда, самым успешным выдача сувениров и магнитиков на

@@ -12,21 +12,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title><?php echo $title; ?></title>
 </head>
-<body class="position-relative">
-<div class="bg"></div>
+<body>
 <div class="top-sidebar pt-2 pb-2">
     <div class="container">
         <div class="row">
             <div class="col-sm-2">
-                <a class="navbar-brand text-white text-uppercase font-weight-bold visible-lg mt-1"
-                   href="/<?= $this->route['language']; ?>/">LUSY</a>
+                <a class="navbar-brand text-dark text-uppercase font-weight-bold visible-lg mt-1"
+                   href="/<?= $this->route['language']; ?>/"><span class="logo mr-3">L</span>LUSY</a>
             </div>
             <div class="col-sm-7">
                 <nav class="navbar navbar-expand-lg p-0 pt-1">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target=".mainNav" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars text-white"></i>
+                        <i class="fas fa-bars text-dark"></i>
                     </button>
 
                     <div class="collapse navbar-collapse mainNav">
@@ -55,7 +54,7 @@
                                 <a class="nav-link login" href="https://s.lusy.io/login/">Войти</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link btn btn-primary text-white"
+                                <a class="nav-link btn btn-primary text-white font-weight-bold"
                                    href="https://s.lusy.io/reg/">Регистрация</a>
                             </li>
                         </ul>
@@ -75,13 +74,13 @@
     <div class="footer mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-sm-10 offset-sm-1 text-white">
+                <div class="col-sm-10 offset-sm-1 text-dark">
                     <p class="lead-text-big mb-1">Lusy.io</p>
                     <h2 class="small mb-5">система постановки и контроля задач</h2>
 
                     <p><a
                                 href="https://lusy.io/licenzionnoe-soglashenie-dogovor-publichnoj-oferty.pdf"
-                                class="btn-link text-white" target="_blank">Оферта
+                                class="btn-link text-dark" target="_blank">Оферта
                             рекуррентных
                             платежей</a></p>
                 </div>
@@ -91,7 +90,7 @@
     <div class="underFooter">
         <div class="container">
             <div class="row">
-                <div class="col-sm-10 offset-sm-1 text-white">
+                <div class="col-sm-10 offset-sm-1 text-dark">
                     <p class="small text-right pt-3">ИП Ласковский Дмитрий Сергеевич <i class="far fa-copyright"></i>
                         2019</p>
                 </div>

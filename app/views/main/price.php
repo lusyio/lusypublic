@@ -1,5 +1,5 @@
 <div class="container pb-5">
-    <h1 class="text-white mt-5 pb-5">Стоимость</h1>
+    <h1 class="text-dark mt-5 pb-5">Стоимость</h1>
 
     <div class="row mb-5">
         <div class="col-sm-6">
