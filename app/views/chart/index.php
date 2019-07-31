@@ -24,22 +24,22 @@
                                         Название компании
                                     </span>
                 </div>
-                <div class="col-3 col-lg-1">
+                <div class="col-3 col-lg-1 text-center">
                                     <span class="text-success chart-align pl-2">
                                         <i class="fas fa-check"></i>
                                     </span>
                 </div>
-                <div class="col-3 col-lg-1">
+                <div class="col-3 col-lg-1 text-center">
                                     <span class="chart-align text-danger pl-2">
                                         <i class="fas fa-fire-alt"></i>
                                     </span>
                 </div>
-                <div class="col-3 col-lg-1">
+                <div class="col-3 col-lg-1 text-center">
                                     <span class="chart-align pl-2">
                                         <i class="fas fa-comments"></i>
                                     </span>
                 </div>
-                <div class="col-3 col-lg-1">
+                <div class="col-3 col-lg-1 text-center">
                                     <span class="chart-align pl-2">
                                         <i class="fas fa-paper-plane"></i>
                                     </span>
@@ -60,8 +60,10 @@
                         <div class="col-1 col-lg-1 text-center">
                                         <span class="text-secondary chart-align">
                                             <?php if ($n == 1) { ?>
-                                            <i class="fas fa-crown text-warning font-weight-bold h4 mb-0"></i>
-                                            <?php } else { echo $n; }
+                                                <i class="fas fa-crown text-warning font-weight-bold h4 mb-0"></i>
+                                            <?php } else {
+                                                echo $n;
+                                            }
                                             $n++;
                                             ?>
                                         </span>
@@ -71,22 +73,22 @@
                                         <?= $company['name']; ?>
                                     </span>
                         </div>
-                        <div class="col-3 col-lg-1">
+                        <div class="col-3 col-lg-1 text-center">
                                     <span class="text-success chart-align pl-2">
                                         <?= $company['taskDone']; ?>
                                     </span>
                         </div>
-                        <div class="col-3 col-lg-1">
+                        <div class="col-3 col-lg-1 text-center">
                                     <span class="chart-align text-danger pl-2">
                                         <?= $company['overdue']; ?>
                                     </span>
                         </div>
-                        <div class="col-3 col-lg-1">
+                        <div class="col-3 col-lg-1 text-center">
                                     <span class="chart-align pl-2">
                                         <?= $company['comment']; ?>
                                     </span>
                         </div>
-                        <div class="col-3 col-lg-1">
+                        <div class="col-3 col-lg-1 text-center">
                                     <span class="chart-align pl-2">
                                         <?= $company['message']; ?>
                                     </span>
@@ -103,21 +105,18 @@
                       data-placement="bottom" title="Подробнее">
                                     <i class="fas fa-caret-down"></i>
                             </span>
-                <div class="collapse" id="collapseExample">
-                    <div class="card-body">
+                <div class="collapse" id="collapseCompany">
+                    <div class="card-body pt-0">
+                        <hr class="mt-0">
                         <div class="row">
-                            <div class="col-12 col-lg-8">
-                                <h5>
-                                    <?= $company['fullName']; ?>
-                                </h5>
-                            </div>
-                            <div class="col-12 col-lg-4 mb-2">
-                                <span class="text-muted">Количество сотрудников:</span>
-                                <span><?= $company['users']; ?></span>
+                            <div class="col-sm-1 text-center"><i class="fas fa-info-circle text-secondary <?php if(!empty($company['fullName'])):?>mt-1<?php endif;?>"></i></div>
+                            <div class="col-sm-11">
+                                <div><?php if(!empty($company['fullName'])):?><span class="h6"><?= $company['fullName']; ?></span> / <?php endif;?><small><span class="text-muted">Количество сотрудников:</span> <span><?= $company['users']; ?></span></small></p>
+                                <p><a href="<?= $company['site']; ?>"><?= $company['site']; ?></a></p>
+                                <p class="mb-0"><?= nl2br($company['description']); ?></p>
+
                             </div>
                         </div>
-                        <p><a href="<?= $company['site']; ?>"><?= $company['site']; ?></a></p>
-                        <p><?= nl2br($company['description']); ?></p>
                     </div>
                 </div>
             </div>
