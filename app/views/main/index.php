@@ -3,15 +3,15 @@
     }</style>
 <div class="main">
     <div class="container">
-        <div class="row justify-content-sm-center">
-            <div class="col-sm-8 text-center">
+        <div class="row">
+            <div class="col-sm-8 text-left">
                 <h1>Система постановки задач</h1>
-                <p class="lead-text text-white">Твой личный помощник<br class="hidden-sm"><span
+                <p class="lead-text">Твой личный помощник<br class="hidden-sm"><span
                             class="visible-sm"> </span>в управлении компанией</p>
                 <p class="lead-text-under">Сосредоточься на росте бизнеса и долгосрочных целях,<br
                             class="hidden-sm"><span
                             class="visible-sm"> </span>а рутинные задачи Люси возьмет на себя</p>
-                <div class="justify-content-center mt-5">
+                <div class="mt-5">
 
                     <form method="post" action="https://s.lusy.io/reg/">
                         <div class="input-group mb-3 mt-3 formreg">
@@ -94,7 +94,7 @@
                     <div class="position-relative">
                         <img class="svg-icon" src="/public/svg/alarm.svg">
                         <span class="badge badge-primary badge-topsidebar" id="notificationBadge">
-                                    <small class="text-white" id="notificationCount"></small>1
+                                    <small class="text-dark" id="notificationCount"></small>1
                                     </span>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                     <div class="position-relative">
                         <img class="svg-icon" src="/public/svg/fire.svg">
                         <span class="badge badge-danger badge-topsidebar" id="overdueBadge">
-                                    <small class="text-white" id="overdueCount"></small>2
+                                    <small class="text-dark" id="overdueCount"></small>2
                                 </span>
                     </div>
                 </div>
@@ -116,8 +116,8 @@
                      class="topsidebar-noty">
                     <div class="position-relative">
                         <img class="svg-icon" src="/public/svg/feedback.svg">
-                        <span class="badge text-white badge-warning badge-topsidebar" id="commentBadge">
-                                    <small class="text-white" id="commentCount"></small>2
+                        <span class="badge text-dark badge-warning badge-topsidebar" id="commentBadge">
+                                    <small class="text-dark" id="commentCount"></small>2
                                 </span>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                     <div class="position-relative">
                         <img class="svg-icon" src="/public/svg/paper-plane.svg">
                         <span class="badge badge-success badge-topsidebar" id="messagesBadge">
-                                    <small class="text-white" id="messagesCount"></small>8
+                                    <small class="text-dark" id="messagesCount"></small>8
                                 </span>
                     </div>
                 </div>
@@ -201,9 +201,9 @@
                                         </span>
                                         <textarea style="overflow: hidden; display: block; position: absolute; top: 0px; left: -9999px; padding: 80px; height: 54px; width: 809px; line-height: 24px; text-decoration: none solid rgb(73, 80, 87); letter-spacing: 0px;" class="form-control" rows="1" placeholder="Введите сообщение" autofocus="" tabindex="-1"></textarea><textarea style="overflow: hidden; display: block;" class="form-control" id="mes" name="mes" rows="1" placeholder="Введите сообщение" autofocus=""></textarea>
                                         <div class="position-relative">
-                                            <button type="button" class="btn rounded-circle text-white" id="sendBtn">
+                                            <button type="button" class="btn rounded-circle text-dark" id="sendBtn">
                                                 <span id="sendMesName"><i class="fas fa-paper-plane"></i></span>
-                                                <div class="spinner-border spinner-border-sm text-white" role="status" style="display: none;">
+                                                <div class="spinner-border spinner-border-sm text-dark" role="status" style="display: none;">
                                                     <span class="sr-only">Loading...</span>
                                                 </div>
                                             </button>
