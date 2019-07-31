@@ -59,7 +59,11 @@
                     <div class="row">
                         <div class="col-1 col-lg-1 text-center">
                                         <span class="text-secondary chart-align">
-                                            <?= $n++; ?>
+                                            <?php if ($n == 1) { ?>
+                                            <i class="fas fa-crown text-warning font-weight-bold h4 mb-0"></i>
+                                            <?php } else { echo $n; }
+                                            $n++;
+                                            ?>
                                         </span>
                         </div>
                         <div class="col-10 col-lg-4">
