@@ -16,11 +16,11 @@
 <div class="top-sidebar pt-2 pb-2">
     <div class="container">
         <div class="row">
-            <div class="col-sm-2">
+            <div class="col-sm-3">
                 <a class="navbar-brand text-dark text-uppercase font-weight-bold visible-lg mt-1"
                    href="/<?= $this->route['language']; ?>/"><span class="logo mr-3">L</span>LUSY</a>
             </div>
-            <div class="col-sm-7">
+            <div class="col-sm-6">
                 <nav class="navbar navbar-expand-lg p-0 pt-1">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target=".mainNav" aria-controls="navbarSupportedContent"
@@ -90,8 +90,8 @@
     <div class="underFooter">
         <div class="container">
             <div class="row">
-                <div class="col-sm-10 offset-sm-1 text-dark">
-                    <p class="small text-right pt-3">ИП Ласковский Дмитрий Сергеевич <i class="far fa-copyright"></i>
+                <div class="col-sm-10 offset-sm-1 text-secondary">
+                    <p class="small pt-3">ИП Ласковский Дмитрий Сергеевич <i class="far fa-copyright"></i>
                         2019</p>
                 </div>
             </div>

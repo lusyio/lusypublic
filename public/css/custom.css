@@ -90,16 +90,19 @@ img {
 	margin-top: 80px;
 }
 .main h1 {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.4);
-    font-weight: 100;
+    font-size: 18px;
+    color: #5156d8;
+    font-weight: 800;
     margin-bottom: 20px;
 }
 .main .lead-text-under {
-    font-size: 23px;
-    color: #e1e1e1;
-    line-height: 1.4;
+    font-size: 20px;
+    color: #8e8e8e;
     margin-top: 20px;
+    font-weight: 300;
+}
+.lead-text-under {
+    font-size: 20px;
 }
 .noty {
     font-size: 2em;
@@ -111,10 +114,16 @@ img {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-.main img {
-    box-shadow: rgba(13, 28, 60, 0.3) 0px 4px 44px 0px;
-    margin-top: 50px;
+.main-img {
+    box-shadow: rgba(0, 44, 58, 0.2) 0px 4px 24px 0px;
     border-radius: 5px;
+}
+.note {
+    position: relative;
+    left: -50px;
+    top: -30px;
+    width: 450px;
+    max-width: initial;
 }
 .second {
 	background-color: #f6f8fa;
@@ -132,16 +141,59 @@ img {
     box-shadow: rgba(13, 28, 60, 0.10) 0px 4px 10px 0px;
     border: none !important;
 }
-.footer{
-    background: #4168a9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4168a9, #76a4e1);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4168a9, #76a4e1);
+.bg-dark {
+    background-color: #202528!important;
+}
+#whatLusy .lead-text-under {
+    max-width: 80%;
+}
+#whatLusy img {
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    width: 330px;
+    opacity: 0.4;
+    z-index: 1;
+}
+#whatLusy .card-body {
+    z-index: 2;
+}
+.inblock {
+    background: #1b1b1b;
+    padding: 30px 40px 15px;
+    border-radius: 10px;
+}
+.inblock div.znak {
+    margin-right: 40px;
+}
+.inblock span {
+    margin-top: 5px;
+    display: block;
+}
+.inblock h3 {
+    margin-bottom: 20px;
+    padding-right: 50px;
+}
+.inblock p {
+    font-size: 14px;
+    line-height: 2;
+    opacity: 0.7;
+    transition: 0.3s all;
+}
+.inblock span {
+    opacity: 0.7;
+    transition: 0.3s all;
+}
+.inblock:hover p, .inblock:hover span {
+    opacity: 1;
+    transition: 0.1s all;
+}
+.footer {
+    background: #f9f9f9;
     padding: 40px 0px;
 }
 .underFooter {
-    background: #214073;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #214073, #5c8dce);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #214073, #5c8dce);
+    background: #f5f5f5;
 }
 .footer-content{
     display: flex;
@@ -730,6 +782,9 @@ pricing-content{
 
 @media (max-width: 768px) {
     .hidden-sm {
+        display: none;
+    }
+    .note {
         display: none;
     }
     .bg {

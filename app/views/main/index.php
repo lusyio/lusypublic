@@ -24,8 +24,46 @@
                     </form>
                 </div>
             </div>
+            <div class="col-sm-4">
+                <img class="note" src="/public/images/note.jpg">
+            </div>
             <div class="col-sm-12">
-                <img class="w-100" src="/public/images/lusy.jpg">
+                <div class="bg-dark card position-relative" id="whatLusy">
+                    <div class="card-body p-5">
+                        <h2 class="text-white">Что такое Lusy?</h2>
+                        <p class="lead-text-under text-white mb-4">Система постановки и контроля задач - без лишнего функционала, с мотивирующими ачивками, полноценным бесплатным тарифом и приятным дизайном.</p>
+                        <div class="inblock d-flex text-white">
+
+                            <div>
+                                <h3>Сотрудники</h3>
+                                <p>Пригласи сотрудников и партнеров в систему</p>
+                            </div>
+
+                            <div class="znak"><span>+</span></div>
+
+                            <div>
+                                <h3>Задачи</h3>
+                                <p>Создай текущие и запланируй будущие</p>
+                            </div>
+
+                            <div class="znak"><span>+</span></div>
+
+                            <div>
+                                <h3>Достижения</h3>
+                                <p>Подкрепи мотивацию нашими крутыми ачивками</p>
+                            </div>
+
+                            <div class="znak"><span>=</span></div>
+
+                            <div>
+                                <h3>Рост</h3>
+                                <p>Ты позаботился о текущих делах, значит освободил место для развития</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <img src="/public/images/mount.png"/>
+                </div>
             </div>
         </div>
     </div>
@@ -37,7 +75,8 @@
                 <p class="lead-text-big text-center">Все задачи как на ладони</p>
                 <div class="row">
                     <div class="col-sm-8 offset-sm-2">
-                        <p class="lead-text-under">Ставь задачи, контролируй их выполнение, следи за сроками, не
+                        <p class="lead-text-under text-center">Ставь задачи, контролируй их выполнение, следи за
+                            сроками, не
                             прилагая
                             каких-либо усилий! Начать очень просто!</p>
                     </div>
@@ -87,7 +126,7 @@
 <div class="container pt-5 pb-5" id="noty">
     <div class="text-center">
         <p class="lead-text-big">Вовремя узнавай обо всех событиях</p>
-        <div class="d-flex counters-topsidebar">
+        <div class="d-flex mt-5 counters-topsidebar">
             <a href="#" class="text-decoration-none topsidebar-noty-content topdisebar-margin">
                 <div data-toggle="tooltip" data-placement="bottom" title="События"
                      class="topsidebar-noty">
@@ -161,14 +200,15 @@
 
 <div class="container pt-5 pb-5" id="messages">
     <div class="row">
-        <div class="col-sm-6 offset-sm-1">
+        <div class="col-sm-7">
             <div class="dialog-container">
 
                 <div class="chat">
                     <div class="card shadow-none">
                         <div class="card-header text-center bg-message border-0">
                             <div class="position-absolute">
-                                <a data-toggle="tooltip" data-placement="bottom" title="" class="text-left" href="../" data-original-title="Назад к диалогам"><i class="fas fa-arrow-left icon-invite"></i></a>
+                                <a data-toggle="tooltip" data-placement="bottom" title="" class="text-left" href="../"
+                                   data-original-title="Назад к диалогам"><i class="fas fa-arrow-left icon-invite"></i></a>
                             </div>
                             <div>
                             <span class="mb-0 h5">Lusy.io
@@ -180,14 +220,18 @@
                             <div data-message-id="132" class="rounded-0 message not-my-message ">
                                 <div class="row">
                                     <div class="col-2 col-lg-2">
-                                        <a class="avatar-chat" href="#"><img src="/public/images/avatar/4-alter.jpg" class="avatar-conversation"></a>
+                                        <a class="avatar-chat" href="#"><img src="/public/images/avatar/4-alter.jpg"
+                                                                             class="avatar-conversation"></a>
                                     </div>
                                     <div class="col pl-2 message-width">
                                         <span class="date">19.07 в 16:05                    </span>
-                                        <p class="m-0" style="color: #000; font-size: 14px; font-weight: 400">Внимание, внимание! Сообщаем, что у нас заработала система обратной связи. Если у вас есть жалобы, предложения, идеи - не держите в себе!</p>
+                                        <p class="m-0" style="color: #000; font-size: 14px; font-weight: 400">Внимание,
+                                            внимание! Сообщаем, что у нас заработала система обратной связи. Если у вас
+                                            есть жалобы, предложения, идеи - не держите в себе!</p>
                                     </div>
                                 </div>
-                            </div>                        </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="card bg-message">
                         <div class="card-body pb-0 pl-2 pr-2">
@@ -199,11 +243,18 @@
                                             <span class="attach-file text-muted">Выберите файл</span>
                                             <input id="sendFiles" type="file" multiple="">
                                         </span>
-                                        <textarea style="overflow: hidden; display: block; position: absolute; top: 0px; left: -9999px; padding: 80px; height: 54px; width: 809px; line-height: 24px; text-decoration: none solid rgb(73, 80, 87); letter-spacing: 0px;" class="form-control" rows="1" placeholder="Введите сообщение" autofocus="" tabindex="-1"></textarea><textarea style="overflow: hidden; display: block;" class="form-control" id="mes" name="mes" rows="1" placeholder="Введите сообщение" autofocus=""></textarea>
+                                        <textarea
+                                                style="overflow: hidden; display: block; position: absolute; top: 0px; left: -9999px; padding: 80px; height: 54px; width: 809px; line-height: 24px; text-decoration: none solid rgb(73, 80, 87); letter-spacing: 0px;"
+                                                class="form-control" rows="1" placeholder="Введите сообщение"
+                                                autofocus="" tabindex="-1"></textarea><textarea
+                                                style="overflow: hidden; display: block;" class="form-control" id="mes"
+                                                name="mes" rows="1" placeholder="Введите сообщение"
+                                                autofocus=""></textarea>
                                         <div class="position-relative">
                                             <button type="button" class="btn rounded-circle text-dark" id="sendBtn">
                                                 <span id="sendMesName"><i class="fas fa-paper-plane"></i></span>
-                                                <div class="spinner-border spinner-border-sm text-dark" role="status" style="display: none;">
+                                                <div class="spinner-border spinner-border-sm text-dark" role="status"
+                                                     style="display: none;">
                                                     <span class="sr-only">Loading...</span>
                                                 </div>
                                             </button>
@@ -230,90 +281,91 @@
                 </div>
 
                 <div class="text-center position-absolute spinner-mes">
-                    <div class="spinner-border" style="width: 3rem; height: 3rem;color: #e4e4e4;margin-top: 35%;" role="status">
+                    <div class="spinner-border" style="width: 3rem; height: 3rem;color: #e4e4e4;margin-top: 35%;"
+                         role="status">
                         <span class="sr-only">Loading...</span>
                     </div>
                 </div>
                 <div class="chat-2">
-                <div class="card mb-3 dialog-mail" val="1">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-3 col-lg-2 pl-2">
-                                <div class="user-pic position-relative" style="width:60px">
-                                    <img src="/public/images/avatar/4-alter.jpg"
-                                         class="avatar-img rounded-circle w-100">
-                                    <span class="online-indicator mobile-online-indicator">
+                    <div class="card mb-3 dialog-mail" val="1">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3 col-lg-2 pl-2">
+                                    <div class="user-pic position-relative" style="width:60px">
+                                        <img src="/public/images/avatar/4-alter.jpg"
+                                             class="avatar-img rounded-circle w-100">
+                                        <span class="online-indicator mobile-online-indicator">
                                             <i class="fas fa-circle mr-1 ml-1 onlineIndicator mail text-success"></i>
                                         </span>
+                                    </div>
                                 </div>
+                                <div class="col text-area-message">
+                                    <p class="mb-2 font-weight-bold ">Дмитрий Ричби </p>
+                                    <span>Вы:  вот так на портретке айпада делать?</span>
+                                </div>
+                                <span class="date mr-2">25.07 12:26</span>
                             </div>
-                            <div class="col text-area-message">
-                                <p class="mb-2 font-weight-bold ">Дмитрий Ричби </p>
-                                <span>Вы:  вот так на портретке айпада делать?</span>
-                            </div>
-                            <span class="date mr-2">25.07 12:26</span>
-                        </div>
 
+                        </div>
                     </div>
-                </div>
-                <div class="card mb-3 dialog-mail" val="2">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-3 col-lg-2 pl-2">
-                                <div class="user-pic position-relative" style="width:60px">
-                                    <img src="/public/images/avatar/4200007-alter.jpg"
-                                         class="avatar-img rounded-circle w-100">
-                                    <span class="online-indicator mobile-online-indicator">
+                    <div class="card mb-3 dialog-mail" val="2">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3 col-lg-2 pl-2">
+                                    <div class="user-pic position-relative" style="width:60px">
+                                        <img src="/public/images/avatar/4200007-alter.jpg"
+                                             class="avatar-img rounded-circle w-100">
+                                        <span class="online-indicator mobile-online-indicator">
                                             <i class="fas fa-circle mr-1 ml-1 onlineIndicator mail text-success"></i>
                                         </span>
+                                    </div>
                                 </div>
+                                <div class="col text-area-message">
+                                    <p class="mb-2 font-weight-bold ">Дельшод Великолепный </p>
+                                    <span>Вы:  Прива как дел</span>
+                                </div>
+                                <span class="date mr-2">25.07 4:20</span>
                             </div>
-                            <div class="col text-area-message">
-                                <p class="mb-2 font-weight-bold ">Дельшод Великолепный </p>
-                                <span>Вы:  Прива как дел</span>
-                            </div>
-                            <span class="date mr-2">25.07 4:20</span>
-                        </div>
 
+                        </div>
                     </div>
-                </div>
-                <div class="card mb-3 dialog-mail" val="3">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-3 col-lg-2  pl-2">
-                                <div class="user-pic position-relative" style="width:60px">
-                                    <img src="/public/images/avatar/2-alter.jpg"
-                                         class="avatar-img rounded-circle w-100">
-                                    <span class="online-indicator mobile-online-indicator">
+                    <div class="card mb-3 dialog-mail" val="3">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3 col-lg-2  pl-2">
+                                    <div class="user-pic position-relative" style="width:60px">
+                                        <img src="/public/images/avatar/2-alter.jpg"
+                                             class="avatar-img rounded-circle w-100">
+                                        <span class="online-indicator mobile-online-indicator">
                                             <i class="fas fa-circle mr-1 ml-1 onlineIndicator mail text-success"></i>
                                         </span>
+                                    </div>
                                 </div>
+                                <div class="col text-area-message">
+                                    <p class="mb-2 font-weight-bold ">Игорь Горыныч </p>
+                                    <span>Вы:  test123</span>
+                                </div>
+                                <span class="date mr-2">24.07 12:35</span>
                             </div>
-                            <div class="col text-area-message">
-                                <p class="mb-2 font-weight-bold ">Игорь Горыныч </p>
-                                <span>Вы:  test123</span>
-                            </div>
-                            <span class="date mr-2">24.07 12:35</span>
-                        </div>
 
+                        </div>
                     </div>
-                </div>
-                <div class="card mb-3 dialog-mail" val="4">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-3 col-lg-2  pl-2">
+                    <div class="card mb-3 dialog-mail" val="4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3 col-lg-2  pl-2">
                                 <span class="companyAvatar user-pic position-relative"><i
                                             class="fas fa-headset fa-fw"></i></span>
+                                </div>
+                                <div class="col text-area-message">
+                                    <p class="mb-2 font-weight-bold ">Служба поддержки </p>
+                                    <span> Внимание, внимание! Сообщаем, что у нас заработала система обратной связи. Если у вас есть жалобы, предложения, идеи - не держите в себе!</span>
+                                </div>
+                                <span class="date mr-2">19.07 16:05</span>
                             </div>
-                            <div class="col text-area-message">
-                                <p class="mb-2 font-weight-bold ">Служба поддержки </p>
-                                <span> Внимание, внимание! Сообщаем, что у нас заработала система обратной связи. Если у вас есть жалобы, предложения, идеи - не держите в себе!</span>
-                            </div>
-                            <span class="date mr-2">19.07 16:05</span>
-                        </div>
 
+                        </div>
                     </div>
-                </div>
                 </div>
 
             </div>
@@ -356,14 +408,14 @@
 
 <div class="container pt-5 pb-5" id="files">
     <div class="row">
-        <div class="col-sm-5 offset-sm-1">
-            <p class="lead-text-big mt-5">Делись файлами<br>и документами</p>
+        <div class="col-sm-5">
+            <p class="lead-text-big mt-2">Делись файлами<br>и документами</p>
             <p class="lead-text-under text-left mt-4">Ни один документ больше не затеряется в глубинах почтового ящика.
                 Все самые важные файлы будут оставаться всегда под рукой и на видном месте.</p>
             <p class="lead-text-under text-left mt-4">А также вы можете использовать облачные хранилища Google Drive и
                 DropBox </p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-7">
             <div class="card files">
                 <div class="card-body file-list">
                 <span data-toggle="tooltip" data-placement="bottom" title=""
@@ -690,7 +742,7 @@
     </div>
     <div class="justify-content-center">
         <form method="post" action="https://s.lusy.io/reg/">
-            <div class="input-group mb-3 mt-3 formreg">
+            <div class="input-group mb-5 mt-3 formreg m-auto">
                 <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
                        aria-label="your_mail@domain.com" aria-describedby="button-addon2">
                 <div class="input-group-append">
@@ -698,7 +750,7 @@
                 </div>
             </div>
         </form>
-        <p class="text-center text-secondary">Перейти к <a href="/<?= $this->route['language']; ?>/price/">платным
+        <p class="text-center text-secondary mt-3">Перейти к <a href="/<?= $this->route['language']; ?>/price/">платным
                 тарифам</a></p>
     </div>
 </div>
