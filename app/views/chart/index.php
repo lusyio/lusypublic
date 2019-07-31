@@ -109,9 +109,15 @@
                     <div class="card-body pt-0">
                         <hr class="mt-0">
                         <div class="row">
-                            <div class="col-sm-1 text-center"><i class="fas fa-info-circle text-secondary <?php if(!empty($company['fullName'])):?>mt-1<?php endif;?>"></i></div>
+                            <div class="col-sm-1 text-center"><i
+                                        class="fas fa-info-circle text-secondary <?php if (!empty($company['fullName'])): ?>mt-1<?php endif; ?>"></i>
+                            </div>
                             <div class="col-sm-11">
-                                <div><?php if(!empty($company['fullName'])):?><span class="h6"><?= $company['fullName']; ?></span> / <?php endif;?><small><span class="text-muted">Количество сотрудников:</span> <span><?= $company['users']; ?></span></small></p>
+                                <div><?php if (!empty($company['fullName'])): ?><span
+                                            class="h6"><?= $company['fullName']; ?></span> / <?php endif; ?>
+                                    <small><span class="text-muted">Количество сотрудников:</span>
+                                        <span><?= $company['users']; ?></span></small>
+                                </div>
                                 <p><a href="<?= $company['site']; ?>"><?= $company['site']; ?></a></p>
                                 <p class="mb-0"><?= nl2br($company['description']); ?></p>
 
