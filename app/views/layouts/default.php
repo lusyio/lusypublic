@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/public/css/custom.css?ver=4">
+    <link rel="stylesheet" href="/public/css/custom.css?ver=5">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title><?php echo $title; ?></title>
@@ -66,34 +66,28 @@
 </div>
 <!--body-->
 <div class="position-relative">
-    <div class="d-none2">
         <?php echo $content; ?>
-    </div>
 
 
     <div class="footer mt-5">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-10 offset-sm-1 text-dark">
-                    <p class="lead-text-big mb-1">Lusy.io</p>
-                    <h2 class="small mb-5">система постановки и контроля задач</h2>
+            <div class="text-dark">
+                <p class="lead-text-big mb-1">Lusy.io</p>
+                <h2 class="small mb-5">система постановки и контроля задач</h2>
 
-                    <p><a
-                                href="https://lusy.io/licenzionnoe-soglashenie-dogovor-publichnoj-oferty.pdf"
-                                class="btn-link text-dark" target="_blank">Оферта
-                            рекуррентных
-                            платежей</a></p>
-                </div>
+                <p><a
+                            href="https://lusy.io/licenzionnoe-soglashenie-dogovor-publichnoj-oferty.pdf"
+                            class="btn-link text-dark" target="_blank">Оферта
+                        рекуррентных
+                        платежей</a></p>
             </div>
         </div>
     </div>
     <div class="underFooter">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-10 offset-sm-1 text-secondary">
-                    <p class="small pt-3">ИП Ласковский Дмитрий Сергеевич <i class="far fa-copyright"></i>
-                        2019</p>
-                </div>
+            <div class="text-secondary">
+                <p class="small pt-3 pb-3 mb-0">ИП Ласковский Дмитрий Сергеевич <i class="far fa-copyright"></i>
+                    2019</p>
             </div>
         </div>
     </div>

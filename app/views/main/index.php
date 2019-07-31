@@ -1,6 +1,3 @@
-<style>.bg {
-        top: 0
-    }</style>
 <div class="main">
     <div class="container">
         <div class="row">
@@ -31,7 +28,7 @@
                 <div class="bg-dark card position-relative" id="whatLusy">
                     <div class="card-body p-5">
                         <h2 class="text-white">Что такое Lusy?</h2>
-                        <p class="lead-text-under text-white mb-4">Система постановки и контроля задач - без лишнего функционала, с мотивирующими ачивками, полноценным бесплатным тарифом и приятным дизайном.</p>
+                        <p class="lead-text-under text-white mb-4">Система постановки и контроля задач - простая в применении, с мотивирующими ачивками, полноценным бесплатным тарифом и приятным дизайном.</p>
                         <div class="inblock d-flex text-white">
 
                             <div>
@@ -723,7 +720,7 @@
             <p class="lead-text-big mt-5">Полный контроль<br>в любом месте</p>
             <p class="lead-text-under text-left mt-4">Застрял в пробке или срочно захотелось
                 на море? Контролируй рабочие процессы
-                прямо с телефона где бы ты не находился</p>
+                прямо с телефона, где бы ты не находился</p>
         </div>
         <div class="col-sm-6">
             <img src="/public/images/mobile.jpg">

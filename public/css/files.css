@@ -51,9 +51,12 @@
     color: #898989;
 
 }
+.file-list:hover .text-ligther {
+    color: #a6aac1;
+}
 .text-ligther {
      color: #c6c9dc;
- }
+}
 .mb-3.file-name{
     color: #898989;
 }

@@ -1,7 +1,7 @@
-<div class="container article-text" itemscope itemtype="https://schema.org/Article">
+<div class="container article-text content" itemscope itemtype="https://schema.org/Article">
     <div class="row">
         <div class="col-sm-8 offset-sm-2">
-            <h1 class="font-weight-bold mt-5 mb-3 text-dark" itemprop="name"><?= $article['article_name']; ?></h1>
+            <h1 itemprop="name"><?= $article['article_name']; ?></h1>
             <small class="text-dark"><span itemprop="articleSection"><?= $article['category']; ?></span> | <?= date('d.m.Y', $article['publish_date']); ?><span itemprop="datePublished" class="d-none"><?= date('Y-m-d', $article['publish_date']); ?></span></small>
         </div>
     </div>
