@@ -1,44 +1,81 @@
 <div class="container pb-5 content">
-    <h1 class="text-dark mt-5 pb-5">Стоимость</h1>
+    <h1 class="text-center mb-5">Стоимость</h1>
 
-    <div class="row mb-5">
-        <div class="col-sm-6">
-            <div class="card">
+    <div class="row payBack">
+        <div class="col-sm-4 offset-sm-2">
+            <div class="card Card freeCard text-center mb-3 mt-5">
                 <div class="card-body">
-                    <h4 class="mt-1 mb-3">Бесплатный тариф</h4>
-                    <p>Здесь есть всё, что необходимо рядовой компании:</p>
-                    <p>- Неограниченное количество сотрудников</p>
-                    <p>- Общий и индивидуальные чаты</p>
-                    <p>- Настраиваемые уведомления на почту</p>
-                    <p>- Система достижений</p>
-                    <p>- Файловый менеджер (объем 100мб)</p>
-                    <p>- Возможность создать до 200 задач в месяц</p>
+                    <p class="tariff">Бесплатный тариф</p>
+                    <p class="priceTariff">0 руб.</p>
+                    <div class="mt-5">
+                        <ul class="checkUl">
+                            <li>Неограниченное число сотрудников</li>
+                            <li>Система достижений</li>
+                            <li>Система диалогов</li>
+                            <li class="minus">Файловый менеджер (100 мб)</li>
+                            <li class="minus">Детальные отчеты (3 отчета в месяц)</li>
+                            <li class="minus">Максимум 150 задач в месяц</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6">
-            <div class="card">
+        <div class="col-sm-4">
+            <div class="card Card premiumCard text-center mb-3">
                 <div class="card-body">
-                    <h4 class="mt-1 mb-3">Платный тариф - 299 рублей/месяц</h4>
-                    <p>- Всё, что есть в бесплатном тарифе</p>
-                    <p>- Неограниченное количество задач</p>
-                    <p>- Бесшовная интеграция с Google Drive и DropBox + 1гб на нашем сервере</p>
-                    <p>- Подробная отчетность о деятельности компании и отдельных сотрудниках</p>
-                    <p>- Интеграции с сторонними сервисами, н-р AmoCRM, Яндекс.Метрика и т.д.</p>
+                    <p class="tariff text-gold font-weight-bold">Premium тариф</p>
+                    <p class="priceTariff mb-0">249 руб.</p>
+                    <p class="small">в месяц</p>
+                    <div class="mt-5">
+                        <ul class="checkUl">
+                            <li>Все, что есть в бесплатном тарифе</li>
+                            <li>Неограниченное количество задач</li>
+                            <li>Неограниченное количество отчетов</li>
+                            <li>Файловый менеджер (1024 мб)</li>
+                            <li>Интеграция с Google Drive и DropBox</li>
+                            <li>Расширенные настройки задач (отложенный старт, подзадачи, чек-листы, редактирование
+                                существующих
+                                задач)
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <p>Мы не берем оплату за каждого сотрудника, как делают многие другие сервисы. Мы выступаем против этой системы. Мы
-        платим за нагрузку на сервер и место на диске, поэтому в бесплатном тарифе вынуждены ограничить вас в месяц 150
-        задачами и 100мб диского пространства всего.</p>
-    <p>Однако, когда вы перерастете бесплатный тариф и вам захочется большего, мы предоставим вам безлимитный доступ к
-        функционалу.</p>
-    <p class="mt-3">Оплата тарифного плана происходит путем автоплатежа - автоматического списания
-        суммы средств с периодичностью,
-        соответствующей выбранному тарифу. Подписку можно отменить в любой момент. Более подробнее читайте в <a
-                href="https://lusy.io/licenzionnoe-soglashenie-dogovor-publichnoj-oferty.pdf"
-                class="btn-link" target="_blank">Оферте
-            рекуррентных
-            платежей</a>.</p>
+    <div class="row mt-5">
+        <div class="col-sm-4 offset-sm-2">
+            <p class="lead-text-under text-left">Перед нами были задача сделать полноценный бесплатный тариф и это
+                удалось</p>
+        </div>
+        <div class="col-sm-4">
+            <p class="lead-text-under text-left">Но, когда вы перерастете бесплатный тариф, то переход на Premium тариф
+                будет легким</p>
+        </div>
+    </div>
+
+    <div class="justify-content-center mt-5">
+        <form method="post" action="https://s.lusy.io/reg/">
+            <div class="input-group mb-5 mt-3 formreg m-auto">
+                <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
+                       aria-label="your_mail@domain.com" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" id="button-addon2">Попробовать бесплатно</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row mt-5">
+        <div class="mt-5 col-sm-8 offset-sm-2">
+            <hr>
+            <p class="small text-secondary">Оплата тарифного плана происходит путем автоплатежа - автоматического
+                списания
+                суммы средств с периодичностью,
+                соответствующей выбранному тарифу. Подписку можно отменить в любой момент. Более подробнее читайте в <a
+                        href="https://lusy.io/licenzionnoe-soglashenie-dogovor-publichnoj-oferty.pdf"
+                        class="btn-link" target="_blank">Оферте
+                    рекуррентных
+                    платежей</a>.</p>
+        </div>
+    </div>
 </div>

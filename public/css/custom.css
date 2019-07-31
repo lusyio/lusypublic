@@ -189,6 +189,62 @@ img {
 #collapseCompany .h5 {
     margin-top: -.25rem;
 }
+.Card {
+    border-radius: 10px;
+}
+.payBack {
+    background-image: url(/public/images/back-pay.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: -40px;
+}
+.premiumCard {
+    background: #4776E6;
+    background: -webkit-linear-gradient(to bottom, #3c41cc, #4776E6);
+    background: linear-gradient(to bottom, #3c41cc, #4776E6);
+    color: white;
+}
+.premiumCard .small {
+    margin-bottom: -10px;
+    position: relative;
+    display: block;
+    margin-top: -10px;
+}
+.priceTariff {
+    font-size: 60px;
+    font-weight: 300;
+}
+.freeCard .priceTariff {
+    color: #5156d8;
+}
+.checkUl {
+    padding-left: 0px;
+    text-align: left;
+}
+.checkUl li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+.checkUl li:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    padding-right: 15px;
+}
+.checkUl li.minus:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f068";
+    padding-right: 15px;
+}
+.tariff {
+    margin-top: 20px;
+    font-weight: 100;
+}
 .content h1 {
     font-size: 32px;
     line-height: 1.2;
@@ -196,6 +252,9 @@ img {
     color: #1d1d1d !important;
     margin-top: 50px;
     margin-bottom: 30px;
+}
+.text-gold {
+    color: gold;
 }
 .footer {
     background: #f9f9f9;
