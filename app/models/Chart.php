@@ -19,7 +19,7 @@ class Chart extends Model
         $companiesOverdueCount = $this->db->allRows("SELECT COUNT(DISTINCT task_id, datetime) AS overdue, company_id AS companyId FROM events WHERE action = 'overdue' GROUP BY company_id");
         $companiesCommentCount = $this->db->allRows("SELECT COUNT(*) AS comment, u.idcompany AS companyId FROM comments c LEFT JOIN users u ON c.iduser = u.id WHERE c.status = 'comment' AND c.iduser > 1 GROUP BY u.idcompany");
         $companiesMailCount = $this->db->allRows("SELECT COUNT(DISTINCT m.message_id) as message, u1.idcompany AS companyId FROM mail m LEFT JOIN users u1 ON m.sender = u1.id WHERE sender > 1 AND recipient > 1 GROUP BY u1.idcompany");
-        $companiesUserCount = $this->db->allRows("SELECT COUNT(*) as users, idcompany AS companyId FROM users WHERE is_fired = 0 GROUP BY idcompany");
+        $companiesUserCount = $this->db->allRows("SELECT COUNT(*) as users, idcompany AS companyId FROM users WHERE is_fired = 0 AND id > 1 GROUP BY idcompany");
         foreach ($companies as $company) {
             $stats[$company['id']] = [
                 'taskDone' => 0,
