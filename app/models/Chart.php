@@ -52,6 +52,9 @@ class Chart extends Model
         foreach ($stats as $companyId => $values) {
             $stats[$companyId]['score'] = floor($values['taskDone'] - 10 * $values['overdue'] + 0.1 * ($values['comment'] + $values['message']));
         }
+        usort($stats, function ($a, $b) {
+           return $b['score'] - $a['score'];
+        });
         return $stats;
     }
 
