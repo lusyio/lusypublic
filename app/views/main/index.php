@@ -206,13 +206,16 @@
                     <div class="card shadow-none">
                         <div class="card-header text-center bg-message border-0">
                             <div class="position-absolute">
-                                <a data-toggle="tooltip" data-placement="bottom" title="" class="text-left" href="../"
-                                   data-original-title="Назад к диалогам"><i class="fas fa-arrow-left icon-invite"></i></a>
+                                <span data-toggle="tooltip" data-placement="bottom" title="" class="text-left"
+                                   data-original-title="Назад к диалогам"><i class="fas fa-arrow-left icon-invite"></i></span>
                             </div>
                             <div>
-                            <span class="mb-0 h5">Lusy.io
-                    <i class="fas fa-circle mr-1 ml-1 onlineIndicator text-success"></i>
-                </span>
+                            <span class="mb-0 h5 name-target">
+                                Lusy.io
+                            </span>
+                                <span>
+                                    <i class="fas fa-circle mr-1 ml-1 onlineIndicator text-success"></i>
+                                </span>
                             </div>
                         </div>
                         <div class="card-body p-0" id="chatBox">
@@ -223,8 +226,8 @@
                                                                              class="avatar-conversation"></a>
                                     </div>
                                     <div class="col pl-2 message-width">
-                                        <span class="date">19.07 в 16:05                    </span>
-                                        <p class="m-0" style="color: #000; font-size: 14px; font-weight: 400">Внимание,
+                                        <span class="date date-target">19.07 в 16:05                    </span>
+                                        <p class="m-0 text-target" style="color: #000; font-size: 14px; font-weight: 400">Внимание,
                                             внимание! Сообщаем, что у нас заработала система обратной связи. Если у вас
                                             есть жалобы, предложения, идеи - не держите в себе!</p>
                                     </div>
@@ -236,7 +239,7 @@
                         <div class="card-body pb-0 pl-2 pr-2">
                             <form>
                                 <div class="d-flex send-mes-block">
-                                    <div class="form-group w-100 text-area d-flex">
+                                    <div class="form-group w-100 text-area d-flex mb-0">
                                         <span class="btn btn-light btn-file border d-none">
                                             <i class="fas fa-file-upload custom-date mr-2"></i>
                                             <span class="attach-file text-muted">Выберите файл</span>
@@ -250,7 +253,7 @@
                                                 name="mes" rows="1" placeholder="Введите сообщение"
                                                 autofocus=""></textarea>
                                         <div class="position-relative">
-                                            <button type="button" class="btn rounded-circle text-dark" id="sendBtn">
+                                            <button type="button" class="btn rounded-circle text-white" id="sendBtn">
                                                 <span id="sendMesName"><i class="fas fa-paper-plane"></i></span>
                                                 <div class="spinner-border spinner-border-sm text-dark" role="status"
                                                      style="display: none;">
@@ -299,8 +302,8 @@
                                     </div>
                                 </div>
                                 <div class="col text-area-message">
-                                    <p class="mb-2 font-weight-bold ">Дмитрий Ричби </p>
-                                    <span>Вы:  вот так на портретке айпада делать?</span>
+                                    <p class="mb-2 font-weight-bold chat-name">Дмитрий Ричби </p>
+                                    <span class="text-message">вот так на портретке айпада делать?</span>
                                 </div>
                                 <span class="date mr-2">25.07 12:26</span>
                             </div>
@@ -319,9 +322,9 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="col text-area-message">
-                                    <p class="mb-2 font-weight-bold ">Дельшод Великолепный </p>
-                                    <span>Вы:  Прива как дел</span>
+                                <div class="col text-area-message ">
+                                    <p class="mb-2 font-weight-bold chat-name">Дельшод Великолепный </p>
+                                    <span class="text-message">Прива как дел</span>
                                 </div>
                                 <span class="date mr-2">25.07 4:20</span>
                             </div>
@@ -341,8 +344,8 @@
                                     </div>
                                 </div>
                                 <div class="col text-area-message">
-                                    <p class="mb-2 font-weight-bold ">Игорь Горыныч </p>
-                                    <span>Вы:  test123</span>
+                                    <p class="mb-2 font-weight-bold chat-name">Игорь Горыныч </p>
+                                    <span class="text-message">test123</span>
                                 </div>
                                 <span class="date mr-2">24.07 12:35</span>
                             </div>
@@ -357,8 +360,8 @@
                                             class="fas fa-headset fa-fw"></i></span>
                                 </div>
                                 <div class="col text-area-message">
-                                    <p class="mb-2 font-weight-bold ">Служба поддержки </p>
-                                    <span> Внимание, внимание! Сообщаем, что у нас заработала система обратной связи. Если у вас есть жалобы, предложения, идеи - не держите в себе!</span>
+                                    <p class="mb-2 font-weight-bold chat-name">Служба поддержки </p>
+                                    <span class="text-message">Внимание, внимание! Сообщаем, что у нас заработала система обратной связи. Если у вас есть жалобы, предложения, идеи - не держите в себе!</span>
                                 </div>
                                 <span class="date mr-2">19.07 16:05</span>
                             </div>
@@ -380,12 +383,61 @@
 </div>
 
 <script>
+
+    $("#mes").keypress(function (e) {
+        var str = $('#mes').val().trim();
+        if (str !== '' && typeof str !== undefined) {
+            if (e.which == 13 && e.ctrlKey) {
+                $('#mes').val($('#mes').val() + "\n");
+            } else if (e.which == 13) {
+                e.preventDefault();
+                $("#sendBtn").click();
+                $("#mes").val('');
+                setTimeout(function () {
+                    $("#mes").css('height', '54px');
+                }, 300);
+            }
+        }
+    });
+
+    $('#sendBtn').on('click', function () {
+        var text = $('#mes').val();
+        $('#chatBox').append('<div data-message-id="171" class="rounded-0 message my-message">\n' +
+            '    <div class="row">\n' +
+            '        <div class="col-2 col-lg-2">\n' +
+            '            <a class="avatar-chat" href=""><img src="/public/images/jopa.jpg" class="avatar-conversation"></a>\n' +
+            '        </div>\n' +
+            '        <div class="col pl-2 message-width">\n' +
+            '                            <span class="date">24.07 в 12:32                    </span>\n' +
+            '            <p class="m-0" style="color: #000; font-size: 14px; font-weight: 400">' + text + '</p>\n' +
+            '                    </div>\n' +
+            '    </div>\n' +
+            '</div>');
+        $('#chatBox').scrollTop($("#chatBox")[0].scrollHeight);
+        var text = $('#mes').val('');
+    });
+
+    $('.icon-invite').on('click', function () {
+        setTimeout(function () {
+            $('.chat').hide();
+            $('.chat-2').show();
+        }, 500);
+    });
+
     $('.dialog-mail').on('click', function () {
+        var name = $(this).find('.chat-name').text();
+        var text = $(this).find('.text-message').text();
+        var avatar = $(this).find('.avatar-img').attr('src');
+        var date = $(this).find('.date').text();
         var val = $(this).attr('val');
         $('.spinner-mes').show();
         setTimeout(function () {
             $('.chat-2').hide();
             $('.spinner-mes').hide();
+            $('.name-target').text(name);
+            $('.avatar-conversation').attr('src', avatar);
+            $('.text-target').text(text);
+            $('.date-target').text(date);
             $('.chat').show();
         }, 500);
         // $.ajax({

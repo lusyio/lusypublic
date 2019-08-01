@@ -29,6 +29,16 @@
     color: #dcdcdc;
 }
 
+.icon-invite{
+    color: rgba(198, 199, 200, 0.69);
+    transition: 200ms;
+}
+
+.icon-invite:hover{
+    color: #5d95db;
+    cursor: pointer;
+}
+
 .spinner-mes{
     width: 100%;
     height: 100%;
@@ -85,9 +95,13 @@ span.date{
     left: 10px;
 }
 
+.my-message>.row{
+    justify-content: flex-end;
+}
+
 #chatBox {
     position: relative;
-    height: 309px;
+    height: 325px;
     /*height: calc(100vh - 315px);*/
     background-color: #fcfcfc;
 
