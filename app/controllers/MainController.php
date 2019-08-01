@@ -31,7 +31,23 @@ class MainController extends Controller
     }
     public function possibilitiesAction()
     {
-        $this->view->render('Возможности');
-
+        $possibilities = [
+            [
+                'icon' => 'fas fa-tasks fa-fw',
+                'text' => 'Постановка задач',
+            ],
+            [
+                'icon' => 'fas fa-clock fa-fw',
+                'text' => 'Контроль сроков',
+            ],
+            [
+                'icon' => 'fas fa-users fa-fw',
+                'text' => 'Учетные записи',
+            ],
+        ];
+        $args = [
+            'possibilities' => $possibilities,
+        ];
+        $this->view->render('Возможности', $args);
     }
 }
