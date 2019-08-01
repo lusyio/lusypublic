@@ -10,7 +10,7 @@
         </h1>
         <div class="row justify-content-center">
             <div class="col-12 col-lg-7 my-4">
-                <form id="regForm" name="regForm" action="https://s.lusy.io/reg/" method="POST">
+                <form id="regForm" name="regForm" action="/<?= $this->route['language']; ?>/register/" method="POST">
                     <h5></h5>
                     <section>
                         <div class="form-group mb-0">

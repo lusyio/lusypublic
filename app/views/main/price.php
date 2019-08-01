@@ -55,7 +55,7 @@
     </div>
 
     <div class="justify-content-center mt-5">
-        <form method="post" action="https://s.lusy.io/reg/">
+        <form method="post" action="/<?= $this->route['language']; ?>/register/">
             <div class="input-group mb-5 mt-3 formreg m-auto">
                 <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
                        aria-label="your_mail@domain.com" aria-describedby="button-addon2">

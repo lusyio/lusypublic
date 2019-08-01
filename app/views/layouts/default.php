@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/public/css/custom.css?ver=6">
+    <link rel="stylesheet" href="/public/css/custom.css?ver=7">
     <link rel="shortcut icon" href="/public/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -56,7 +56,7 @@
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link btn btn-primary text-white font-weight-bold"
-                                   href="https://s.lusy.io/reg/">Регистрация</a>
+                                   href="/<?= $this->route['language']; ?>/register/">Регистрация</a>
                             </li>
                         </ul>
                     </nav>
