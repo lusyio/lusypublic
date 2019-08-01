@@ -118,7 +118,7 @@
                                     <small><span class="text-muted">Количество сотрудников:</span>
                                         <span><?= $company['users']; ?></span></small>
                                 </div>
-                                <p><a href="<?= $company['site']; ?>"><?= $company['site']; ?></a></p>
+                                <p><a href="http://<?= $company['site']; ?>"><?= $company['site']; ?></a></p>
                                 <p class="mb-0"><?= nl2br($company['description']); ?></p>
 
                             </div>
