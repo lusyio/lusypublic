@@ -17,6 +17,7 @@
     <meta property="og:image" content="https://lusy.io/public/images/lusy.jpg" />
     <meta property="og:url" content="https://<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
     <meta property="og:description" content="Система постановки и контроля задач">
+    <meta name="yandex-verification" content="5329c550c78733c7" />
 </head>
 <body>
 <div class="top-sidebar pt-2 pb-2">
