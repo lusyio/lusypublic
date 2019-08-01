@@ -10,7 +10,7 @@
                             class="visible-sm"> </span>а рутинные задачи Люси возьмет на себя</p>
                 <div class="mt-5">
 
-                    <form method="post" action="https://s.lusy.io/reg/">
+                    <form method="post" action="/<?= $this->route['language']; ?>/register/">
                         <div class="input-group mb-3 mt-3 formreg">
                             <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
                                    aria-label="your_mail@domain.com" aria-describedby="button-addon2">
@@ -583,7 +583,7 @@
         <div class="row mt-5">
             <div class="col-sm-6 offset-sm-3 mt-3 d-none">
                 <div class="d-flex justify-content-center mt-4">
-                    <a href="https://s.lusy.io/reg/" class="btn btn-primary">Забрать медальку</a>
+                    <a href="/<?= $this->route['language']; ?>/register/" class="btn btn-primary">Забрать медальку</a>
                 </div>
             </div>
         </div>
@@ -738,7 +738,7 @@
         </div>
     </div>
     <div class="justify-content-center">
-        <form method="post" action="https://s.lusy.io/reg/">
+        <form method="post" action="/<?= $this->route['language']; ?>/register/">
             <div class="input-group mb-5 mt-3 formreg m-auto">
                 <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
                        aria-label="your_mail@domain.com" aria-describedby="button-addon2">
