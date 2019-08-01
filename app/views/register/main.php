@@ -1,3 +1,9 @@
+<?php
+$email = '';
+if (!empty($_POST['email'])) {
+    $email = $_POST['email'];
+}
+?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -5,16 +11,16 @@
 <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 <div class="">
     <div class="container pt-5">
-        <h1 class="lead-text text-dark text-center mb-3 mt-5">
+        <h1 class="lead-text text-dark text-center mb-3">
             Регистрация
         </h1>
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-7 my-4">
+            <div class="col-12 col-lg-7 mb-4">
                 <form id="regForm" name="regForm" action="/<?= $this->route['language']; ?>/register/" method="POST">
                     <h5></h5>
                     <section>
                         <div class="form-group mb-0">
-                            <div class="lead-text-p text-center mb-3">
+                            <div class="lead-text-under text-center mb-3 mt-0">
                                 Первым делом необходимо выбрать краткий идентификатор для вашей компании
                             </div>
                             <input type="text" id="companyName" name="companyName" class="form-control required"
@@ -27,7 +33,7 @@
                     <section>
 
                         <div class="form-group mb-0">
-                            <div class="lead-text-p text-center mb-3">
+                            <div class="lead-text-under text-center mb-3 mt-0">
                                 Теперь выберите часовой пояс, в котором работает ваша компания, и предпочитаемый язык
                             </div>
                             <select id="timezone" name="timezone" class="form-control mb-3 required">
@@ -139,11 +145,11 @@
 
                     <h5></h5>
                     <section>
-                        <div class="lead-text-p text-center mb-3">
-                            Отлично! Осталось создать аккаунт главы компании. Для этого введите Ваш email и укажите пароль
-                        </div>
                         <div class="form-group">
-                            <input id="emailAdmin" type="text" value="" name="email" class="form-control required email"
+                            <div class="lead-text-under text-center mb-3 mt-0">
+                                Отлично! Осталось создать аккаунт главы компании. Для этого введите Ваш email и укажите пароль
+                            </div>
+                            <input id="emailAdmin" type="text" value="<?=$email?>" name="email" class="form-control required email"
                                    placeholder="E-mail">
                         </div>
                         <div class="form-group mb-0">
@@ -161,8 +167,6 @@
                 Уже зарегистрированы? <a href="https://s.lusy.io/login/" class="text-dark">Авторизация</a>
             </p>
         </div>
-        <p class="text-center position-absolute" style="left: 0; right: 0; bottom: 0"><a
-                    href="https://lusy.io/">LUSY.IO</a></p>
     </div>
 
 </div>
@@ -179,34 +183,6 @@
         </div>
     </div>
 </div>
-
-<style>
-    html, body {
-        height: 100%;
-    }
-
-    .form-control {
-        height: calc(2.5em + .75rem + 2px) !important;
-        border-radius: 15px !important;
-        padding-left: 20px;
-    }
-
-    .btn-primary {
-        background: #284c8e;
-        border: none !important;
-        border-radius: 15px;
-        padding-left: 25px !important;
-        padding-right: 25px !important;
-    }
-
-    .btn-primary:hover {
-        background: #13387c;
-    }
-
-    #btn-show-restore-form {
-        color: #e1e1e1;
-    }
-</style>
 
 <script>
     $(document).ready(function () {

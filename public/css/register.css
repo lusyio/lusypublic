@@ -152,7 +152,7 @@ label.error {
 .wizard > .steps .disabled a,
 .wizard > .steps .disabled a:hover,
 .wizard > .steps .disabled a:active {
-    background: #446aaa;
+    background: #7478d8;
     color: #aaa;
     cursor: default;
 }
@@ -168,7 +168,7 @@ label.error {
 .wizard > .steps .current a,
 .wizard > .steps .current a:hover,
 .wizard > .steps .current a:active {
-    background: #284d8e;
+    background: #5156d8;
     color: #fff;
     cursor: default;
 }
@@ -176,7 +176,7 @@ label.error {
 .wizard > .steps .done a,
 .wizard > .steps .done a:hover,
 .wizard > .steps .done a:active {
-    background: #446aaa;
+    background: #7478d8;
     color: #fff;
 }
 
@@ -287,4 +287,10 @@ label.error {
 }
 
 .wizard > .loading .spinner {
+}
+
+#regForm .form-control {
+    height: calc(2.5em + .75rem + 2px) !important;
+    border-radius: 15px !important;
+    padding-left: 20px;
 }

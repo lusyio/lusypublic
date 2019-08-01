@@ -95,7 +95,7 @@ img {
     font-weight: 800;
     margin-bottom: 20px;
 }
-.main .lead-text-under {
+.main .lead-text-under, .form-group .lead-text-under {
     font-size: 20px;
     color: #8e8e8e;
     margin-top: 20px;
