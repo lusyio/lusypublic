@@ -20,6 +20,23 @@
     }
 }
 
+.btn-primary.disabled{
+    background: #5156d8;
+}
+
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: none;
+}
+
+.steps.clearfix{
+    margin-right: 10px;
+}
+
 .loginPage {
     background-image: url("https://lusy.io/public/images/bg.jpg");
     background-repeat: no-repeat;
