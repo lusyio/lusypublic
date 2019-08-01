@@ -5,11 +5,11 @@
 <?php $itemCounter = 0; // Счетчик элементов?>
 <?php foreach ($possibilities as $item): ?>
     <?php if ($itemCounter % 3 == 0): // Открывающий row-див, перед элементами, кратными 3?>
-        <div class="row mb-3">
+        <div class="row mb-4">
     <?php endif; ?>
             <div class="col-sm-4">
                 <div class="d-flex">
-                    <i class="<?= $item['icon']; ?>"></i>
+                    <i class="<?= $item['icon']; ?> fa-fw"></i>
                     <p><?= $item['text']; ?></p>
                 </div>
             </div>
@@ -18,5 +18,8 @@
     <?php endif; ?>
     <?php $itemCounter++; ?>
 <?php endforeach; ?>
+
+    </div>
+    
     </div>
 </div>

@@ -33,16 +33,48 @@ class MainController extends Controller
     {
         $possibilities = [
             [
-                'icon' => 'fas fa-tasks fa-fw',
+                'icon' => 'fas fa-tasks',
                 'text' => 'Постановка задач',
             ],
             [
-                'icon' => 'fas fa-clock fa-fw',
+                'icon' => 'fas fa-clock',
                 'text' => 'Контроль сроков',
             ],
             [
-                'icon' => 'fas fa-users fa-fw',
+                'icon' => 'fas fa-user-circle',
                 'text' => 'Учетные записи',
+            ],
+            [
+                'icon' => 'fas fa-comments',
+                'text' => 'Система диалогов',
+            ],
+            [
+                'icon' => 'fas fa-trophy',
+                'text' => 'Достижения',
+            ],
+            [
+                'icon' => 'fas fa-book-open',
+                'text' => 'Журнал событий',
+            ],
+            [
+                'icon' => 'fas fa-users',
+                'text' => 'Раздел Компания',
+            ],
+            [
+                'icon' => 'fas fa-clock',
+                'text' => 'Планировщик заданий',
+            ],
+            [
+                'icon' => 'fas fa-file-upload',
+                'text' => 'Файловый менеджер',
+            ],
+            [
+                'icon' => 'fas fa-chart-pie',
+                'text' => 'Детальные отчеты',
+            ],
+            [
+                'icon' => 'fas fa-search',
+                'text' => 'Удобный поиск',
             ],
         ];
         $args = [
