@@ -28,7 +28,9 @@
                 <div class="bg-dark card position-relative" id="whatLusy">
                     <div class="card-body p-5">
                         <h2 class="text-white">Что такое Lusy?</h2>
-                        <p class="lead-text-under text-white mb-4">Система постановки и контроля задач - простая в применении, с мотивирующими ачивками, полноценным бесплатным тарифом и приятным дизайном.</p>
+                        <p class="lead-text-under text-white mb-4">Система постановки и контроля задач - простая в
+                            применении, с мотивирующими ачивками, полноценным бесплатным тарифом и приятным
+                            дизайном.</p>
                         <div class="inblock d-flex text-white">
 
                             <div>
@@ -503,7 +505,7 @@
     </div>
 </div>
 
-<div class="pt-5 pb-5 hidden-sm" id="awards">
+<div class="pt-5 pb-5" id="awards">
     <div class="container">
         <p class="lead-text-big text-center">Достижения, мотивация, игра!</p>
         <div class="row mb-3">
@@ -513,73 +515,75 @@
                     решай, кому выписать премию</p>
             </div>
         </div>
-
-        <div class="d-flex justify-content-center">
-            <div class="award text-center aw1">
-                <div>
-                    <div class="circle" data-value="0.00"></div>
-                    <div class="award-star bg-secondary">
-                        <i class="fas fa-handshake"></i>
+        <div class="hidden-sm">
+            <div class="d-flex justify-content-center">
+                <div class="award text-center aw1">
+                    <div>
+                        <div class="circle" data-value="0.00"></div>
+                        <div class="award-star bg-secondary">
+                            <i class="fas fa-handshake"></i>
+                        </div>
                     </div>
+                    <h5>Знакомство</h5>
+                    <small class="mt-3">Заполнил профиль</small>
+                    <hr>
+                    <span class="badge badge-secondary">не достигнуто</span>
                 </div>
-                <h5>Знакомство</h5>
-                <small class="mt-3">Заполнил профиль</small>
-                <hr>
-                <span class="badge badge-secondary">не достигнуто</span>
-            </div>
-            <div class="award text-center aw2">
-                <div>
-                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
-                         data-value="0.20"></div>
-                    <div class="award-star bg-secondary">
-                        <i class="fas fa-handshake"></i>
+                <div class="award text-center aw2">
+                    <div>
+                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                             data-value="0.20"></div>
+                        <div class="award-star bg-secondary">
+                            <i class="fas fa-handshake"></i>
+                        </div>
                     </div>
+                    <h5>Акула бизнеса</h5>
+                    <small class="mt-3">Назначил 50 задач</small>
+                    <hr>
+                    <span class="badge badge-secondary">10/50</span>
                 </div>
-                <h5>Акула бизнеса</h5>
-                <small class="mt-3">Назначил 50 задач</small>
-                <hr>
-                <span class="badge badge-secondary">10/50</span>
-            </div>
-            <div class="award text-center aw3">
-                <div>
-                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(40, 167, 69, 1)&quot;}"
-                         data-value="1.00"></div>
-                    <div class="award-star bg-success">
-                        <i class="fas fas fa-medal"></i>
+                <div class="award text-center aw3">
+                    <div>
+                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(40, 167, 69, 1)&quot;}"
+                             data-value="1.00"></div>
+                        <div class="award-star bg-success">
+                            <i class="fas fas fa-medal"></i>
+                        </div>
                     </div>
+                    <h5>Красавчик</h5>
+                    <small class="mt-3">Месяц без просрочек</small>
+                    <hr>
+                    <span class="badge badge-success">Достигнуто</span>
                 </div>
-                <h5>Красавчик</h5>
-                <small class="mt-3">Месяц без просрочек</small>
-                <hr>
-                <span class="badge badge-success">Достигнуто</span>
-            </div>
-            <div class="award text-center aw2">
-                <div>
-                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
-                         data-value="0.10"></div>
-                    <div class="award-star bg-secondary">
-                        <i class="fas fa-handshake"></i>
+                <div class="award text-center aw2">
+                    <div>
+                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                             data-value="0.10"></div>
+                        <div class="award-star bg-secondary">
+                            <i class="fas fa-handshake"></i>
+                        </div>
                     </div>
+                    <h5>LVL100 B0$$</h5>
+                    <small class="mt-3">Назначил 100 задач</small>
+                    <hr>
+                    <span class="badge badge-secondary">10/100</span>
                 </div>
-                <h5>LVL100 B0$$</h5>
-                <small class="mt-3">Назначил 100 задач</small>
-                <hr>
-                <span class="badge badge-secondary">10/100</span>
-            </div>
-            <div class="award text-center mr-0 aw1">
-                <div>
-                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
-                         data-value="0.26"></div>
-                    <div class="award-star bg-secondary">
-                        <i class="fas fas fa-star"></i>
+                <div class="award text-center mr-0 aw1">
+                    <div>
+                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                             data-value="0.26"></div>
+                        <div class="award-star bg-secondary">
+                            <i class="fas fas fa-star"></i>
+                        </div>
                     </div>
+                    <h5>Гуру</h5>
+                    <small class="mt-3">Завершил 500 задач</small>
+                    <hr>
+                    <span class="badge badge-secondary">130/500</span>
                 </div>
-                <h5>Гуру</h5>
-                <small class="mt-3">Завершил 500 задач</small>
-                <hr>
-                <span class="badge badge-secondary">130/500</span>
             </div>
         </div>
+
         <div class="row mt-5">
             <div class="col-sm-6 offset-sm-3 mt-3 d-none">
                 <div class="d-flex justify-content-center mt-4">
