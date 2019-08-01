@@ -21,7 +21,7 @@ class MainController extends Controller
         $vars = [
             'articles' => $lastArticles,
         ];
-        $this->view->render('Главная страница', $vars);
+        $this->view->render('Lusy - система постановки и контроля задач', $vars);
     }
 
     public function priceAction()
