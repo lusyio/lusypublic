@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="charts-container">
-        <div class="card card-body">
+        <div class="card card-body headchart">
             <div class="row">
                 <div class="col-1 col-lg-1 text-center">
                 </div>
@@ -57,8 +57,8 @@
             <div class="card chart-card mt-2">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-1 col-lg-1 text-center">
-                                        <span class="text-secondary chart-align">
+                        <div class="col-2 col-lg-1 chart-align">
+                                        <span class="text-secondary">
                                             <?php if ($n == 1) { ?>
                                                 <i class="fas fa-crown text-warning font-weight-bold h4 mb-0"></i>
                                             <?php } else {
@@ -68,33 +68,33 @@
                                             ?>
                                         </span>
                         </div>
-                        <div class="col-10 col-lg-4">
-                                    <span class="chart-align name-company">
+                        <div class="col-10 col-lg-4 chart-align text-left">
+                                    <span class="name-company">
                                         <?= $company['name']; ?>
                                     </span>
                         </div>
-                        <div class="col-3 col-lg-1 text-center">
-                                    <span class="text-success chart-align pl-2">
+                        <div class="col-2 col-lg-1 chart-align">
+                                    <span class="text-success pl-2">
                                         <?= $company['taskDone']; ?>
                                     </span>
                         </div>
-                        <div class="col-3 col-lg-1 text-center">
-                                    <span class="chart-align text-danger pl-2">
+                        <div class="col-2 col-lg-1 chart-align">
+                                    <span class="text-danger pl-2">
                                         <?= $company['overdue']; ?>
                                     </span>
                         </div>
-                        <div class="col-3 col-lg-1 text-center">
-                                    <span class="chart-align pl-2">
+                        <div class="col-2 col-lg-1 chart-align">
+                                    <span class="pl-2">
                                         <?= $company['comment']; ?>
                                     </span>
                         </div>
-                        <div class="col-3 col-lg-1 text-center">
-                                    <span class="chart-align pl-2">
+                        <div class="col-2 col-lg-1 chart-align">
+                                    <span class="pl-2">
                                         <?= $company['message']; ?>
                                     </span>
                         </div>
-                        <div class="col-3 col-lg-3 text-center">
-                                    <span class="chart-align">
+                        <div class="col-4 col-lg-3 chart-align">
+                                    <span>
                                         <?= $company['score']; ?>
                                     </span>
                         </div>
