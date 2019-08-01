@@ -11,11 +11,11 @@
     <link rel="shortcut icon" href="/public/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title><?php echo $title; ?></title>
+    <title><?=$title;?></title>
 
-    <meta property="og:title" content="<?php echo $title; ?>">
+    <meta property="og:title" content="Lusy.io - <?=$title;?>">
     <meta property="og:image" content="https://lusy.io/public/images/lusy.jpg" />
-    <meta property="og:url" content="https://lusy.io/">
+    <meta property="og:url" content="https://<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
     <meta property="og:description" content="Система постановки и контроля задач">
 </head>
 <body>
