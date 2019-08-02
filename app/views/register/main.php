@@ -234,6 +234,9 @@ if (!empty($_POST['email'])) {
 
         var securityPass = 0;
 
+        if (security != 2){
+            $("a[href=\"#finish\"]").addClass('disabled');
+        }
 
         $('#emailAdmin').on('keyup', function () {
            var $this = $(this);
