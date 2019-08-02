@@ -16,9 +16,9 @@ class Chart extends Model
         $stats = [];
         $firstDay = strtotime('first day of this month midnight');
         $companies = $this->db->allRows("SELECT id, idcompany, full_company_name, description, site FROM company", [':firstDay' => $firstDay]);
-        $companiesTaskDoneCount = $this->db->allRows("SELECT COUNT(*) AS taskDone, t.idcompany AS companyId FROM tasks t LEFT JOIN events e ON t.id = e.task_id WHERE e.action = 'workdone' AND e.datetime >= :firstDay GROUP BY t.idcompany", [':firstDay' => $firstDay]);
+        $companiesTaskDoneCount = $this->db->allRows("SELECT COUNT(DISTINCT t.id) AS taskDone, t.idcompany AS companyId FROM tasks t LEFT JOIN events e ON t.id = e.task_id WHERE e.action = 'workdone' AND e.datetime >= :firstDay GROUP BY t.idcompany", [':firstDay' => $firstDay]);
         $companiesOverdueCount = $this->db->allRows("SELECT COUNT(DISTINCT task_id, datetime) AS overdue, company_id AS companyId FROM events WHERE action = 'overdue' AND datetime >= :firstDay GROUP BY company_id", [':firstDay' => $firstDay]);
-        $companiesCommentCount = $this->db->allRows("SELECT COUNT(*) AS comment, u.idcompany AS companyId FROM comments c LEFT JOIN users u ON c.iduser = u.id WHERE c.status = 'comment' AND c.datetime > :firstDay AND c.iduser > 1 GROUP BY u.idcompany", [':firstDay' => $firstDay]);
+        $companiesCommentCount = $this->db->allRows("SELECT COUNT(DISTINCT c.id) AS comment, u.idcompany AS companyId FROM comments c LEFT JOIN users u ON c.iduser = u.id WHERE c.status = 'comment' AND c.datetime > :firstDay AND c.iduser > 1 GROUP BY u.idcompany", [':firstDay' => $firstDay]);
         $companiesMailCount = $this->db->allRows("SELECT COUNT(DISTINCT m.message_id) as message, u1.idcompany AS companyId FROM mail m LEFT JOIN users u1 ON m.sender = u1.id WHERE sender > 1 AND recipient > 1 AND datetime > :firstDay GROUP BY u1.idcompany", [':firstDay' => $firstDay]);
         $companiesUserCount = $this->db->allRows("SELECT COUNT(*) as users, idcompany AS companyId FROM users WHERE is_fired = 0 AND id > 1 GROUP BY idcompany");
         foreach ($companies as $company) {
