@@ -479,7 +479,7 @@
                             <i class="far fa-file-image custom-file"></i>
                         </div>
                         <div class="col file-width-storage">
-                            <a href="#" class="h6 mb-3 file-name">Снимок экрана 2019-07-10 в 12.06.16.png</a>
+                            <a target="_blank" href="#" class="h6 mb-3 file-name">Снимок экрана 2019-07-10 в 12.06.16.png</a>
                             <span class="text-ligther ml-1"> <i class="fas fa-hdd mr-1 ml-1"></i> 20 КБ</span>
                             <span class="text-ligther ml-1"> <i class="fas fa-circle mr-1 ml-1"></i> 10.07.2019</span>
                             <a href="#" class="text-ligther">
@@ -500,7 +500,7 @@
                             <i class="far fa-file-image custom-file"></i>
                         </div>
                         <div class="col file-width-storage">
-                            <a href="/public/images/jopa.jpg"
+                            <a target="_blank" href="/public/images/jopa.jpg"
                                class="h6 mb-3 file-name">бэкэнд.jpg</a>
                             <span class="text-ligther ml-1"> <i class="fas fa-hdd mr-1 ml-1"></i> 193 КБ</span>
                             <span class="text-ligther ml-1"> <i class="fas fa-circle mr-1 ml-1"></i> 25.07.2019</span>
@@ -522,7 +522,7 @@
                             <i class="far fa-file-image custom-file"></i>
                         </div>
                         <div class="col file-width-storage">
-                            <a href="#" class="h6 mb-3 file-name">Снимок экрана 2019-07-10 в 12.06.16.png</a>
+                            <a target="_blank" href="#" class="h6 mb-3 file-name">Снимок экрана 2019-07-10 в 12.06.16.png</a>
                             <span class="text-ligther ml-1"> <i class="fab fa-dropbox mr-1 ml-1"></i> 20 КБ</span>
                             <span class="text-ligther ml-1"> <i class="fas fa-circle mr-1 ml-1"></i> 10.07.2019</span>
                             <a href="#" class="text-ligther">
@@ -543,7 +543,7 @@
                             <i class="far fa-file-image custom-file"></i>
                         </div>
                         <div class="col file-width-storage">
-                            <a href="/public/images/photoreport.jpg" class="h6 mb-3 file-name">Фотоотчет о 20минутной
+                            <a target="_blank" href="/public/images/photoreport.jpg" class="h6 mb-3 file-name">Фотоотчет о 20минутной
                                 работе.png</a>
                             <span class="text-ligther ml-1"> <i class="fab fa-google-drive mr-1 ml-1"></i> 20 КБ</span>
                             <span class="text-ligther ml-1"> <i class="fas fa-circle mr-1 ml-1"></i> 10.07.2019</span>
