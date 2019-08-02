@@ -16,7 +16,7 @@ if (!empty($_POST['email'])) {
         </h1>
         <div class="row justify-content-center">
             <div class="col-12 col-lg-7 mb-4">
-                <form id="regForm" name="regForm" action="/<?= $this->route['language']; ?>/register/" method="POST">
+                <form id="regForm" name="regForm" action="https://s.lusy.io/reg/" method="POST">
                     <h5></h5>
                     <section>
                         <div class="form-group mb-0">
