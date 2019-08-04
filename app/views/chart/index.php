@@ -57,7 +57,7 @@
             <div class="card chart-card mt-2">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-2 col-lg-1 chart-align">
+                        <div class="col-1 col-lg-1 chart-align">
                                         <span class="text-secondary">
                                             <?php if ($n == 1) { ?>
                                                 <i class="fas fa-crown text-warning font-weight-bold h4 mb-0"></i>
@@ -68,7 +68,7 @@
                                             ?>
                                         </span>
                         </div>
-                        <div class="col-8 col-lg-4 chart-align text-left">
+                        <div class="col-7 col-lg-4 chart-align text-left">
                                     <span class="name-company">
                                         <?= $company['name']; ?>
                                     </span>
@@ -93,7 +93,7 @@
                                         <?= $company['message']; ?>
                                     </span>
                         </div>
-                        <div class="col-2 col-lg-3 chart-align">
+                        <div class="col-3 col-lg-3 chart-align">
                                     <span>
                                         <?= $company['score']; ?>
                                     </span>

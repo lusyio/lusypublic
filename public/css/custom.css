@@ -867,8 +867,9 @@ pricing-content{
     .inblock {
         display: none !important;
     }
-    .charts-container .row {
-        padding-right: 30px;
+    .fa-crown {
+        left: -10px;
+        position: relative;
     }
     .about-company {
         top: 20px;
