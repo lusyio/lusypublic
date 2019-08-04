@@ -1,8 +1,8 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <div class="container content">
     <div class="row mb-4">
-        <div class="col-sm-8 pt-3">
-            <h1>Битва месяца! Кто сделает больше?</h1>
+        <div class="col-sm-8">
+            <h1 class="chartH">Битва месяца! Кто сделает больше?</h1>
             <p>Мы проводим ежемесячное состязание между компаниями, кто больше наберет активностей. Победителю - приз!
                 Расчет идет по
                 формуле:</p>
@@ -68,32 +68,32 @@
                                             ?>
                                         </span>
                         </div>
-                        <div class="col-10 col-lg-4 chart-align text-left">
+                        <div class="col-8 col-lg-4 chart-align text-left">
                                     <span class="name-company">
                                         <?= $company['name']; ?>
                                     </span>
                         </div>
-                        <div class="col-2 col-lg-1 chart-align">
+                        <div class="col-2 col-lg-1 chart-align d-none d-md-block">
                                     <span class="text-success pl-2">
                                         <?= $company['taskDone']; ?>
                                     </span>
                         </div>
-                        <div class="col-2 col-lg-1 chart-align">
+                        <div class="col-2 col-lg-1 chart-align d-none d-md-block">
                                     <span class="text-danger pl-2">
                                         <?= $company['overdue']; ?>
                                     </span>
                         </div>
-                        <div class="col-2 col-lg-1 chart-align">
+                        <div class="col-2 col-lg-1 chart-align d-none d-md-block">
                                     <span class="pl-2">
                                         <?= $company['comment']; ?>
                                     </span>
                         </div>
-                        <div class="col-2 col-lg-1 chart-align">
+                        <div class="col-2 col-lg-1 chart-align d-none d-md-block">
                                     <span class="pl-2">
                                         <?= $company['message']; ?>
                                     </span>
                         </div>
-                        <div class="col-4 col-lg-3 chart-align">
+                        <div class="col-2 col-lg-3 chart-align">
                                     <span>
                                         <?= $company['score']; ?>
                                     </span>
@@ -109,7 +109,7 @@
                     <div class="card-body pt-0">
                         <hr class="mt-0">
                         <div class="row">
-                            <div class="col-sm-1 text-center"><i
+                            <div class="col-sm-1 text-center d-none d-md-block"><i
                                         class="fas fa-info-circle text-secondary <?php if (!empty($company['fullName'])): ?>mt-1<?php endif; ?>"></i>
                             </div>
                             <div class="col-sm-11">
