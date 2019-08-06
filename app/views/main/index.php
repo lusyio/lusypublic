@@ -10,12 +10,12 @@
                             class="visible-sm"> </span>а рутинные задачи Люси возьмет на себя</p>
                 <div class="mt-5">
 
-                    <form method="post" action="/<?= $this->route['language']; ?>/register/">
+                    <form onsubmit="ym(53097463, 'reachGoal', 'reg'); return true;" id="regForm1" method="post" action="https://s.lusy.io/reg/">
                         <div class="input-group mb-3 mt-3 formreg">
                             <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
-                                   aria-label="your_mail@domain.com" aria-describedby="button-addon2">
+                                   aria-label="your_mail@domain.com" aria-describedby="button-addon1" data-toggle="tooltip" data-placement="bottom" title="Введен неверный email">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="submit" id="button-addon2">Попробовать</button>
+                                <button class="btn btn-primary" type="submit" id="button-addon1">Попробовать</button>
                             </div>
                         </div>
                     </form>
@@ -207,7 +207,8 @@
                         <div class="card-header text-center bg-message border-0">
                             <div class="position-absolute">
                                 <span data-toggle="tooltip" data-placement="bottom" title="" class="text-left"
-                                   data-original-title="Назад к диалогам"><i class="fas fa-arrow-left icon-invite"></i></span>
+                                      data-original-title="Назад к диалогам"><i
+                                            class="fas fa-arrow-left icon-invite"></i></span>
                             </div>
                             <div>
                             <span class="mb-0 h5 name-target">
@@ -227,7 +228,8 @@
                                     </div>
                                     <div class="col pl-2 message-width">
                                         <span class="date date-target">19.07 в 16:05                    </span>
-                                        <p class="m-0 text-target" style="color: #000; font-size: 14px; font-weight: 400">Внимание,
+                                        <p class="m-0 text-target"
+                                           style="color: #000; font-size: 14px; font-weight: 400">Внимание,
                                             внимание! Сообщаем, что у нас заработала система обратной связи. Если у вас
                                             есть жалобы, предложения, идеи - не держите в себе!</p>
                                     </div>
@@ -479,7 +481,8 @@
                             <i class="far fa-file-image custom-file"></i>
                         </div>
                         <div class="col file-width-storage">
-                            <a target="_blank" href="#" class="h6 mb-3 file-name">Снимок экрана 2019-07-10 в 12.06.16.png</a>
+                            <a target="_blank" href="#" class="h6 mb-3 file-name">Снимок экрана 2019-07-10 в
+                                12.06.16.png</a>
                             <span class="text-ligther ml-1"> <i class="fas fa-hdd mr-1 ml-1"></i> 20 КБ</span>
                             <span class="text-ligther ml-1"> <i class="fas fa-circle mr-1 ml-1"></i> 10.07.2019</span>
                             <a href="#" class="text-ligther">
@@ -522,7 +525,8 @@
                             <i class="far fa-file-image custom-file"></i>
                         </div>
                         <div class="col file-width-storage">
-                            <a target="_blank" href="#" class="h6 mb-3 file-name">Снимок экрана 2019-07-10 в 12.06.16.png</a>
+                            <a target="_blank" href="#" class="h6 mb-3 file-name">Снимок экрана 2019-07-10 в
+                                12.06.16.png</a>
                             <span class="text-ligther ml-1"> <i class="fab fa-dropbox mr-1 ml-1"></i> 20 КБ</span>
                             <span class="text-ligther ml-1"> <i class="fas fa-circle mr-1 ml-1"></i> 10.07.2019</span>
                             <a href="#" class="text-ligther">
@@ -543,7 +547,8 @@
                             <i class="far fa-file-image custom-file"></i>
                         </div>
                         <div class="col file-width-storage">
-                            <a target="_blank" href="/public/images/photoreport.jpg" class="h6 mb-3 file-name">Фотоотчет о 20минутной
+                            <a target="_blank" href="/public/images/photoreport.jpg" class="h6 mb-3 file-name">Фотоотчет
+                                о 20минутной
                                 работе.png</a>
                             <span class="text-ligther ml-1"> <i class="fab fa-google-drive mr-1 ml-1"></i> 20 КБ</span>
                             <span class="text-ligther ml-1"> <i class="fas fa-circle mr-1 ml-1"></i> 10.07.2019</span>
@@ -794,10 +799,10 @@
         </div>
     </div>
     <div class="justify-content-center">
-        <form method="post" action="/<?= $this->route['language']; ?>/register/">
+        <form onsubmit="ym(53097463, 'reachGoal', 'reg'); return true;" id="regForm2" method="post" action="https://s.lusy.io/reg/">
             <div class="input-group mb-5 mt-3 formreg m-auto">
                 <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
-                       aria-label="your_mail@domain.com" aria-describedby="button-addon2">
+                       aria-label="your_mail@domain.com" aria-describedby="button-addon2" data-toggle="tooltip" data-placement="bottom" title="Введен неверный email">
                 <div class="input-group-append">
                     <button class="btn btn-primary" type="button" id="button-addon2">Попробовать</button>
                 </div>
@@ -805,6 +810,19 @@
         </form>
         <p class="text-center text-secondary mt-3">Перейти к <a href="/<?= $this->route['language']; ?>/price/">платным
                 тарифам</a></p>
+    </div>
+</div>
+
+<div class="modal fade" id="spinnerRegModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content border-0" style="margin-top: 60%;background-color: transparent;">
+            <div class="modal-body text-center">
+                <div class="spinner-border" style="width: 3rem; height: 3rem;color: #f2f2f2;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -820,4 +838,70 @@
         size: 75,
         thickness: 2
     });
+</script>
+<script>
+    $(document).ready(function () {
+        var securityMail = 0;
+
+        $('[name=email]').tooltip('disable');
+
+        $('[name=email]').on('keyup', function () {
+            var $this = $(this);
+
+            var email = $this.val();
+            var regMail = /^[0-9a-z-\.]+\@[0-9a-z-]{1,}\.[a-z]{2,}$/i;
+            var checkMail = regMail.exec(email);
+
+            if (checkMail == null) {
+                $this.css({
+                    'border': '1px solid #fbc2c4',
+                    'color': '#8a1f11'
+                });
+                securityMail = 0;
+            } else {
+                $this.css({
+                    'border': '1px solid #ccc',
+                    'color': '#495057'
+                });
+               securityMail = 1;
+            }
+        });
+
+        $('#button-addon1').on('click', function (e) {
+            e.preventDefault();
+            if (securityMail == 1) {
+                $('#spinnerRegModal').modal('show');
+                $('#regForm1').submit();
+            } else {
+                e.preventDefault();
+                $(this).parents('form').find('[name=email]').tooltip('enable').tooltip('show');
+                $(this).parents('form').find('[name=email]').css({
+                    'border': '1px solid #fbc2c4',
+                    'color': '#8a1f11'
+                });
+                setTimeout(function () {
+                    $('[name=email]').tooltip('disable').tooltip('hide');
+                },2000);
+            }
+        });
+
+        $('#button-addon2').on('click', function (e) {
+            e.preventDefault();
+            if (securityMail == 1) {
+                $('#spinnerRegModal').modal('show');
+                $('#regForm2').submit();
+            } else {
+                e.preventDefault();
+                $(this).parents('form').find('[name=email]').tooltip('enable').tooltip('show');
+                $(this).parents('form').find('[name=email]').css({
+                    'border': '1px solid #fbc2c4',
+                    'color': '#8a1f11'
+                });
+                setTimeout(function () {
+                    $('[name=email]').tooltip('disable').tooltip('hide');
+                },2000);
+            }
+        });
+    });
+
 </script>

@@ -55,10 +55,10 @@
     </div>
 
     <div class="justify-content-center mt-5">
-        <form method="post" action="/<?= $this->route['language']; ?>/register/">
+        <form id="regForm2" method="post" action="https://s.lusy.io/reg/">
             <div class="input-group mb-5 mt-3 formreg m-auto">
                 <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
-                       aria-label="your_mail@domain.com" aria-describedby="button-addon2">
+                       aria-label="your_mail@domain.com" aria-describedby="button-addon2" data-toggle="tooltip" data-placement="bottom" title="Введен неверный email">
                 <div class="input-group-append">
                     <button class="btn btn-primary" type="button" id="button-addon2">Попробовать бесплатно</button>
                 </div>
@@ -79,3 +79,52 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        var securityMail = 0;
+
+        $('[name=email]').tooltip('disable');
+
+        $('[name=email]').on('keyup', function () {
+            var $this = $(this);
+
+            var email = $this.val();
+            var regMail = /^[0-9a-z-\.]+\@[0-9a-z-]{1,}\.[a-z]{2,}$/i;
+            var checkMail = regMail.exec(email);
+
+            if (checkMail == null) {
+                $this.css({
+                    'border': '1px solid #fbc2c4',
+                    'color': '#8a1f11'
+                });
+                securityMail = 0;
+            } else {
+                $this.css({
+                    'border': '1px solid #ccc',
+                    'color': '#495057'
+                });
+                securityMail = 1;
+            }
+        });
+
+        $('#button-addon2').on('click', function (e) {
+            e.preventDefault();
+            if (securityMail == 1) {
+                $('#spinnerRegModal').modal('show');
+                $('#regForm2').submit();
+            } else {
+                e.preventDefault();
+                $(this).parents('form').find('[name=email]').tooltip('enable').tooltip('show');
+                $(this).parents('form').find('[name=email]').css({
+                    'border': '1px solid #fbc2c4',
+                    'color': '#8a1f11'
+                });
+                setTimeout(function () {
+                    $('[name=email]').tooltip('disable').tooltip('hide');
+                }, 2000);
+            }
+        });
+    });
+
+</script>
