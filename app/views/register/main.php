@@ -148,7 +148,6 @@ if (!empty($_POST['email'])) {
 
         $('#registrationBtn').on('click', function () {
             $('#spinnerRegModal').modal('show');
-            $('#regForm').submit();
         });
     });
 </script>
