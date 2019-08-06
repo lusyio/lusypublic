@@ -29,7 +29,7 @@ if (!empty($_POST['email'])) {
                     </section>
                     <div class="row">
                         <div class="col text-center">
-                            <button id="registrationBtn" class="btn btn-primary" style="height: 50px" disabled>
+                            <button id="registrationBtn" class="btn btn-primary" disabled>
                                 Зарегистрироваться
                             </button>
                         </div>

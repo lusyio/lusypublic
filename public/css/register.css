@@ -38,6 +38,12 @@
     background: #5156d8;
 }
 
+#registrationBtn{
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .steps.clearfix{
     margin-right: 10px;
 }
