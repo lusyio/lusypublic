@@ -33,6 +33,11 @@
     box-shadow: none;
 }
 
+#registrationBtn:disabled {
+    color: #fff;
+    background: #5156d8;
+}
+
 .steps.clearfix{
     margin-right: 10px;
 }
