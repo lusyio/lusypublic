@@ -33,5 +33,9 @@ return [
         'controller' => 'register',
         'action' => 'main',
     ],
+    'history' => [
+        'controller' => 'history',
+        'action' => 'index',
+    ],
 
 ];
