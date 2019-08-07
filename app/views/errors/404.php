@@ -9,7 +9,7 @@
                 <div class="col-12">
                     <a class="navbar-brand text-dark text-uppercase font-weight-bold visible-lg mt-1" href="/ru/"><span
                                 class="logo mr-3">L</span>LUSY</a>
-                    <p class="mb-0">Система постановки задач</p>
+                    <p class="mt-2 mb-0">Система постановки задач</p>
                 </div>
             </div>
             <hr>
