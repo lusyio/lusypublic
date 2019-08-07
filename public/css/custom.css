@@ -701,6 +701,26 @@ pricing-content{
     color: #c2c2c4;
 }
 
+#error404 .mb-0{
+    font-size: 14px;
+    color: #5156d8;
+    font-weight: 800;
+}
+
+#error404 h1{
+    font-weight: 700
+}
+
+.bg-icon-error{
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.bg-icon-error i{
+    font-size: 300px;
+    color: #f5f7fe;
+}
+
 .about-company:hover{
     background-color: #f8f9fa;
     cursor: pointer;
