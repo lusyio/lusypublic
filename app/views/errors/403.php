@@ -16,19 +16,17 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row text-center">
-            <div class="col">
-                <a href="/ru/">
-                    <p class="bg-icon-error"><i class="fas fa-frown-open"></i></p>
-                </a>
-            </div>
+    <div class="row mt-5 text-center">
+        <div class="col">
+            <a href="/ru/">
+                <p class="bg-icon-error"><i class="fas fa-frown-open"></i></p>
+            </a>
         </div>
-        <div class="row mt-5 text-center">
-            <div class="col">
-                <h1>Упс, что-то пошло не так :(</h1>
-                <p>Если вы хотите начать всё сначала, перейдите на <a href="/ru/">Lusy.io</a></p>
-            </div>
+    </div>
+    <div class="row mt-5 text-center">
+        <div class="col">
+            <h1>Упс, что-то пошло не так :(</h1>
+            <p>Если вы хотите начать всё сначала, перейдите на <a href="/ru/">Lusy.io</a></p>
         </div>
     </div>
 </div>
