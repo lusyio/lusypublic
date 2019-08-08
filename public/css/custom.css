@@ -19,6 +19,13 @@ html, body {
 p {
 	line-height: 1.78;
 }
+ul, li {
+    line-height: 2;
+}
+.historyImg {
+    box-shadow: 0 4px 20px rgba(14,21,47,.1);
+    border-radius: 5px;
+}
 .navbar-toggler {
     border: 1px solid white;
     position: absolute;
