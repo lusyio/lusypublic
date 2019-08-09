@@ -805,6 +805,20 @@ pricing-content{
     color: #28a745bf
 }
 
+.img-history{
+    max-width: 50%
+}
+
+.date-history{
+    left: -85px;
+    top: 16px;
+    position: absolute;
+}
+
+.badge-history{
+    background: #5156d8;
+}
+
 .icon-not-complete {
     font-size: 22px;
     vertical-align: -11%;
@@ -912,6 +926,12 @@ pricing-content{
     .fa-crown {
         left: -10px;
         position: relative;
+    }
+    .date-history{
+        position: unset;
+    }
+    .img-history{
+        max-width: 100%
     }
     .about-company {
         top: 20px;

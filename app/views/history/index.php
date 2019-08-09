@@ -7,7 +7,7 @@
             </p>
         </div>
         <div class="col text-right">
-            <img src="/public/images/changelog.jpg" alt="" style="max-width: 50%">
+            <img class="img-history" src="/public/images/changelog.jpg" alt="">
         </div>
     </div>
     <div class="row">
@@ -24,12 +24,18 @@
                             <h2 class="d-inline-block ml-3"><span
                                         class="badge badge-soft-primary mt-n1">Lusy <?= $item['version']; ?></span>
                             </h2>
-                            <span class="text-muted small position-absolute" style="left: -80px;top: 16px;">31 авг, 2019</span>
-<!--                            <span class="text-muted small position-absolute" style="left: -80px;top: 16px;">--><?//= $item['date']; ?><!--</span>-->
-                            <div class="badge text-white ml-4" style="padding: 7px;font-size: 14px;background: #5156d8;">Новое</div>
+                            <span class="text-muted small date-history" ><?= $item['date']; ?></span>
                             <ul class="mt-2">
-                                <?php $changes = explode("!", $item['changes']);
-                                foreach ($changes as $n) : ?>
+                                <?php
+                                $news = explode("!", $item['news']);
+                                $changes = explode("!", $item['changes']);
+                                foreach ($news as $n) : ?>
+                                    <li>
+                                        <?= $n; ?><div class="badge badge-small badge-history text-white ml-2">Новое</div>
+                                    </li>
+                                <?php endforeach; ?>
+
+                                <?php foreach ($changes as $n) : ?>
                                     <li><?= $n; ?></li>
                                 <?php endforeach; ?>
                             </ul>
