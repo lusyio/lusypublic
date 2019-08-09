@@ -10,12 +10,16 @@ class HistoryController extends Controller
     {
         $versions = [
             [
+                'icon' => 'far',
+                'iconColor' => 'icon-not-complete',
                 'version' => 'v1.0.1',
                 'date' => 'в разработке',
                 'changes' =>
                     'Функция редактирования существующих задач!Функция повторения задач!Новые шаблоны писем - полезные и красочные!Система Drag and Drop для загрузки файлов',
             ],
             [
+                'icon' => 'fas',
+                'iconColor' => 'icon-complete',
                 'version' => 'v1.0.0',
                 'date' => '31 июля 2019 года',
                 'changes' =>
@@ -23,6 +27,8 @@ class HistoryController extends Controller
                 'img' => 'lusy-reports.jpg',
             ],
             [
+                'icon' => 'far',
+                'iconColor' => 'icon-complete',
                 'version' => 'Beta  v0.9.0',
                 'date' => '19 июля 2019 года',
                 'changes' =>
@@ -30,6 +36,8 @@ class HistoryController extends Controller
                 'img' => 'lusy-beta-version-9.jpg',
             ],
             [
+                'icon' => 'far',
+                'iconColor' => 'icon-complete',
                 'version' => 'Beta  v0.8.0',
                 'date' => '10 июля 2019 года',
                 'changes' =>
@@ -37,6 +45,8 @@ class HistoryController extends Controller
                 'img' => 'lusy-beta-payment.jpg',
             ],
             [
+                'icon' => 'far',
+                'iconColor' => 'icon-complete',
                 'version' => 'Beta  v0.7.0',
                 'date' => '30 июня 2019 года',
                 'changes' =>
@@ -44,12 +54,16 @@ class HistoryController extends Controller
                 'img' => 'lusy-beta-awards.jpg',
             ],
             [
+                'icon' => 'far',
+                'iconColor' => 'icon-complete',
                 'version' => 'Beta  v0.6.0',
                 'date' => '15 июня 2019 года',
                 'changes' =>
                     'Добавлен учет часового пояса!Появилось отображение "онлайна" пользователей!Добавлена возможность загрузки файлов в комментариях!Разработана страница "компания"!Проведена первичная мобильная адаптация!Разработна страница "настройки"!Сделана интеграция с Google Drive и DropBox',
             ],
             [
+                'icon' => 'far',
+                'iconColor' => 'icon-complete',
                 'version' => 'Beta  v0.5.0',
                 'date' => '31 мая 2019 года',
                 'changes' =>
@@ -57,12 +71,16 @@ class HistoryController extends Controller
                 'img' => 'lusy-beta-version.jpg',
             ],
             [
+                'icon' => 'far',
+                'iconColor' => 'icon-complete',
                 'version' => 'Alpha  v0.4.0',
                 'date' => '30 апреля 2019 года',
                 'changes' =>
                     'Создана страница "задачи" с поиском и сортировкой задач по: имени, статусу, постановщику, ответственному, дедлайну и т.п.!Новый вид страницы создания задачи с визуальным редактором описания!Разработан модуль управления задачами (завершение, отмена, перенос срока и т.д.)!Разработан блок переноса срока в карточке задачи!Разработан блок управления участниками задачи!Разработан базовый функционал файлового менеджера!Разработан поиск по названию задач, файлов, комментариев!Новый вид и логика работы блока уведомлений!Внедрены веб-сокеты для обновления в блоке уведомлений',
             ],
             [
+                'icon' => 'far',
+                'iconColor' => 'icon-complete',
                 'version' => 'Alpha  v0.3.0',
                 'date' => '1 марта 2019 года',
                 'changes' =>
@@ -70,12 +88,16 @@ class HistoryController extends Controller
                 'img' => 'lusy-alpha-version.jpg',
             ],
             [
+                'icon' => 'far',
+                'iconColor' => 'icon-complete',
                 'version' => 'Alpha  v0.2.0',
                 'date' => '15 февраля 2019 года',
                 'changes' =>
                     'Задачи разделены по статусам!Заложена основа для "достижений"!Разработана первая версия блока уведомлений',
             ],
             [
+                'icon' => 'far',
+                'iconColor' => 'icon-complete',
                 'version' => 'Alpha  v0.1.0',
                 'date' => '23 января 2019 года',
                 'changes' =>
