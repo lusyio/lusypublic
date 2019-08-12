@@ -7,7 +7,7 @@
             </p>
         </div>
         <div class="col text-right">
-            <img class="img-history" src="/public/images/changelog.jpg" alt="">
+            <img class="img-history" src="/public/images/history.jpg" alt="">
         </div>
     </div>
     <div class="row">
