@@ -9,18 +9,20 @@
                 <div class="swiper-container vertical p-0">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-slide-vertical lead-text-vertical text-left">
-                           вместе с Lusy
+                            вместе с Lusy
                         </div>
                         <div class="swiper-slide swiper-slide-vertical lead-text-vertical text-left">
                             и развивай бизнес
                         </div>
                         <div class="swiper-slide swiper-slide-vertical lead-text-vertical text-left">
-                           и освободи время для себя
+                            и освободи время для себя
                         </div>
                     </div>
                 </div>
 
-                <p class="lead-text-under">Назначь задачи без звонков и переписки, смотивируй себя и сотрудников с помощью достижений,  а всю рутинную работу и контроль Lusy возьмет на себя. Сосредоточься на росте своего бизнеса!
+                <p class="lead-text-under">Назначь задачи без звонков и переписки, смотивируй себя и сотрудников с
+                    помощью достижений, а всю рутинную работу и контроль Lusy возьмет на себя. Сосредоточься на росте
+                    своего бизнеса!
                 </p>
                 <div class="mt-5">
 
@@ -228,96 +230,277 @@
 
 </script>
 
-<div class="pt-5 pb-5" id="awards">
-    <div class=" container">
-        <p class="lead-text-big text-center">Достижения, мотивация, игра!</p>
-        <div class="row mb-3">
-            <div class="col-sm-8 offset-sm-2 mt-3 mb-3">
-                <p class="lead-text-under">Кто сказал, что работа - это скучно? Встроенная система мотивации вносит
-                    в
-                    привычный распорядок элементы геймификации. Получай достижения, наблюдай за успехами сотрудников
-                    и
-                    решай, кому выписать премию</p>
-            </div>
+<div class="container mt-5 table-compare">
+    <div class="row">
+        <div class="col">
+            <p class="lead-text">Немного сравнения</p>
         </div>
-        <div class="hidden-sm">
-            <div class="d-flex justify-content-center">
-                <div class="award text-center aw1">
-                    <div>
-                        <div class="circle" data-value="0.00"></div>
-                        <div class="award-star bg-secondary">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                    </div>
-                    <h5>Знакомство</h5>
-                    <small class="mt-3">Заполнил профиль</small>
-                    <hr>
-                    <span class="badge badge-secondary">не достигнуто</span>
-                </div>
-                <div class="award text-center aw2">
-                    <div>
-                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
-                             data-value="0.20"></div>
-                        <div class="award-star bg-secondary">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                    </div>
-                    <h5>Акула бизнеса</h5>
-                    <small class="mt-3">Назначил 50 задач</small>
-                    <hr>
-                    <span class="badge badge-secondary">10/50</span>
-                </div>
-                <div class="award text-center aw3">
-                    <div>
-                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(40, 167, 69, 1)&quot;}"
-                             data-value="1.00"></div>
-                        <div class="award-star bg-success">
-                            <i class="fas fas fa-medal"></i>
-                        </div>
-                    </div>
-                    <h5>Красавчик</h5>
-                    <small class="mt-3">Месяц без просрочек</small>
-                    <hr>
-                    <span class="badge badge-success">Достигнуто</span>
-                </div>
-                <div class="award text-center aw2">
-                    <div>
-                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
-                             data-value="0.10"></div>
-                        <div class="award-star bg-secondary">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                    </div>
-                    <h5>LVL100 B0$$</h5>
-                    <small class="mt-3">Назначил 100 задач</small>
-                    <hr>
-                    <span class="badge badge-secondary">10/100</span>
-                </div>
-                <div class="award text-center mr-0 aw1">
-                    <div>
-                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
-                             data-value="0.26"></div>
-                        <div class="award-star bg-secondary">
-                            <i class="fas fas fa-star"></i>
-                        </div>
-                    </div>
-                    <h5>Гуру</h5>
-                    <small class="mt-3">Завершил 500 задач</small>
-                    <hr>
-                    <span class="badge badge-secondary">130/500</span>
-                </div>
-            </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-4">
+            <p style="margin-top: 70px;">
+                Ограничения рабочих мест <i class="fas fa-info-circle text-ligther"></i>
+            </p>
+            <p>
+                Стоимость 1 польз/мес <i class="fas fa-info-circle text-ligther"></i>
+            </p>
+            <p>
+                Система мотивации <i class="fas fa-info-circle text-ligther"></i>
+            </p>
+            <p>
+                Отчеты эффективности <i class="fas fa-info-circle text-ligther"></i>
+            </p>
+            <p>
+                Полезный рабочий стол <i class="fas fa-info-circle text-ligther"></i>
+            </p>
         </div>
+        <div class="col-8">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header text-center" style="background-color: #f8f9fe">
+                            <span style="font-size: 20px;
+    font-weight: 600;    color: #28416b;">
+                                Lusy.io
+                            </span>
+                        </div>
+                        <div class="card-body text-center">
+                            <p style="border-bottom: 1px solid #f2f2f2;">
+                                нет
+                            </p>
+                            <p style="border-bottom: 1px solid #f2f2f2;">
+                                249 руб
+                            </p>
+                            <p>
+                                <i class="far fa-check-circle text-success" style="font-size: 25px"></i>
+                            </p>
+                            <p>
+                                <i class="far fa-check-circle text-success" style="font-size: 25px"></i>
+                            </p>
+                            <p>
+                                <i class="far fa-check-circle text-success" style="font-size: 25px"></i>
+                            </p>
 
-        <div class="row mt-5">
-            <div class="col-sm-6 offset-sm-3 mt-3 d-none">
-                <div class="d-flex justify-content-center mt-4">
-                    <a href="/<?= $this->route['language']; ?>/register/" class="btn btn-primary">Забрать
-                        медальку</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header text-center" style="background-color: #f8f9fe">
+                            <span style="font-size: 20px;
+    font-weight: 600;    color: #28416b;">
+                                asana.com
+                            </span>
+                        </div>
+                        <div class="card-body text-center">
+                            <p style="border-bottom: 1px solid #f2f2f2;">
+                                до 15
+                            </p>
+                            <p style="border-bottom: 1px solid #f2f2f2;">
+                                660 руб
+                            </p>
+                            <p>
+                                <i class="far fa-times-circle text-danger" style="font-size: 25px"></i>
+                            </p>
+                            <p>
+                                <i class="far fa-check-circle text-success" style="font-size: 25px"></i>
+                            </p>
+                            <p>
+                                <i class="far fa-times-circle text-danger" style="font-size: 25px"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header text-center" style="background-color: #f8f9fe">
+                            <span style="font-size: 20px;
+    font-weight: 600;    color: #28416b;">
+                                trello.com
+                            </span>
+                        </div>
+                        <div class="card-body text-center">
+                            <p style="border-bottom: 1px solid #f2f2f2;">
+                                нет
+                            </p>
+                            <p style="border-bottom: 1px solid #f2f2f2;">
+                                660 руб
+                            </p>
+                            <p>
+                                <i class="far fa-times-circle text-danger" style="font-size: 25px"></i>
+                            </p>
+                            <p>
+                                <i class="far fa-check-circle text-success" style="font-size: 25px"></i>
+                            </p>
+                            <p>
+                                <i class="far fa-check-circle text-success" style="font-size: 25px"></i>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<div class="container mt-5 table-compare">
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Lusy.io</th>
+                    <th scope="col">wrike.com</th>
+                    <th scope="col">asana.com</th>
+                    <th scope="col">trello.com</th>
+                    <th scope="col">redmine.org</th>
+                    <th scope="col">todoist.com</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Ограничения рабочих мест <i class="fas fa-info-circle text-muted"></i></th>
+                    <td>нет</td>
+                    <td>до 5</td>
+                    <td>до 15</td>
+                    <td>нет</td>
+                    <td>нет</td>
+                    <td>до 5</td>
+                </tr>
+                <tr>
+                    <th scope="row">Стоимость 1 польз/мес</th>
+                    <td>249</td>
+                    <td>650</td>
+                    <td>660</td>
+                    <td>660</td>
+                    <td>225</td>
+                    <td>396</td>
+                </tr>
+                <tr>
+                    <th scope="row">Система мотиваций <i class="fas fa-info-circle text-muted"></i></th>
+                    <td><i class="far fa-check-circle text-success" style="font-size: 25px"></i></td>
+                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
+                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
+                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
+                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
+                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Отчеты эффективности <i class="fas fa-info-circle text-muted"></i></th>
+                    <td><i class="far fa-check-circle text-success" style="font-size: 25px"></i></td>
+                    <td><i class="far fa-check-circle text-success" style="font-size: 25px"></i></td>
+                    <td><i class="far fa-check-circle text-success" style="font-size: 25px"></i></td>
+                    <td><i class="far fa-check-circle text-success" style="font-size: 25px"></i></td>
+                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
+                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Полезный рабочий стол <i class="fas fa-info-circle text-muted"></i></th>
+                    <td><i class="far fa-check-circle text-success" style="font-size: 25px"></i></td>
+                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
+                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
+                    <td><i class="far fa-check-circle text-success" style="font-size: 25px"></i></td>
+                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
+                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="pt-5 pb-5" id="awards">
+    <p class="lead-text-big text-center">Достижения, мотивация, игра!</p>
+    <div class="container">
+    <div class="row mb-3">
+        <div class="col-sm-8 offset-sm-2 mt-3 mb-3">
+            <p class="lead-text-under">Кто сказал, что работа - это скучно? Встроенная система мотивации вносит
+                в
+                привычный распорядок элементы геймификации. Получай достижения, наблюдай за успехами сотрудников
+                и
+                решай, кому выписать премию</p>
+        </div>
+    </div>
+    </div>
+    <div class="hidden-sm">
+        <div class="d-flex justify-content-center">
+            <div class="award text-center aw1">
+                <div>
+                    <div class="circle" data-value="0.00"></div>
+                    <div class="award-star bg-secondary">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                </div>
+                <h5>Знакомство</h5>
+                <small class="mt-3">Заполнил профиль</small>
+                <hr>
+                <span class="badge badge-secondary">не достигнуто</span>
+            </div>
+            <div class="award text-center aw2">
+                <div>
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                         data-value="0.20"></div>
+                    <div class="award-star bg-secondary">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                </div>
+                <h5>Акула бизнеса</h5>
+                <small class="mt-3">Назначил 50 задач</small>
+                <hr>
+                <span class="badge badge-secondary">10/50</span>
+            </div>
+            <div class="award text-center aw3">
+                <div>
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(40, 167, 69, 1)&quot;}"
+                         data-value="1.00"></div>
+                    <div class="award-star bg-success">
+                        <i class="fas fas fa-medal"></i>
+                    </div>
+                </div>
+                <h5>Красавчик</h5>
+                <small class="mt-3">Месяц без просрочек</small>
+                <hr>
+                <span class="badge badge-success">Достигнуто</span>
+            </div>
+            <div class="award text-center aw2">
+                <div>
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                         data-value="0.10"></div>
+                    <div class="award-star bg-secondary">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                </div>
+                <h5>LVL100 B0$$</h5>
+                <small class="mt-3">Назначил 100 задач</small>
+                <hr>
+                <span class="badge badge-secondary">10/100</span>
+            </div>
+            <div class="award text-center mr-0 aw1">
+                <div>
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                         data-value="0.26"></div>
+                    <div class="award-star bg-secondary">
+                        <i class="fas fas fa-star"></i>
+                    </div>
+                </div>
+                <h5>Гуру</h5>
+                <small class="mt-3">Завершил 500 задач</small>
+                <hr>
+                <span class="badge badge-secondary">130/500</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-sm-6 offset-sm-3 mt-3 d-none">
+            <div class="d-flex justify-content-center mt-4">
+                <a href="/<?= $this->route['language']; ?>/register/" class="btn btn-primary">Забрать
+                    медальку</a>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 <!-- Link Swiper's CSS -->

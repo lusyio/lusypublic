@@ -369,6 +369,15 @@ img {
     line-height: 1.4;
 }
 
+.table-compare th{
+    padding: 1.75rem;
+}
+
+.table-compare td{
+    text-align: center;
+    vertical-align: middle;
+}
+
 
 .functions-content{
     line-height: 1.4;
