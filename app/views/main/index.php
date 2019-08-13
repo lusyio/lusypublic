@@ -169,6 +169,7 @@
         var swiper1 = new Swiper('.vertical', {
             direction: 'vertical',
             autoHeight: true,
+            loop: true,
             height: 56,
             autoplay: {
                 delay: 2500,
