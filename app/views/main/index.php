@@ -59,7 +59,7 @@
                             <div class="carousel-indicators">
                                 <div data-target="#carouselMain" data-slide-to="0" class="active position-relative">
                                     <div style="border: 1px solid #999999; border-radius: 50%; padding: 26px;width: 120px;height: 120px;">
-                                        <img src="/public/images/mail/add-user.png" alt="" style="max-width: 90%;">
+                                        <img class="svg-icon-swiper mr-3" src="/public/svg/users.svg">
                                     </div>
                                     <span class="position-absolute">
                                         Команда
@@ -67,7 +67,7 @@
                                 </div>
                                 <div data-target="#carouselMain" data-slide-to="1" class="position-relative">
                                     <div style="border: 1px solid #999999; border-radius: 50%; padding: 26px;width: 120px;height: 120px;">
-                                        <img src="/public/images/list.png" alt="" style="max-width: 90%;">
+                                        <img class="svg-icon-swiper mr-3" src="/public/svg/checklist.svg">
                                     </div>
                                     <span class="position-absolute">
                                         Задачи
@@ -75,7 +75,7 @@
                                 </div>
                                 <div data-target="#carouselMain" data-slide-to="2" class="position-relative">
                                     <div style="border: 1px solid #999999; border-radius: 50%; padding: 26px;width: 120px;height: 120px;">
-                                        <img src="/public/images/mail/trophy.png" alt="" style="max-width: 90%;">
+                                        <img class="svg-icon-swiper mr-3" src="/public/svg/trophy.svg">
                                     </div>
                                     <span class="position-absolute">
                                         Достижения
@@ -83,7 +83,7 @@
                                 </div>
                                 <div data-target="#carouselMain" data-slide-to="3" class="position-relative">
                                     <div style="border: 1px solid #999999; border-radius: 50%; padding: 26px;width: 120px;height: 120px;">
-                                        <img src="/public/images/speech-bubble.png" alt="" style="max-width: 90%;">
+                                        <img class="svg-icon-swiper mr-3" src="/public/svg/paper-plane.svg">
                                     </div>
                                     <span class="position-absolute">
                                         Коммуникация
@@ -91,7 +91,7 @@
                                 </div>
                                 <div data-target="#carouselMain" data-slide-to="4" class="position-relative">
                                     <div style="border: 1px solid #999999; border-radius: 50%; padding: 26px;width: 120px;height: 120px;">
-                                        <img src="/public/images/mail/import.png" alt="" style="max-width: 90%;">
+                                        <img class="svg-icon-swiper mr-3" src="/public/svg/upload.svg">
                                     </div>
                                     <span class="position-absolute">
                                         Файлы
