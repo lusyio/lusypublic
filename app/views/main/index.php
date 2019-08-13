@@ -201,7 +201,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-8 col-12">
-                                    <img src="/public/images/reports.jpg" alt="">
+                                    <img src="/public/images/files.jpg" alt="">
                                 </div>
                             </div>
                         </div>
