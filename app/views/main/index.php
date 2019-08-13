@@ -20,13 +20,7 @@
                     </div>
                 </div>
 
-                <p class="lead-text-under">Назначь задачи без звонков и переписки, смотивируй себя <br
-                            class="hidden-sm"><span
-                            class="visible-sm"> </span> и сотрудников с помощью достижений,
-                    <br>
-                    а всю рутинную работу и контроль Lusy возьмет на себя.
-                    <br>
-                    Сосредоточься на росте своего бизнеса!
+                <p class="lead-text-under">Назначь задачи без звонков и переписки, смотивируй себя и сотрудников с помощью достижений,  а всю рутинную работу и контроль Lusy возьмет на себя. Сосредоточься на росте своего бизнеса!
                 </p>
                 <div class="mt-5">
 
@@ -57,34 +51,49 @@
         <div class="row mt-5">
             <div class="col">
                 <div id="carouselMain" class="carousel slide" data-ride="carousel">
-                    <div class="row mb-5">
+                    <div class="row" style="margin-bottom: 80px;">
                         <div class="col text-center position-relative">
                             <hr class="m-0 dashed-line">
                             <div class="carousel-indicators">
-                                <div data-target="#carouselMain" data-slide-to="0" class="active">
+                                <div data-target="#carouselMain" data-slide-to="0" class="active position-relative">
                                     <div style="border: 1px solid #999999; border-radius: 50%; padding: 26px;width: 120px;height: 120px;">
                                         <img src="/public/images/mail/add-user.png" alt="" style="max-width: 90%;">
                                     </div>
+                                    <span class="position-absolute">
+                                        Команда
+                                    </span>
                                 </div>
-                                <div data-target="#carouselMain" data-slide-to="1">
+                                <div data-target="#carouselMain" data-slide-to="1" class="position-relative">
                                     <div style="border: 1px solid #999999; border-radius: 50%; padding: 26px;width: 120px;height: 120px;">
-                                        <img src="/public/images/mail/add-user.png" alt="" style="max-width: 90%;">
+                                        <img src="/public/images/list.png" alt="" style="max-width: 90%;">
                                     </div>
+                                    <span class="position-absolute">
+                                        Задачи
+                                    </span>
                                 </div>
-                                <div data-target="#carouselMain" data-slide-to="2">
+                                <div data-target="#carouselMain" data-slide-to="2" class="position-relative">
                                     <div style="border: 1px solid #999999; border-radius: 50%; padding: 26px;width: 120px;height: 120px;">
-                                        <img src="/public/images/mail/add-user.png" alt="" style="max-width: 90%;">
+                                        <img src="/public/images/mail/trophy.png" alt="" style="max-width: 90%;">
                                     </div>
+                                    <span class="position-absolute">
+                                        Достижения
+                                    </span>
                                 </div>
-                                <div data-target="#carouselMain" data-slide-to="3">
+                                <div data-target="#carouselMain" data-slide-to="3" class="position-relative">
                                     <div style="border: 1px solid #999999; border-radius: 50%; padding: 26px;width: 120px;height: 120px;">
-                                        <img src="/public/images/mail/add-user.png" alt="" style="max-width: 90%;">
+                                        <img src="/public/images/speech-bubble.png" alt="" style="max-width: 90%;">
                                     </div>
+                                    <span class="position-absolute">
+                                        Коммуникация
+                                    </span>
                                 </div>
-                                <div data-target="#carouselMain" data-slide-to="4">
+                                <div data-target="#carouselMain" data-slide-to="4" class="position-relative">
                                     <div style="border: 1px solid #999999; border-radius: 50%; padding: 26px;width: 120px;height: 120px;">
-                                        <img src="/public/images/mail/add-user.png" alt="" style="max-width: 90%;">
+                                        <img src="/public/images/mail/import.png" alt="" style="max-width: 90%;">
                                     </div>
+                                    <span class="position-absolute">
+                                        Файлы
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -116,8 +125,49 @@
                             <div class="row">
                                 <div class="col-12 col-lg-4">
                                     <p class="lead-text-carousel">
-                                        Работай и
-                                        соревнуйся</p>
+                                        Организуй и делегируй</p>
+                                    <p class="lead-text-under mt-5">
+                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря на
+                                        эффективность другших
+                                        коллег.
+                                    </p>
+                                    <p class="lead-text-under">
+                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных дух
+                                        в
+                                        работу!
+                                    </p>
+                                </div>
+                                <div class="col-lg-8 col-12">
+                                    <img src="/public/images/tasks-block.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <p class="lead-text-carousel">
+                                        Достигай большего</p>
+                                    <p class="lead-text-under mt-5">
+                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря на
+                                        эффективность другших
+                                        коллег.
+                                    </p>
+                                    <p class="lead-text-under">
+                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных дух
+                                        в
+                                        работу!
+                                    </p>
+                                </div>
+                                <div class="col-lg-8 col-12">
+                                    <img src="/public/images/achieve-block.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <p class="lead-text-carousel">
+                                        Общайся в системе</p>
                                     <p class="lead-text-under mt-5">
                                         Пригласи сотрудников в систему, и они будут стараться делать больше, смотря на
                                         эффективность другших
@@ -138,8 +188,7 @@
                             <div class="row">
                                 <div class="col-12 col-lg-4">
                                     <p class="lead-text-carousel">
-                                        Работай и
-                                        соревнуйся</p>
+                                        Всегда под рукой</p>
                                     <p class="lead-text-under mt-5">
                                         Пригласи сотрудников в систему, и они будут стараться делать больше, смотря на
                                         эффективность другших

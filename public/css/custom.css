@@ -813,6 +813,19 @@ pricing-content{
     background: #ffffff;
 }
 
+[data-target="#carouselMain"] span{
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    color: #999999;
+    bottom: -40px;
+}
+
+[data-target="#carouselMain"].active span{
+    color: #1d1d1d;
+    font-weight: 700;
+}
+
 [data-target="#carouselMain"]:hover{
     cursor: pointer;
 }
