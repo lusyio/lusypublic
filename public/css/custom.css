@@ -733,12 +733,34 @@ pricing-content{
     cursor: pointer;
 }
 
+.carousel-indicators{
+     position: relative;
+    z-index: 15;
+    display: unset;
+    -ms-flex-pack: center;
+     padding-left: 0;
+     margin-right: 0;
+     margin-left: 0;
+     list-style: none;
+}
+
 .chart-align {
     text-align: center;
 }
 
 .circle {
     height: 80px;
+}
+
+.swiper-slide.swiper-slide-vertical{
+    width: 100% !important;
+    height: 56px !important;
+}
+
+.lead-text-vertical{
+    font-size: 47px;
+    line-height: 1.2;
+    font-weight: 900;
 }
 
 .sort span {
@@ -770,6 +792,61 @@ pricing-content{
 .logIcon.plane:hover{
     color: white;
     background: #6097d8;
+}
+
+[type="text"]::placeholder{
+    color: #dedede;
+}
+
+.lead-text-carousel{
+    font-size: 46px;
+    line-height: 1.2;
+    font-weight: 900;
+    color: #1d1d1d !important;
+}
+
+[data-target="#carouselMain"] {
+    width: 11%;
+    display: inline-block;
+    margin-right: 120px;
+    z-index: 2;
+    background: #ffffff;
+}
+
+[data-target="#carouselMain"]:hover{
+    cursor: pointer;
+}
+
+[data-target="#carouselMain"]:last-of-type {
+    width: 11%;
+    display: inline-block;
+    margin-right: 0;
+    z-index: 2;
+    background: #ffffff;
+}
+
+.dashed-line{
+    position: absolute;
+    width: 97%;
+    z-index: -1;
+    top: 50%;
+    border: 0 none;
+    border-top: 2px dashed #C0C0C0;
+    background: none;
+    height:0;
+}
+
+[data-target="#carouselMain"].active div{
+    background-color: #535ad3;
+}
+
+[data-target="#carouselMain"] div{
+    transition: 200ms;
+}
+
+.swiper-slide-main{
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .award {
