@@ -59,7 +59,7 @@
                         <div class="swiper-slide active">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="lead-text-carousel text-center">
+                                    <p class="lead-text-carousel">
                                         Работай и
                                         соревнуйся</p>
                                     <p class="lead-text-under mt-5">
@@ -83,7 +83,7 @@
                         <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="lead-text-carousel text-center">
+                                    <p class="lead-text-carousel">
                                         Организуй и делегируй</p>
                                     <p class="lead-text-under mt-5">
                                         Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
@@ -106,7 +106,7 @@
                         <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="lead-text-carousel text-center">
+                                    <p class="lead-text-carousel">
                                         Достигай большего</p>
                                     <p class="lead-text-under mt-5">
                                         Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
@@ -129,7 +129,7 @@
                         <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="lead-text-carousel text-center">
+                                    <p class="lead-text-carousel">
                                         Общайся в системе</p>
                                     <p class="lead-text-under mt-5">
                                         Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
@@ -152,7 +152,7 @@
                         <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="lead-text-carousel text-center">
+                                    <p class="lead-text-carousel">
                                         Всегда под рукой</p>
                                     <p class="lead-text-under mt-5">
                                         Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
@@ -183,10 +183,14 @@
     $(document).ready(function () {
         if (screen.width <= 375){
             var height = 100;
+            var autoPlay = false;
             if (screen.width <= 320){
                 height = 130;
             }
         } else {
+            autoPlay = {
+                delay: 2500,
+            }
             height = 56;
         }
         var swiper1 = new Swiper('.vertical', {
@@ -201,9 +205,7 @@
         var swiper2 = new Swiper('#carouselMain', {
             loop: true,
             grabCursor: true,
-            autoplay: {
-                delay: 2500,
-            },
+            autoplay: autoPlay,
             height: 670,
             pagination: {
                 el: '.swiper-pagination',
