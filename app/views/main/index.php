@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="https://s.lusy.io/assets/css/swiper.min.css">
-
 <div class="main">
     <div class="container">
         <div class="row">
@@ -43,77 +42,35 @@
                 <img class="note" src="/public/images/note.jpg">
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5 lusy-block">
             <div class="col-12">
                 <p class="text-center"
                    style="font-size: 46px; line-height: 1.2; font-weight: 900;color: #1d1d1d !important;">Что такое
                     Lusy?</p>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5 mb-3rem">
             <div class="col">
-                <div id="carouselMain" class="carousel slide" data-ride="carousel">
-                    <div class="row" style="margin-bottom: 80px;">
-                        <div class="col text-center position-relative">
-                            <hr class="m-0 dashed-line">
-                            <div class="carousel-indicators">
-                                <div data-target="#carouselMain" data-slide-to="0" class="active position-relative">
-                                    <div style="border: 1px solid #999999; border-radius: 50%; padding: 26px;width: 120px;height: 120px;">
-                                        <img class="svg-icon-swiper mr-3" src="/public/svg/users.svg">
-                                    </div>
-                                    <span class="position-absolute">
-                                        Команда
-                                    </span>
-                                </div>
-                                <div data-target="#carouselMain" data-slide-to="1" class="position-relative">
-                                    <div style="border: 1px solid #999999; border-radius: 50%; padding: 26px;width: 120px;height: 120px;">
-                                        <img class="svg-icon-swiper mr-3" src="/public/svg/checklist.svg">
-                                    </div>
-                                    <span class="position-absolute">
-                                        Задачи
-                                    </span>
-                                </div>
-                                <div data-target="#carouselMain" data-slide-to="2" class="position-relative">
-                                    <div style="border: 1px solid #999999; border-radius: 50%; padding: 26px;width: 120px;height: 120px;">
-                                        <img class="svg-icon-swiper mr-3" src="/public/svg/trophy.svg">
-                                    </div>
-                                    <span class="position-absolute">
-                                        Достижения
-                                    </span>
-                                </div>
-                                <div data-target="#carouselMain" data-slide-to="3" class="position-relative">
-                                    <div style="border: 1px solid #999999; border-radius: 50%; padding: 26px;width: 120px;height: 120px;">
-                                        <img class="svg-icon-swiper mr-3" src="/public/svg/paper-plane.svg">
-                                    </div>
-                                    <span class="position-absolute">
-                                        Коммуникация
-                                    </span>
-                                </div>
-                                <div data-target="#carouselMain" data-slide-to="4" class="position-relative">
-                                    <div style="border: 1px solid #999999; border-radius: 50%; padding: 26px;width: 120px;height: 120px;">
-                                        <img class="svg-icon-swiper mr-3" src="/public/svg/upload.svg">
-                                    </div>
-                                    <span class="position-absolute">
-                                        Файлы
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+                <div id="carouselMain" class="swiper-container">
+                    <hr class="m-0 dashed-line">
+                    <div class="row swiper-pagination top-block-carousel">
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide active">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
                                     <p class="lead-text-carousel">
                                         Работай и
                                         соревнуйся</p>
                                     <p class="lead-text-under mt-5">
-                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря на
+                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
+                                        на
                                         эффективность других
                                         коллег.
                                     </p>
                                     <p class="lead-text-under">
-                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных дух
+                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных
+                                        дух
                                         в
                                         работу!
                                     </p>
@@ -123,18 +80,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
                                     <p class="lead-text-carousel">
                                         Организуй и делегируй</p>
                                     <p class="lead-text-under mt-5">
-                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря на
+                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
+                                        на
                                         эффективность другших
                                         коллег.
                                     </p>
                                     <p class="lead-text-under">
-                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных дух
+                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных
+                                        дух
                                         в
                                         работу!
                                     </p>
@@ -144,18 +103,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
                                     <p class="lead-text-carousel">
                                         Достигай большего</p>
                                     <p class="lead-text-under mt-5">
-                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря на
+                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
+                                        на
                                         эффективность другших
                                         коллег.
                                     </p>
                                     <p class="lead-text-under">
-                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных дух
+                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных
+                                        дух
                                         в
                                         работу!
                                     </p>
@@ -165,18 +126,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
                                     <p class="lead-text-carousel">
                                         Общайся в системе</p>
                                     <p class="lead-text-under mt-5">
-                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря на
+                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
+                                        на
                                         эффективность другших
                                         коллег.
                                     </p>
                                     <p class="lead-text-under">
-                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных дух
+                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных
+                                        дух
                                         в
                                         работу!
                                     </p>
@@ -186,18 +149,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
                                     <p class="lead-text-carousel">
                                         Всегда под рукой</p>
                                     <p class="lead-text-under mt-5">
-                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря на
+                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
+                                        на
                                         эффективность другших
                                         коллег.
                                     </p>
                                     <p class="lead-text-under">
-                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных дух
+                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных
+                                        дух
                                         в
                                         работу!
                                     </p>
@@ -214,23 +179,49 @@
     </div>
 </div>
 
-
 <script>
     $(document).ready(function () {
+        if (screen.width <= 375){
+            var height = 100;
+        } else {
+            height = 56;
+        }
         var swiper1 = new Swiper('.vertical', {
             direction: 'vertical',
             autoHeight: true,
             loop: true,
-            height: 56,
+            height: height,
             autoplay: {
                 delay: 2500,
             },
         });
+        var swiper2 = new Swiper('#carouselMain', {
+            loop: true,
+            grabCursor: true,
+            autoplay: {
+                delay: 2500,
+            },
+            height: 670,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    let names = ['Команда', 'Задачи', 'Достижения', 'Коммуникация', 'Файлы'];
+                    return "<div data-target=\"#carouselMain\" data-slide-to=\"0\" class=\"position-relative " + className + "\">\n" +
+                        "                                <div class='swiper-img'>\n" +
+                        "                                    <span class='icon icon" + index + "'><a href='#'>asd</a></span>\n" +
+                        "                                </div>\n" +
+                        "                                <span class=\"position-absolute\">\n" +
+                        "                                       "+ names[index] +"\n" +
+                        "                                    </span>\n" +
+                        "                            </div>";
+                },
+            },
+        });
     });
-
 </script>
 
-<div class="container mt-5 table-compare">
+<div class="container mt-5 table-compare d-none">
     <div class="row">
         <div class="col">
             <p class="lead-text">Немного сравнения</p>
@@ -343,85 +334,18 @@
     </div>
 </div>
 
-<div class="container mt-5 table-compare">
-    <div class="row">
-        <div class="col">
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Lusy.io</th>
-                    <th scope="col">wrike.com</th>
-                    <th scope="col">asana.com</th>
-                    <th scope="col">trello.com</th>
-                    <th scope="col">redmine.org</th>
-                    <th scope="col">todoist.com</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">Ограничения рабочих мест <i class="fas fa-info-circle text-muted"></i></th>
-                    <td>нет</td>
-                    <td>до 5</td>
-                    <td>до 15</td>
-                    <td>нет</td>
-                    <td>нет</td>
-                    <td>до 5</td>
-                </tr>
-                <tr>
-                    <th scope="row">Стоимость 1 польз/мес</th>
-                    <td>249</td>
-                    <td>650</td>
-                    <td>660</td>
-                    <td>660</td>
-                    <td>225</td>
-                    <td>396</td>
-                </tr>
-                <tr>
-                    <th scope="row">Система мотиваций <i class="fas fa-info-circle text-muted"></i></th>
-                    <td><i class="far fa-check-circle text-success" style="font-size: 25px"></i></td>
-                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
-                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
-                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
-                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
-                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
-                </tr>
-                <tr>
-                    <th scope="row">Отчеты эффективности <i class="fas fa-info-circle text-muted"></i></th>
-                    <td><i class="far fa-check-circle text-success" style="font-size: 25px"></i></td>
-                    <td><i class="far fa-check-circle text-success" style="font-size: 25px"></i></td>
-                    <td><i class="far fa-check-circle text-success" style="font-size: 25px"></i></td>
-                    <td><i class="far fa-check-circle text-success" style="font-size: 25px"></i></td>
-                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
-                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
-                </tr>
-                <tr>
-                    <th scope="row">Полезный рабочий стол <i class="fas fa-info-circle text-muted"></i></th>
-                    <td><i class="far fa-check-circle text-success" style="font-size: 25px"></i></td>
-                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
-                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
-                    <td><i class="far fa-check-circle text-success" style="font-size: 25px"></i></td>
-                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
-                    <td><i class="far fa-times-circle text-danger" style="font-size: 25px"></i></td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-
 <div class="pt-5 pb-5" id="awards">
     <p class="lead-text-big text-center">Достижения, мотивация, игра!</p>
     <div class="container">
-    <div class="row mb-3">
-        <div class="col-sm-8 offset-sm-2 mt-3 mb-3">
-            <p class="lead-text-under">Кто сказал, что работа - это скучно? Встроенная система мотивации вносит
-                в
-                привычный распорядок элементы геймификации. Получай достижения, наблюдай за успехами сотрудников
-                и
-                решай, кому выписать премию</p>
+        <div class="row mb-3">
+            <div class="col-sm-8 offset-sm-2 mt-3 mb-3">
+                <p class="lead-text-under">Кто сказал, что работа - это скучно? Встроенная система мотивации вносит
+                    в
+                    привычный распорядок элементы геймификации. Получай достижения, наблюдай за успехами сотрудников
+                    и
+                    решай, кому выписать премию</p>
+            </div>
         </div>
-    </div>
     </div>
     <div class="hidden-sm">
         <div class="d-flex justify-content-center">
@@ -516,6 +440,19 @@
         background-size: cover;
         width: 210px;
         height: 340px;
+    }
+
+    #carouselMain .swiper-slide{
+        height: 420px;
+    }
+
+    #carouselMain {
+        padding-top: 180px !important;
+    }
+    @media (max-width: 768px) {
+        #carouselMain {
+            padding-top: 50px !important;
+        }
     }
 </style>
 <!-- Swiper -->

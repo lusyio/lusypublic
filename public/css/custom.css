@@ -754,6 +754,88 @@ pricing-content{
     cursor: pointer;
 }
 
+.swiper-img{
+    border: 1px solid #999999;
+    border-radius: 50%;
+    padding: 26px 29px;
+    width: 100%;
+    height: 120px;
+}
+
+[data-target="#carouselMain"].swiper-pagination-bullet-active{
+    opacity: 1;
+    background: #535ad3 !important;
+}
+[data-target="#carouselMain"].swiper-pagination-bullet-active span{
+    color: #1d1d1d;
+    font-weight: 700;
+}
+
+span.icon a:link,
+span.icon a:visited {
+    text-indent: -9999px;
+    display: block;
+    /*background-size: cover !important;*/
+}
+
+span.icon0 a:link,
+span.icon0 a:visited {
+    width: 64px;
+    height: 64px;
+    background: url("/public/images/swiper-img/users.png") top left no-repeat;
+}
+
+span.icon1 a:link,
+span.icon1 a:visited {
+    width: 64px;
+    height: 64px;
+    background: url("/public/images/swiper-img/clipboard.png") top left no-repeat;
+}
+
+span.icon2 a:link,
+span.icon2 a:visited {
+    width: 64px;
+    height: 64px;
+    background: url("/public/images/swiper-img/trophy.png") top left no-repeat;
+}
+
+span.icon3 a:link,
+span.icon3 a:visited {
+    width: 64px;
+    height: 64px;
+    background: url("/public/images/swiper-img/send.png") top left no-repeat;
+}
+
+span.icon4 a:link,
+span.icon4 a:visited {
+    width: 64px;
+    height: 64px;
+    background: url("/public/images/swiper-img/cloud-computing.png") top left no-repeat;
+}
+
+[data-target="#carouselMain"].swiper-pagination-bullet-active span.icon a{
+    background-position: 0 -64px;
+}
+
+[data-target="#carouselMain"].swiper-pagination-bullet{
+    background: #ffffff;
+    opacity: 1;
+}
+
+[data-target="#carouselMain"].swiper-pagination-bullet-active img{
+    opacity: 1 !important;
+}
+
+[data-target="#carouselMain"].swiper-pagination-bullet img{
+    opacity: 0.4;
+}
+
+.swiper-pagination.top-block-carousel{
+    top: 0;
+    left: 15px !important;
+    width: 100% !important;
+}
+
 .carousel-indicators{
      position: relative;
     z-index: 15;
@@ -775,7 +857,7 @@ pricing-content{
 
 .swiper-slide.swiper-slide-vertical{
     width: 100% !important;
-    height: 56px !important;
+    height: 56px;
 }
 
 .lead-text-vertical{
@@ -827,10 +909,12 @@ pricing-content{
 }
 
 [data-target="#carouselMain"] {
-    width: 11%;
-    display: inline-block;
-    margin-right: 120px;
-    z-index: 2;
+    width: 11% !important;
+    margin-left: 0!important;
+    height: fit-content !important;
+    display: inline-block !important;
+    margin-right: 120px !important;
+    z-index: 15;
     background: #ffffff;
 }
 
@@ -842,20 +926,15 @@ pricing-content{
     bottom: -40px;
 }
 
-[data-target="#carouselMain"].active span{
-    color: #1d1d1d;
-    font-weight: 700;
-}
-
 [data-target="#carouselMain"]:hover{
     cursor: pointer;
 }
 
 [data-target="#carouselMain"]:last-of-type {
-    width: 11%;
+    width: 11% !important;
     display: inline-block;
-    margin-right: 0;
-    z-index: 2;
+    margin-right: 0 !important;
+    z-index: 15;
     background: #ffffff;
 }
 
@@ -863,15 +942,12 @@ pricing-content{
     position: absolute;
     width: 97%;
     z-index: -1;
-    top: 50%;
+    top: 10%;
     border: 0 none;
     border-top: 2px dashed #C0C0C0;
     background: none;
     height:0;
-}
-
-[data-target="#carouselMain"].active div{
-    background-color: #535ad3;
+    left: 5px;
 }
 
 [data-target="#carouselMain"] div{
@@ -956,6 +1032,9 @@ pricing-content{
 .award:hover .badge-secondary {
     background-color: rgba(0, 0, 0, .3);
 }
+.mb-3rem{
+    margin-bottom: 3rem;
+}
 .award-star {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
     line-height: 1.65;
@@ -1034,12 +1113,24 @@ pricing-content{
     .inblock {
         display: none !important;
     }
+    .mb-3rem{
+        margin-bottom: 1.5rem;
+    }
+    .lusy-block{
+        display: none;
+    }
     .fa-crown {
         left: -10px;
         position: relative;
     }
     .date-history{
         position: unset;
+    }
+    #carouselMain .swiper-slide{
+        height: 100% !important;
+    }
+    .dashed-line{
+        display: none;
     }
     .img-history{
         max-width: 100%
@@ -1056,11 +1147,15 @@ pricing-content{
     .bg {
         max-height: 600px;
     }
-
+    #carouselMain img{
+        max-height: 190px;
+    }
     .topdisebar-margin{
         margin-right: 1rem;
     }
-
+    .swiper-slide.swiper-slide-vertical{
+        max-height: 100px;
+    }
     .task-box{
         display: none;
     }
@@ -1069,6 +1164,12 @@ pricing-content{
     }
     .lead-text {
         font-size: 40px;
+    }
+    .top-block-carousel{
+        display: none;
+    }
+    .lead-text-vertical{
+        font-size: 38px;
     }
     .lead-text-big {
         font-size: 30px;
