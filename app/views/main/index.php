@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://s.lusy.io/assets/css/swiper.min.css">
 <div class="main">
     <div class="container">
-        <div class="row">
+        <div class="row first-block">
             <div class="col-sm-8 text-left">
                 <p class="lead-text mt-2 lead-text-vertical">Организуй работу команды<br class="hidden-sm"><span
                             class="visible-sm"> </span></p>
@@ -59,7 +59,7 @@
                         <div class="swiper-slide active">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="lead-text-carousel">
+                                    <p class="lead-text-carousel text-center">
                                         Работай и
                                         соревнуйся</p>
                                     <p class="lead-text-under mt-5">
@@ -83,7 +83,7 @@
                         <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="lead-text-carousel">
+                                    <p class="lead-text-carousel text-center">
                                         Организуй и делегируй</p>
                                     <p class="lead-text-under mt-5">
                                         Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
@@ -106,7 +106,7 @@
                         <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="lead-text-carousel">
+                                    <p class="lead-text-carousel text-center">
                                         Достигай большего</p>
                                     <p class="lead-text-under mt-5">
                                         Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
@@ -129,7 +129,7 @@
                         <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="lead-text-carousel">
+                                    <p class="lead-text-carousel text-center">
                                         Общайся в системе</p>
                                     <p class="lead-text-under mt-5">
                                         Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
@@ -152,7 +152,7 @@
                         <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="lead-text-carousel">
+                                    <p class="lead-text-carousel text-center">
                                         Всегда под рукой</p>
                                     <p class="lead-text-under mt-5">
                                         Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
@@ -183,6 +183,9 @@
     $(document).ready(function () {
         if (screen.width <= 375){
             var height = 100;
+            if (screen.width <= 320){
+                height = 130;
+            }
         } else {
             height = 56;
         }
@@ -339,7 +342,7 @@
     <div class="container">
         <div class="row mb-3">
             <div class="col-sm-8 offset-sm-2 mt-3 mb-3">
-                <p class="lead-text-under">Кто сказал, что работа - это скучно? Встроенная система мотивации вносит
+                <p class="lead-text-under text-center">Кто сказал, что работа - это скучно? Встроенная система мотивации вносит
                     в
                     привычный распорядок элементы геймификации. Получай достижения, наблюдай за успехами сотрудников
                     и

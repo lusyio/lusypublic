@@ -1150,6 +1150,9 @@ span.icon4 a:visited {
     #carouselMain img{
         max-height: 190px;
     }
+    .first-block .lead-text-under{
+        text-align: center;
+    }
     .topdisebar-margin{
         margin-right: 1rem;
     }
@@ -1176,6 +1179,9 @@ span.icon4 a:visited {
     }
     .lead-text-under {
         font-size: 18px;
+    }
+    #carouselMain .lead-text-under{
+        text-align: center;
     }
     .main {
         margin-top: 30px;
@@ -1263,5 +1269,11 @@ span.icon4 a:visited {
     }
     .pb-5 {
         padding-bottom: 15px !important;
+    }
+}
+
+@media (max-width: 568px) {
+    .swiper-slide.swiper-slide-vertical{
+        max-height: 130px;
     }
 }
