@@ -3,8 +3,9 @@
     <div class="container">
         <div class="row first-block">
             <div class="col-sm-8 text-left">
-                <p class="lead-text mt-2 lead-text-vertical">Организуй работу команды<br class="hidden-sm"><span
-                            class="visible-sm"> </span></p>
+                <p class="lead-text mt-2 lead-text-vertical">Организуй работу команды<br class="hidden-sm">
+                    <span class="vertical-visible">вмecте с lusy </span></p>
+
                 <div class="swiper-container vertical p-0">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-slide-vertical lead-text-vertical text-left">
