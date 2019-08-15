@@ -56,14 +56,14 @@
                     <hr class="m-0 dashed-line">
                     <div class="row swiper-pagination top-block-carousel">
                     </div>
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper mt-4">
                         <div class="swiper-slide active">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="lead-text-carousel">
+                                    <p class="lead-text-carousel mt-3">
                                         Работай и
                                         соревнуйся</p>
-                                    <p class="lead-text-under mt-5">
+                                    <p class="lead-text-under mt-3">
                                         Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
                                         на
                                         эффективность других
@@ -84,9 +84,9 @@
                         <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="lead-text-carousel">
+                                    <p class="lead-text-carousel mt-3">
                                         Организуй и делегируй</p>
-                                    <p class="lead-text-under mt-5">
+                                    <p class="lead-text-under mt-3">
                                         Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
                                         на
                                         эффективность другших
@@ -107,9 +107,9 @@
                         <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="lead-text-carousel">
+                                    <p class="lead-text-carousel mt-3">
                                         Достигай большего</p>
-                                    <p class="lead-text-under mt-5">
+                                    <p class="lead-text-under mt-3">
                                         Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
                                         на
                                         эффективность другших
@@ -130,9 +130,9 @@
                         <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="lead-text-carousel">
+                                    <p class="lead-text-carousel mt-3">
                                         Общайся в системе</p>
-                                    <p class="lead-text-under mt-5">
+                                    <p class="lead-text-under mt-3">
                                         Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
                                         на
                                         эффективность другших
@@ -153,9 +153,9 @@
                         <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <p class="lead-text-carousel">
+                                    <p class="lead-text-carousel mt-3">
                                         Всегда под рукой</p>
-                                    <p class="lead-text-under mt-5">
+                                    <p class="lead-text-under mt-3">
                                         Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
                                         на
                                         эффективность другших
@@ -182,15 +182,15 @@
 
 <script>
     $(document).ready(function () {
-        if (screen.width <= 375){
+        if (screen.width <= 375) {
             var height = 100;
             var autoPlay = false;
-            if (screen.width <= 320){
+            if (screen.width <= 320) {
                 height = 130;
             }
         } else {
             autoPlay = {
-                delay: 2500,
+                delay: 5000,
             }
             height = 56;
         }
@@ -200,7 +200,7 @@
             loop: true,
             height: height,
             autoplay: {
-                delay: 2500,
+                delay: 5000,
             },
         });
         var swiper2 = new Swiper('#carouselMain', {
@@ -215,10 +215,10 @@
                     let names = ['Команда', 'Задачи', 'Достижения', 'Коммуникация', 'Файлы'];
                     return "<div data-target=\"#carouselMain\" data-slide-to=\"0\" class=\"position-relative " + className + "\">\n" +
                         "                                <div class='swiper-img'>\n" +
-                        "                                    <span class='icon icon" + index + "'><a href='#'>asd</a></span>\n" +
+                        "                                    <span class='icon icon" + index + "'><img class='not-active-icon' src='/public/images/swiper-img/" + index + "-grey.svg'/><img class='active-icon' src='/public/images/swiper-img/" + index + "-white.svg'/></span>\n" +
                         "                                </div>\n" +
                         "                                <span class=\"position-absolute\">\n" +
-                        "                                       "+ names[index] +"\n" +
+                        "                                       " + names[index] + "\n" +
                         "                                    </span>\n" +
                         "                            </div>";
                 },
@@ -345,7 +345,8 @@
     <div class="container">
         <div class="row mb-3">
             <div class="col-sm-8 offset-sm-2 mt-3 mb-3">
-                <p class="lead-text-under text-center">Кто сказал, что работа - это скучно? Встроенная система мотивации вносит
+                <p class="lead-text-under text-center">Кто сказал, что работа - это скучно? Встроенная система мотивации
+                    вносит
                     в
                     привычный распорядок элементы геймификации. Получай достижения, наблюдай за успехами сотрудников
                     и
@@ -448,13 +449,14 @@
         height: 340px;
     }
 
-    #carouselMain .swiper-slide{
+    #carouselMain .swiper-slide {
         height: 420px;
     }
 
     #carouselMain {
         padding-top: 180px !important;
     }
+
     @media (max-width: 768px) {
         #carouselMain {
             padding-top: 50px !important;
@@ -583,16 +585,43 @@
     </div>
 </div>
 
+<div class="container mt-4">
+    <div class="preimBlock">
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="navbar-brand text-dark text-uppercase font-weight-bold visible-lg mt-1"><span
+                            class="logo mr-3">L</span>LUSY</p>
+                <p class="lead-text-big mb-4">Проще других - поэтому удобнее и доступнее</p>
+                <form onsubmit="ym(53097463, 'reachGoal', 'reg'); return true;" id="regForm2" method="post"
+                      action="https://s.lusy.io/reg/">
+                    <div class="input-group mb-5 mt-3 formreg m-auto">
+                        <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
+                               aria-label="your_mail@domain.com" aria-describedby="button-addon2" data-toggle="tooltip"
+                               data-placement="bottom" title="Введен неверный email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button" id="button-addon2">Убедиться самому</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="text-secondary mt-3 small">Ого, да тут же быстрая регистрация!<br>Просто введи e-mail и
+                    окажись в системе</p>
+            </div>
+            <div class="col-sm-6">
+<img src="/public/images/systems.jpg"/>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container pt-5 pb-5">
-    <p class="lead-text-big text-center">Сколько это стоит? Бесплатно!</p>
     <div class="row mb-3">
-        <div class="col-sm-8 offset-sm-2 mt-3 mb-3">
+        <div class="col-sm-8 offset-sm-2 mt-4 mb-3">
             <p class="lead-text-under text-center">В бесплатном тарифе есть всё для эффективной работы всей команды!
                 Пользуйся сервисом сколько нужно, приглашай любое количество
                 сотрудников, назначайте задачи, общайтесь и делитесь файлами</p>
         </div>
     </div>
-    <div class="justify-content-center">
+    <div class="justify-content-center d-none">
         <form onsubmit="ym(53097463, 'reachGoal', 'reg'); return true;" id="regForm2" method="post"
               action="https://s.lusy.io/reg/">
             <div class="input-group mb-5 mt-3 formreg m-auto">
@@ -621,7 +650,6 @@
         </div>
     </div>
 </div>
-
 <script src="https://s.lusy.io/assets/js/circle-progress.min.js"></script>
 
 <script>
@@ -637,6 +665,7 @@
 </script>
 <script>
     $(document).ready(function () {
+
         var securityMail = 0;
 
         $('[name=email]').tooltip('disable');

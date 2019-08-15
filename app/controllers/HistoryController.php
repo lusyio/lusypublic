@@ -9,6 +9,17 @@ class HistoryController extends Controller
     public function indexAction()
     {
         $versions = [
+
+            [
+                'icon' => 'far',
+                'iconColor' => 'icon-not-complete',
+                'version' => 'v1.0.2',
+                'date' => 'в разработке',
+                'news' =>
+                    'Шаблон для повторения задач',
+                'changes' =>
+                    'Переработанный файловый менеджер!Предпросмотр фотографий и файлов',
+            ],
             [
                 'icon' => 'far',
                 'iconColor' => 'icon-not-complete',
