@@ -1090,6 +1090,7 @@ span.icon a:visited {
 .swiper-slide .award {
     margin-right: 0px !important;
 }
+
 @media (min-width: 768px) {
     .firstNav {
         margin-left: 0px !important;
@@ -1110,6 +1111,13 @@ span.icon a:visited {
     .inblock {
         display: none !important;
     }
+    .swiper-img {
+        height: auto;
+        padding: 10px;
+    }
+    #carouselMain .swiper-wrapper {
+        margin-top: 3.5rem!important;
+    }
     .mb-3rem{
         margin-bottom: 1.5rem;
     }
@@ -1126,6 +1134,10 @@ span.icon a:visited {
     #carouselMain .swiper-slide{
         height: 100% !important;
     }
+    .swiper-slide .col-lg-8 img {
+        box-shadow: none !important;
+        width: 100%;
+    }
     .dashed-line{
         display: none;
     }
@@ -1141,14 +1153,19 @@ span.icon a:visited {
     .note {
         display: none;
     }
+    .preimBlock {
+        box-shadow: none !important;
+        padding: 0px;
+        border-radius: 0px;
+    }
+    .preimBlock img {
+        display: none;
+    }
     .bg {
         max-height: 600px;
     }
     #carouselMain img{
         max-height: 190px;
-    }
-    .first-block .lead-text-under{
-        text-align: center;
     }
     .topdisebar-margin{
         margin-right: 1rem;
@@ -1165,7 +1182,25 @@ span.icon a:visited {
     .lead-text {
         font-size: 40px;
     }
-    .top-block-carousel{
+    [data-target="#carouselMain"] {
+        width: 14% !important;
+        margin-left: 0!important;
+        height: fit-content !important;
+        display: inline-block !important;
+        margin-right: 10px !important;
+        z-index: 15;
+        background: #ffffff;
+    }
+    [data-target="#carouselMain"]:last-of-type {
+        width: 14% !important;
+        margin-left: 0!important;
+        height: fit-content !important;
+        display: inline-block !important;
+        margin-right: 10px !important;
+        z-index: 15;
+        background: #ffffff;
+    }
+    .swiper-pagination-bullet span.position-absolute {
         display: none;
     }
     .lead-text-vertical{
@@ -1177,18 +1212,12 @@ span.icon a:visited {
     .lead-text-under {
         font-size: 18px;
     }
-    #carouselMain .lead-text-under{
-        text-align: center;
-    }
     .main {
         margin-top: 30px;
     }
     .btn-primary {
         padding-left: 15px !important;
         padding-right: 15px !important;
-    }
-    .main img {
-        margin-top: 20px;
     }
     .navbar-nav .nav-link {
         margin-left: 0px;

@@ -433,7 +433,7 @@
 
     @media (max-width: 768px) {
         #carouselMain {
-            padding-top: 50px !important;
+            padding-top: 0px !important;
         }
     }
 </style>
