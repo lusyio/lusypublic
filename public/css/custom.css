@@ -23,9 +23,29 @@ ul, li {
     line-height: 2;
 }
 .preimBlock {
-    box-shadow: rgba(125, 122, 239, 0.7) 0px 15px 100px -15px !important;
+    box-shadow: rgba(1, 1, 1, 0.7) 0px 15px 30px -15px !important;
     padding: 40px;
     border-radius: 30px;
+}
+.preimBlock .lead-text-small {
+    font-weight: 900;
+}
+.preimBlock .lead-text-under {
+    font-size: 17px;
+    color: #8e8e8e;
+}
+.third {
+    font-size: 23px;
+    font-weight: bold;
+}
+.third span {
+    color: #5156d8;
+}
+.third i {
+    color: #5156d8;
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
 }
 .historyImg {
     box-shadow: 0 4px 20px rgba(14,21,47,.1);
@@ -830,7 +850,10 @@ span.icon a:visited {
     width: 100% !important;
     height: 56px;
 }
-
+.swiper-slide .col-lg-8 img {
+    box-shadow: rgba(1, 1, 1, 0.7) 0px 15px 30px -15px !important;
+    width: 96%;
+}
 .lead-text-vertical{
     font-size: 47px;
     line-height: 1.2;

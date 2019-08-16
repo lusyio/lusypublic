@@ -87,16 +87,10 @@
                                     <p class="lead-text-carousel mt-3">
                                         Организуй и делегируй</p>
                                     <p class="lead-text-under mt-3">
-                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
-                                        на
-                                        эффективность другших
-                                        коллег.
+                                        Назначай задачи на лету! Ты можешь добавить подзадачи, подпункты, ответсвенных и соисполнителей.
                                     </p>
                                     <p class="lead-text-under">
-                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных
-                                        дух
-                                        в
-                                        работу!
+                                        И не забудь попробовать "отложенный старт". Планируй на неделю вперед, чтобы достичь все поставленные цели.
                                     </p>
                                 </div>
                                 <div class="col-lg-8 col-12">
@@ -110,16 +104,10 @@
                                     <p class="lead-text-carousel mt-3">
                                         Достигай большего</p>
                                     <p class="lead-text-under mt-3">
-                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
-                                        на
-                                        эффективность другших
-                                        коллег.
+                                        Хватит делать рутину "серой" - добавь красок! Мы сделали 25 стандартных достижений и парочку скрытых...
                                     </p>
                                     <p class="lead-text-under">
-                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных
-                                        дух
-                                        в
-                                        работу!
+                                        Поощряй сотрудников за достижения, пускай игровые элементы вовлекут их в работу.
                                     </p>
                                 </div>
                                 <div class="col-lg-8 col-12">
@@ -133,20 +121,14 @@
                                     <p class="lead-text-carousel mt-3">
                                         Общайся в системе</p>
                                     <p class="lead-text-under mt-3">
-                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
-                                        на
-                                        эффективность другших
-                                        коллег.
+                                        Теперь можно забыть о бесконечных чатах в WhatsApp - общайся внутри системы.
                                     </p>
                                     <p class="lead-text-under">
-                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных
-                                        дух
-                                        в
-                                        работу!
+                                        После сможешь найти любое сообщение или файл из диалога с помощью поиска.
                                     </p>
                                 </div>
                                 <div class="col-lg-8 col-12">
-                                    <img src="/public/images/reports.jpg" alt="">
+                                    <img src="/public/images/dialogs.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -156,17 +138,9 @@
                                     <p class="lead-text-carousel mt-3">
                                         Всегда под рукой</p>
                                     <p class="lead-text-under mt-3">
-                                        Пригласи сотрудников в систему, и они будут стараться делать больше, смотря
-                                        на
-                                        эффективность другших
-                                        коллег.
+                                        С нашим файловым менеджером ты всегда найдешь нужный файл. И плюс у нас есть интеграции GoogleDrive и DropBox
                                     </p>
-                                    <p class="lead-text-under">
-                                        Плюс, у нас есть крутые достижения - отличный способ внести соревновательных
-                                        дух
-                                        в
-                                        работу!
-                                    </p>
+                                    <img src="/public/images/gd-db.jpg">
                                 </div>
                                 <div class="col-lg-8 col-12">
                                     <img src="/public/images/files.jpg" alt="">
@@ -591,10 +565,12 @@
             <div class="col-sm-6">
                 <p class="navbar-brand text-dark text-uppercase font-weight-bold visible-lg mt-1"><span
                             class="logo mr-3">L</span>LUSY</p>
-                <p class="lead-text-big mb-4">Проще других - поэтому удобнее и доступнее</p>
+                <p class="lead-text-small mt-3 mb-4">Проще других - поэтому удобнее и доступнее</p>
+                <p class="lead-text-under mt-4 mb-4">Ого, да тут же быстрая регистрация!<br>Просто введи e-mail и
+                    окажись в системе</p>
                 <form onsubmit="ym(53097463, 'reachGoal', 'reg'); return true;" id="regForm2" method="post"
                       action="https://s.lusy.io/reg/">
-                    <div class="input-group mb-5 mt-3 formreg m-auto">
+                    <div class="input-group pt-2 pb-2 formreg m-auto">
                         <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
                                aria-label="your_mail@domain.com" aria-describedby="button-addon2" data-toggle="tooltip"
                                data-placement="bottom" title="Введен неверный email">
@@ -603,17 +579,34 @@
                         </div>
                     </div>
                 </form>
-                <p class="text-secondary mt-3 small">Ого, да тут же быстрая регистрация!<br>Просто введи e-mail и
-                    окажись в системе</p>
             </div>
             <div class="col-sm-6">
-<img src="/public/images/systems.jpg"/>
+                <img src="/public/images/systems.jpg"/>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container pt-5 pb-5">
+<div class="container pt-5 mt-3 pb-5">
+    <div class="d-flex justify-content-center third">
+        <div class="mr-5">
+            <span>Неограниченное</span> число сотрудников
+        </div>
+        <div>
+            <span>0</span> руб./месяц
+        </div>
+    </div>
+    <div class="row third d-none">
+        <div class="col-5 text-right">
+            <i class="fas fa-infinity"></i> число сотрудников
+        </div>
+        <div class="col-2 text-center">
+            Навсегда
+        </div>
+        <div class="col-5">
+            <span>0</span> руб./месяц
+        </div>
+    </div>
     <div class="row mb-3">
         <div class="col-sm-8 offset-sm-2 mt-4 mb-3">
             <p class="lead-text-under text-center">В бесплатном тарифе есть всё для эффективной работы всей команды!
