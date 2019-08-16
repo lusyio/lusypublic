@@ -994,9 +994,8 @@ span.icon a:visited {
 }
 
 .date-history{
-    left: -85px;
-    top: 16px;
-    position: absolute;
+    position: relative;
+    top: -3px;
 }
 
 .badge-history{

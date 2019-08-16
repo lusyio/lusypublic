@@ -11,9 +11,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-1 col-3 pr-0">
-        </div>
-        <div class="col-lg-11 col-12">
+        <div class="col-12">
             <div class="vertical-line">
                 <?php foreach ($versions as $item): ?>
                     <div class="row mb-3">
