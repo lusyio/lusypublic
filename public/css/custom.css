@@ -135,6 +135,8 @@ img {
 }
 .lead-text-under {
     font-size: 20px;
+    color: #8e8e8e;
+    font-weight: 300;
 }
 .noty {
     font-size: 2em;
