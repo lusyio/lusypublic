@@ -1150,7 +1150,10 @@ span.icon a:visited {
         display: none;
     }
     .note {
-        display: none;
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-width: 100%;
     }
     .preimBlock {
         box-shadow: none !important;
@@ -1158,7 +1161,13 @@ span.icon a:visited {
         border-radius: 0px;
     }
     .preimBlock img {
+        margin-top: 30px;
+    }
+    .unlimitBlock {
         display: none;
+    }
+    .swiper-pagination {
+        display: inline;
     }
     .bg {
         max-height: 600px;
