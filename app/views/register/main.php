@@ -21,7 +21,7 @@ if (!empty($_POST['email'])) {
                     <section>
                         <div class="form-group">
                             <div class="lead-text-under text-center mb-3 mt-0">
-                                Отлично! Для регистрации введите Ваш email, а пароль мы отправим вам на почту
+                                У нас же быстрая регистрация! Просто введи e-mail и окажись в системе
                             </div>
                             <input id="emailAdmin" type="text" value="<?=$email?>" name="email" class="form-control required email"
                                    placeholder="E-mail">
