@@ -22,6 +22,31 @@ p {
 ul, li {
     line-height: 2;
 }
+.preimBlock {
+    box-shadow: rgba(1, 1, 1, 0.7) 0px 15px 30px -15px !important;
+    padding: 40px;
+    border-radius: 30px;
+}
+.preimBlock .lead-text-small {
+    font-weight: 900;
+}
+.preimBlock .lead-text-under {
+    font-size: 17px;
+    color: #8e8e8e;
+}
+.third {
+    font-size: 23px;
+    font-weight: bold;
+}
+.third span {
+    color: #5156d8;
+}
+.third i {
+    color: #5156d8;
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+}
 .historyImg {
     box-shadow: 0 4px 20px rgba(14,21,47,.1);
     border-radius: 5px;
@@ -110,6 +135,8 @@ img {
 }
 .lead-text-under {
     font-size: 20px;
+    color: #8e8e8e;
+    font-weight: 300;
 }
 .noty {
     font-size: 2em;
@@ -333,6 +360,18 @@ img {
     font-size: 4em;
     top: -10px;
 }
+
+.svg-icon-swiper{
+    height: 60px;
+    width: 60px;
+    position: relative;
+    top: -1px;
+}
+
+.svg-icon-swiper path {
+    fill: #27406a;
+}
+
 .items{
     padding: 0;
     margin: 0;
@@ -367,6 +406,15 @@ img {
 .item-content-text{
     color: #3d3d3d;
     line-height: 1.4;
+}
+
+.table-compare th{
+    padding: 1.75rem;
+}
+
+.table-compare td{
+    text-align: center;
+    vertical-align: middle;
 }
 
 
@@ -733,12 +781,85 @@ pricing-content{
     cursor: pointer;
 }
 
+.swiper-img{
+    border: 1px solid #999999;
+    border-radius: 50%;
+    padding: 26px 29px;
+    width: 100%;
+    height: 120px;
+}
+.active-icon {
+    display: none;
+}
+[data-target="#carouselMain"].swiper-pagination-bullet-active{
+    opacity: 1;
+    background: #535ad3 !important;
+}
+[data-target="#carouselMain"].swiper-pagination-bullet-active .active-icon {
+    display: block;
+}
+[data-target="#carouselMain"].swiper-pagination-bullet-active .not-active-icon {
+    display: none;
+}
+[data-target="#carouselMain"].swiper-pagination-bullet-active span{
+    color: #1d1d1d;
+    font-weight: 700;
+}
+
+span.icon a:link,
+span.icon a:visited {
+    text-indent: -9999px;
+    display: block;
+}
+
+[data-target="#carouselMain"].swiper-pagination-bullet-active span.icon a{
+    background-position: 0 -64px;
+}
+
+[data-target="#carouselMain"].swiper-pagination-bullet{
+    background: #ffffff;
+    opacity: 1;
+}
+
+
+
+.swiper-pagination.top-block-carousel{
+    top: 0;
+    left: 15px !important;
+    width: 100% !important;
+}
+
+.carousel-indicators{
+     position: relative;
+    z-index: 15;
+    display: unset;
+    -ms-flex-pack: center;
+     padding-left: 0;
+     margin-right: 0;
+     margin-left: 0;
+     list-style: none;
+}
+
 .chart-align {
     text-align: center;
 }
 
 .circle {
     height: 80px;
+}
+
+.swiper-slide.swiper-slide-vertical{
+    width: 100% !important;
+    height: 56px;
+}
+.swiper-slide .col-lg-8 img {
+    box-shadow: rgba(1, 1, 1, 0.7) 0px 15px 30px -15px !important;
+    width: 96%;
+}
+.lead-text-vertical{
+    font-size: 47px;
+    line-height: 1.2;
+    font-weight: 900;
 }
 
 .sort span {
@@ -772,6 +893,71 @@ pricing-content{
     background: #6097d8;
 }
 
+[type="text"]::placeholder{
+    color: #dedede;
+}
+
+.lead-text-carousel{
+    font-size: 46px;
+    line-height: 1.2;
+    font-weight: 900;
+    color: #1d1d1d !important;
+}
+
+[data-target="#carouselMain"] {
+    width: 11% !important;
+    margin-left: 0!important;
+    height: fit-content !important;
+    display: inline-block !important;
+    margin-right: 120px !important;
+    z-index: 15;
+    background: #ffffff;
+}
+
+[data-target="#carouselMain"] span{
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    color: #999999;
+    bottom: -40px;
+}
+
+[data-target="#carouselMain"]:hover{
+    cursor: pointer;
+}
+
+[data-target="#carouselMain"]:last-of-type {
+    width: 11% !important;
+    display: inline-block;
+    margin-right: 0 !important;
+    z-index: 15;
+    background: #ffffff;
+}
+
+.dashed-line{
+    position: absolute;
+    width: 97%;
+    z-index: -1;
+    top: 10%;
+    border: 0 none;
+    border-top: 2px dashed #C0C0C0;
+    background: none;
+    height:0;
+    left: 5px;
+}
+.vertical-visible{
+    display: none;
+}
+
+[data-target="#carouselMain"] div{
+    transition: 200ms;
+}
+
+.swiper-slide-main{
+    width: 100% !important;
+    height: 100% !important;
+}
+
 .award {
     border-radius: 5px;
     display: block;
@@ -795,6 +981,34 @@ pricing-content{
     z-index: 12;
 }
 
+.vertical-line {
+    border-left: 1px solid #e4e4e4;
+}
+
+.icon-complete {
+    font-size: 22px;
+    vertical-align: -11%;
+    color: #28a745bf
+}
+
+.img-history{
+    max-width: 50%
+}
+
+.date-history{
+    position: relative;
+    top: -3px;
+}
+
+.badge-history{
+    background: #5156d8;
+}
+
+.icon-not-complete {
+    font-size: 22px;
+    vertical-align: -11%;
+    color: #999999
+}
 
 .award:hover {
     -webkit-transform: translateY(-5px);
@@ -815,6 +1029,9 @@ pricing-content{
 }
 .award:hover .badge-secondary {
     background-color: rgba(0, 0, 0, .3);
+}
+.mb-3rem{
+    margin-bottom: 3rem;
 }
 .award-star {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
@@ -874,6 +1091,7 @@ pricing-content{
 .swiper-slide .award {
     margin-right: 0px !important;
 }
+
 @media (min-width: 768px) {
     .firstNav {
         margin-left: 0px !important;
@@ -894,9 +1112,38 @@ pricing-content{
     .inblock {
         display: none !important;
     }
+    .swiper-img {
+        height: auto;
+        padding: 10px;
+    }
+    #carouselMain .swiper-wrapper {
+        margin-top: 3.5rem!important;
+    }
+    .mb-3rem{
+        margin-bottom: 1.5rem;
+    }
+    .lusy-block{
+        display: none;
+    }
     .fa-crown {
         left: -10px;
         position: relative;
+    }
+    .date-history{
+        position: unset;
+    }
+    #carouselMain .swiper-slide{
+        height: 100% !important;
+    }
+    .swiper-slide .col-lg-8 img {
+        box-shadow: none !important;
+        width: 100%;
+    }
+    .dashed-line{
+        display: none;
+    }
+    .img-history{
+        max-width: 100%
     }
     .about-company {
         top: 20px;
@@ -905,16 +1152,37 @@ pricing-content{
         display: none;
     }
     .note {
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    .preimBlock {
+        box-shadow: none !important;
+        padding: 0px;
+        border-radius: 0px;
+    }
+    .preimBlock img {
+        margin-top: 30px;
+    }
+    .unlimitBlock {
         display: none;
+    }
+    .swiper-pagination {
+        display: inline;
     }
     .bg {
         max-height: 600px;
     }
-
+    #carouselMain img{
+        max-height: 190px;
+    }
     .topdisebar-margin{
         margin-right: 1rem;
     }
-
+    .swiper-slide.swiper-slide-vertical{
+        max-height: 100px;
+    }
     .task-box{
         display: none;
     }
@@ -923,6 +1191,30 @@ pricing-content{
     }
     .lead-text {
         font-size: 40px;
+    }
+    [data-target="#carouselMain"] {
+        width: 14% !important;
+        margin-left: 0!important;
+        height: fit-content !important;
+        display: inline-block !important;
+        margin-right: 10px !important;
+        z-index: 15;
+        background: #ffffff;
+    }
+    [data-target="#carouselMain"]:last-of-type {
+        width: 14% !important;
+        margin-left: 0!important;
+        height: fit-content !important;
+        display: inline-block !important;
+        margin-right: 10px !important;
+        z-index: 15;
+        background: #ffffff;
+    }
+    .swiper-pagination-bullet span.position-absolute {
+        display: none;
+    }
+    .lead-text-vertical{
+        font-size: 38px;
     }
     .lead-text-big {
         font-size: 30px;
@@ -936,9 +1228,6 @@ pricing-content{
     .btn-primary {
         padding-left: 15px !important;
         padding-right: 15px !important;
-    }
-    .main img {
-        margin-top: 20px;
     }
     .navbar-nav .nav-link {
         margin-left: 0px;
@@ -1017,4 +1306,17 @@ pricing-content{
     .pb-5 {
         padding-bottom: 15px !important;
     }
+    .vertical{
+        display: none;
+    }
+    .vertical-visible{
+        display: inline;
+    }
+}
+
+@media (max-width: 568px) {
+    .swiper-slide.swiper-slide-vertical{
+        max-height: 130px;
+    }
+
 }

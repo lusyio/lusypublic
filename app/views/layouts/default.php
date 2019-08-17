@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/public/css/custom.css?ver=8">
+    <link rel="stylesheet" href="/public/css/custom.css?ver=11">
     <link rel="shortcut icon" href="/public/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -26,6 +26,9 @@
             <div class="col-sm-3">
                 <a class="navbar-brand text-dark text-uppercase font-weight-bold visible-lg mt-1"
                    href="/<?= $this->route['language']; ?>/"><span class="logo mr-3">L</span>LUSY</a>
+                <p class="mt-2 mb-0" style="    font-size: 14px;
+    color: #5156d8;
+    font-weight: 800;">Система постановки задач</p>
             </div>
             <div class="col-sm-6">
                 <nav class="navbar navbar-expand-lg p-0 pt-1">
