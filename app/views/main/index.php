@@ -456,14 +456,14 @@
                 <p class="lead-text-small mt-3 mb-4">Проще других - поэтому удобнее и доступнее</p>
                 <p class="lead-text-under mt-4 mb-4">Ого, да тут же быстрая регистрация!<br>Просто введи e-mail и
                     окажись в системе</p>
-                <form onsubmit="ym(53097463, 'reachGoal', 'reg'); return true;" id="regForm2" method="post"
+                <form onsubmit="ym(53097463, 'reachGoal', 'reg'); return true;" id="regForm3" method="post"
                       action="https://s.lusy.io/reg/">
                     <div class="input-group pt-2 pb-2 formreg m-auto">
                         <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
                                aria-label="your_mail@domain.com" aria-describedby="button-addon2" data-toggle="tooltip"
                                data-placement="bottom" title="Введен неверный email">
                         <div class="input-group-append">
-                            <button class="btn btn-primary" type="button" id="button-addon2">Убедиться самому</button>
+                            <button class="btn btn-primary" type="button" id="button-addon3">Убедиться самому</button>
                         </div>
                     </div>
                 </form>
@@ -501,21 +501,6 @@
                 Пользуйся сервисом сколько нужно, приглашай любое количество
                 сотрудников, назначай задачи, общайся и делись файлами</p>
         </div>
-    </div>
-    <div class="justify-content-center d-none">
-        <form onsubmit="ym(53097463, 'reachGoal', 'reg'); return true;" id="regForm2" method="post"
-              action="https://s.lusy.io/reg/">
-            <div class="input-group mb-5 mt-3 formreg m-auto">
-                <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
-                       aria-label="your_mail@domain.com" aria-describedby="button-addon2" data-toggle="tooltip"
-                       data-placement="bottom" title="Введен неверный email">
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="button" id="button-addon2">Попробовать</button>
-                </div>
-            </div>
-        </form>
-        <p class="text-center text-secondary mt-3">Перейти к <a href="/<?= $this->route['language']; ?>/price/">платным
-                тарифам</a></p>
     </div>
 </div>
 
@@ -596,6 +581,24 @@
             if (securityMail == 1) {
                 $('#spinnerRegModal').modal('show');
                 $('#regForm2').submit();
+            } else {
+                e.preventDefault();
+                $(this).parents('form').find('[name=email]').tooltip('enable').tooltip('show');
+                $(this).parents('form').find('[name=email]').css({
+                    'border': '1px solid #fbc2c4',
+                    'color': '#8a1f11'
+                });
+                setTimeout(function () {
+                    $('[name=email]').tooltip('disable').tooltip('hide');
+                }, 2000);
+            }
+        });
+
+        $('#button-addon3').on('click', function (e) {
+            e.preventDefault();
+            if (securityMail == 1) {
+                $('#spinnerRegModal').modal('show');
+                $('#regForm3').submit();
             } else {
                 e.preventDefault();
                 $(this).parents('form').find('[name=email]').tooltip('enable').tooltip('show');
