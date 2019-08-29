@@ -1,7 +1,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <div class="container content">
     <div class="row mb-4">
-        <div class="col-sm-8">
+        <div class="col-sm-7 col-md-6 col-lg-8">
             <h1 class="chartH">Битва месяца! Кто сделает больше?</h1>
             <p>Мы проводим ежемесячное состязание между компаниями, кто больше наберет активностей. Победителю - приз!
                 Расчет идет по
@@ -10,7 +10,7 @@
                 (<strong>0,1</strong> * кол-во комментов и
                 сообщений) = <span class="allCount">Балл эффективности</span></p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-lg-4 col-md-6 col-sm-5">
             <img src="/public/images/winner.jpg">
         </div>
     </div>

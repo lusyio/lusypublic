@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/public/css/custom.css?ver=11">
+    <link rel="stylesheet" href="/public/css/custom.css?ver=12">
     <link rel="shortcut icon" href="/public/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -23,14 +23,14 @@
 <div class="top-sidebar pt-2 pb-2">
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <a class="navbar-brand text-dark text-uppercase font-weight-bold visible-lg mt-1"
                    href="/<?= $this->route['language']; ?>/"><span class="logo mr-3">L</span>LUSY</a>
                 <p class="mt-2 mb-0" style="    font-size: 14px;
     color: #5156d8;
     font-weight: 800;">Система постановки задач</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-lg-6">
                 <nav class="navbar navbar-expand-lg p-0 pt-1">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target=".mainNav" aria-controls="navbarSupportedContent"
@@ -56,7 +56,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="col-sm-3 navbar-expand-lg">
+            <div class="col-sm-5 col-lg-3 offset-sm-7 offset-lg-0 navbar-expand-lg">
                 <div class="collapse navbar-collapse float-right mainNav">
                     <nav class="navbar navbar-expand-lg">
                         <ul class="navbar-nav mr-auto">

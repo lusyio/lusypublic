@@ -2,7 +2,7 @@
 <div class="main">
     <div class="container">
         <div class="row first-block">
-            <div class="col-sm-8 text-left">
+            <div class="col-sm-12 col-md-8 col-lg-8 text-left">
                 <p class="lead-text mt-2 lead-text-vertical">Организуй работу команды<br class="hidden-sm">
                     <span class="vertical-visible">вмecте с lusy </span></p>
 
@@ -39,7 +39,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-12 col-md-4 col-lg-4">
                 <img class="note" src="/public/images/note.jpg">
             </div>
         </div>
@@ -321,7 +321,22 @@
 
     @media (max-width: 768px) {
         #carouselMain {
-            padding-top: 0px !important;
+            padding-top: 20px !important;
+        }
+    }
+    @media only screen and (max-width: 1200px) and (min-width: 991px){
+        #carouselMain {
+            padding-top: 140px !important;
+        }
+    }
+    @media only screen and (max-width: 991px) and (min-width: 768px){
+        #carouselMain {
+            padding-top: 70px !important;
+        }
+    }
+    @media only screen and (max-width: 768px) and (min-width: 576px) {
+        #carouselMain {
+            padding-top: 30px !important;
         }
     }
 </style>
@@ -435,13 +450,13 @@
 </script>
 <div class="container pt-5 pb-5" id="mobile">
     <div class="row">
-        <div class="col-sm-5 offset-sm-1">
+        <div class="col-sm-12 col-md-6 col-lg-5 offset-lg-1">
             <p class="lead-text-big mt-5">Полный контроль<br>в любом месте</p>
             <p class="lead-text-under text-left mt-4">Застрял в пробке или срочно захотелось
                 на море? Контролируй рабочие процессы
                 прямо с телефона, где бы ты не находился</p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-12 col-md-6 col-lg-6">
             <img src="/public/images/mobile.jpg">
         </div>
     </div>
@@ -450,7 +465,7 @@
 <div class="container mt-4">
     <div class="preimBlock">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-12 col-md-6 col-lg-6">
                 <p class="navbar-brand text-dark text-uppercase font-weight-bold visible-lg mt-1"><span
                             class="logo mr-3">L</span>LUSY</p>
                 <p class="lead-text-small mt-3 mb-4">Проще других - поэтому удобнее и доступнее</p>
@@ -468,7 +483,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-12 col-md-6 col-lg-6">
                 <img src="/public/images/systems.jpg"/>
             </div>
         </div>
