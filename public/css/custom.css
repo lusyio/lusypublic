@@ -1522,9 +1522,7 @@ and (min-width: 576px) {
         background: #ffffff;
     }
     .dashed-line{
-        margin-left: 25px !important;
-        width: 86%;
-        top: 5%;
+        display: none;
     }
     .swiper-img {
         height: auto;
