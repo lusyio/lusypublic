@@ -1,7 +1,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <div class="container content">
     <div class="row mb-4">
-        <div class="col-sm-8">
+        <div class="col-sm-7 col-md-6 col-lg-8">
             <h1 class="chartH">Битва месяца! Кто сделает больше?</h1>
             <p>Мы проводим ежемесячное состязание между компаниями, кто больше наберет активностей. Победителю - приз!
                 Расчет идет по
@@ -10,7 +10,7 @@
                 (<strong>0,1</strong> * кол-во комментов и
                 сообщений) = <span class="allCount">Балл эффективности</span></p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-lg-4 col-md-6 col-sm-5">
             <img src="/public/images/winner.jpg">
         </div>
     </div>
@@ -57,7 +57,7 @@
             <div class="card chart-card mt-2">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-1 col-lg-1 chart-align">
+                        <div class="col-2 col-lg-1 chart-align">
                                         <span class="text-secondary">
                                             <?php if ($n == 1) { ?>
                                                 <i class="fas fa-crown text-warning font-weight-bold h4 mb-0"></i>
@@ -68,7 +68,7 @@
                                             ?>
                                         </span>
                         </div>
-                        <div class="col-7 col-lg-4 chart-align text-left">
+                        <div class="col-6 col-lg-4 chart-align text-left">
                                     <span class="name-company">
                                         <?= $company['name']; ?>
                                     </span>

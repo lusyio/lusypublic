@@ -1,6 +1,6 @@
 <div class="container content">
     <div class="row">
-        <div class="col-12 col-lg-5">
+        <div class="col-12 col-sm-7 col-md-5 col-lg-5">
             <h1>История версий</h1>
             <p>
                 Здесь располагаются все изменения системы с момента её создания. А также, Вы можете найти здесь анонсы будущих функций!

@@ -2,7 +2,7 @@
     <h1 class="text-center mb-5">Стоимость</h1>
 
     <div class="row payBack">
-        <div class="col-sm-4 offset-sm-2">
+        <div class="col-sm-10 col-10 offset-1 offset-right-1 col-lg-4 col-md-5 offset-lg-2 offset-md-1">
             <div class="card Card freeCard text-center mb-3 mt-5">
                 <div class="card-body">
                     <p class="tariff">Бесплатный тариф</p>
@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-10 col-10 offset-1 offset-right-1 col-lg-4 col-md-5 offset-md-0">
             <div class="card Card premiumCard text-center mb-3">
                 <div class="card-body">
                     <p class="tariff text-gold font-weight-bold">Premium тариф</p>
@@ -44,11 +44,11 @@
         </div>
     </div>
     <div class="row mt-5">
-        <div class="col-sm-4 offset-sm-2">
+        <div class="col-sm-10 col-10 offset-1 offset-sm-1 col-md-4 offset-md-1 col-lg-4 offset-lg-2">
             <p class="lead-text-under text-left">Перед нами были задача сделать полноценный бесплатный тариф и это
                 удалось</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-10 col-10 offset-1 offset-sm-1 col-md-4 offset-md-1 col-lg-4 offset-lg-0">
             <p class="lead-text-under text-left">Но, когда вы перерастете бесплатный тариф, то переход на Premium тариф
                 будет легким</p>
         </div>
@@ -66,7 +66,7 @@
         </form>
     </div>
     <div class="row mt-5">
-        <div class="mt-5 col-sm-8 offset-sm-2">
+        <div class="mt-5 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 col-10 offset-1 offset-sm-1">
             <hr>
             <p class="small text-secondary">Оплата тарифного плана происходит путем автоплатежа - автоматического
                 списания
