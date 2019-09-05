@@ -24,7 +24,7 @@ class HistoryController extends Controller
                 'icon' => 'far',
                 'iconColor' => 'icon-complete',
                 'version' => 'v1.0.2',
-                'date' => '18 августа 2019',
+                'date' => '28 августа 2019',
                 'news' =>
                     'Сообщения об ачивках пользователей в общем чате',
                 'changes' =>

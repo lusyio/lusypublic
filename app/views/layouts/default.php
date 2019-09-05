@@ -86,10 +86,10 @@
                 <h2 class="small mb-5">система постановки и контроля задач</h2>
                 <p><a
                             href="/<?= $this->route['language']; ?>/history/"
-                            class="btn-link text-dark">История версий</a></p>
+                            class="btn-link text-secondary">История версий</a></p>
                 <p><a
                             href="https://lusy.io/licenzionnoe-soglashenie-dogovor-publichnoj-oferty.pdf"
-                            class="btn-link text-dark" target="_blank">Оферта
+                            class="btn-link text-secondary" target="_blank">Оферта
                         рекуррентных
                         платежей</a></p>
             </div>

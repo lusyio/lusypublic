@@ -232,7 +232,7 @@
             </div>
             <div class="award text-center aw2">
                 <div>
-                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(127, 134, 234, .8)&quot;}"
                          data-value="0.20"></div>
                     <div class="award-star bg-secondary">
                         <i class="fas fa-handshake"></i>
@@ -245,20 +245,20 @@
             </div>
             <div class="award text-center aw3">
                 <div>
-                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(40, 167, 69, 1)&quot;}"
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(127, 134, 234, 1)&quot;}"
                          data-value="1.00"></div>
-                    <div class="award-star bg-success">
+                    <div class="award-star bg-primary">
                         <i class="fas fas fa-medal"></i>
                     </div>
                 </div>
                 <h5>Красавчик</h5>
                 <small class="mt-3">Месяц без просрочек</small>
                 <hr>
-                <span class="badge badge-success">Достигнуто</span>
+                <span class="badge badge-primary">Достигнуто</span>
             </div>
             <div class="award text-center aw2">
                 <div>
-                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(127, 134, 234, .8)&quot;}"
                          data-value="0.10"></div>
                     <div class="award-star bg-secondary">
                         <i class="fas fa-handshake"></i>
@@ -271,7 +271,7 @@
             </div>
             <div class="award text-center mr-0 aw1">
                 <div>
-                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                    <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(127, 134, 234, .8)&quot;}"
                          data-value="0.26"></div>
                     <div class="award-star bg-secondary">
                         <i class="fas fas fa-star"></i>
@@ -361,7 +361,7 @@
             <div class="swiper-slide">
                 <div class="award text-center">
                     <div>
-                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(127, 134, 234)&quot;}"
                              data-value="0.20"></div>
                         <div class="award-star bg-secondary">
                             <i class="fas fa-handshake"></i>
@@ -391,7 +391,7 @@
             <div class="swiper-slide">
                 <div class="award text-center">
                     <div>
-                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(127, 134, 234)&quot;}"
                              data-value="0.10"></div>
                         <div class="award-star bg-secondary">
                             <i class="fas fa-handshake"></i>
@@ -406,7 +406,7 @@
             <div class="swiper-slide">
                 <div class="award text-center">
                     <div>
-                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;}"
+                        <div class="circle" data-fill="{ &quot;color&quot;: &quot;rgba(127, 134, 234)&quot;}"
                              data-value="0.26"></div>
                         <div class="award-star bg-secondary">
                             <i class="fas fas fa-star"></i>

@@ -90,6 +90,9 @@ img {
 .btn-primary:hover {
     background: #353aaf;
 }
+.bg-primary, .badge-primary {
+    background: #737ae8 !important;
+}
 .nav-link:hover {
     color: rgba(0, 0, 0, 1);
     transition: 0.2s all;
