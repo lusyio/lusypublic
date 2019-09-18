@@ -39,7 +39,7 @@
                     </button>
 
                     <div class="collapse navbar-collapse mainNav">
-                        <ul class="navbar-nav mr-auto">
+                        <ul class="navbar-nav mr-auto ml-auto">
                             <li class="nav-item">
                                 <a class="nav-link firstNav" href="/<?= $this->route['language']; ?>/possibilities/">Возможности</a>
                             </li>
@@ -48,9 +48,6 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/<?= $this->route['language']; ?>/price/">Стоимость</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/<?= $this->route['language']; ?>/blog/">Знания</a>
                             </li>
                         </ul>
                     </div>
