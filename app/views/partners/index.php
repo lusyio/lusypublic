@@ -62,12 +62,17 @@
     </div>
 </div>
 
-
 <script>
     $(document).ready(function () {
-        $('#myTab a').on('click', function (e) {
-            e.preventDefault();
-            $(this).tab('show');
-        })
+        var pathname = window.location.href;
+        if (pathname.indexOf('waystab') > -1) {
+            $('#waysTab').trigger('click');
+        }
+        if (pathname.indexOf('marketingtab') > -1) {
+            $('#marketingTab').trigger('click');
+        }
+        if (pathname.indexOf('rulestab') > -1) {
+            $('#rulesTab').trigger('click');
+        }
     })
 </script>
