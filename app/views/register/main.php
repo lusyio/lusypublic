@@ -10,7 +10,7 @@ if (!empty($_POST['email'])) {
 <script src="/public/js/jquery.steps.js"></script>
 <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 <div class="">
-    <div class="container pt-5">
+    <div class="container pt-5 mb-5">
         <h1 class="lead-text text-dark text-center mb-3">
             Регистрация
         </h1>

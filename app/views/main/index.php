@@ -490,7 +490,7 @@
     </div>
 </div>
 
-<div class="container pt-5 mt-3 pb-5 unlimitBlock">
+<div class="container mb-5 pt-5 mt-3 pb-5 unlimitBlock">
     <div class="d-flex justify-content-center third">
         <div class="mr-5">
             <span>Неограниченное</span> число сотрудников

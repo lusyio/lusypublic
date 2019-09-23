@@ -1,4 +1,4 @@
-<div class="container content">
+<div class="container content mb-5">
     <h1>Возможности</h1>
     <img class="w-100 main-img mb-3" src="/public/images/lusy.jpg" alt="Lusy" title="Lusy">
     <div class="possibli mt-5">

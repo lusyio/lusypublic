@@ -76,7 +76,7 @@
         <?php echo $content; ?>
 
 
-    <div class="footer mt-5">
+    <div class="footer">
         <div class="container">
             <div class="text-dark">
                 <p class="lead-text-big mb-1">Lusy.io</p>
@@ -84,6 +84,9 @@
                 <p><a
                             href="/<?= $this->route['language']; ?>/history/"
                             class="btn-link text-secondary">История версий</a></p>
+                <p><a
+                            href="/<?= $this->route['language']; ?>/partners/"
+                            class="btn-link text-secondary">Партнерская программа</a></p>
                 <p><a
                             href="https://lusy.io/licenzionnoe-soglashenie-dogovor-publichnoj-oferty.pdf"
                             class="btn-link text-secondary" target="_blank">Оферта

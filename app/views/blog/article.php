@@ -1,4 +1,4 @@
-<div class="container article-text content" itemscope itemtype="https://schema.org/Article">
+<div class="container mb-5 article-text content" itemscope itemtype="https://schema.org/Article">
     <div class="row">
         <div class="col-sm-8 offset-sm-2">
             <h1 itemprop="name"><?= $article['article_name']; ?></h1>

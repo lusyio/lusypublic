@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="shortcut icon" href="/public/images/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-<div id="error404">
+<div id="error404" >
     <div class="top-sidebar pt-2 pb-2">
         <div class="container">
             <div class="row text-left">

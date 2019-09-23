@@ -1,5 +1,5 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-<div class="container content">
+<div class="container content mb-5">
     <div class="row mb-4">
         <div class="col-sm-7 col-md-6 col-lg-8">
             <h1 class="chartH">Битва месяца! Кто сделает больше?</h1>

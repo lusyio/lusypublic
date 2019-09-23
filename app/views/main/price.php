@@ -1,4 +1,4 @@
-<div class="container pb-5 content">
+<div class="container pb-5 mb-5 content">
     <h1 class="text-center mb-5">Стоимость</h1>
 
     <div class="row payBack">

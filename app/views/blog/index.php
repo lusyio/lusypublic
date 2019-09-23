@@ -1,4 +1,4 @@
-<div class="container blog-list content">
+<div class="container mb-5 blog-list content">
     <h1 class="mt-5 text-dark">Блог</h1>
     <p class="mt-3 mb-4 text-dark">Пишем для вас полезные статьи по теме управления, маркетинга, продаж, чтобы повысить
         эффективность вашего

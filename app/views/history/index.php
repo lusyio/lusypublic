@@ -1,4 +1,4 @@
-<div class="container content">
+<div class="container mb-5 content">
     <div class="row">
         <div class="col-12 col-sm-7 col-md-5 col-lg-5">
             <h1>История версий</h1>

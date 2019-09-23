@@ -37,5 +37,9 @@ return [
         'controller' => 'history',
         'action' => 'index',
     ],
+    'partners' => [
+        'controller' => 'partners',
+        'action' => 'index',
+    ],
 
 ];
