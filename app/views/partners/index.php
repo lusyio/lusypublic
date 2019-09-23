@@ -36,6 +36,10 @@
         </p>
     </div>
     <div class="tab-pane" id="ways" role="tabpanel" aria-labelledby="waysTab">
+        <img src="/public/images/partners-ways.jpg" alt="">
+        <h5 class="mt-5">
+            Участвуйте также в нашей партнерской программе 
+        </h5>
         <p>
             Участвуйте также в нашей партнерской программе
             Ваше вознаграждение выплачивается с каждой оплаты хостинга клиентом, которого вы привели, в том числе с
@@ -43,6 +47,10 @@
         </p>
     </div>
     <div class="tab-pane" id="rules" role="tabpanel" aria-labelledby="rulesTab">
+        <img src="/public/images/partners-rules.jpg" style="max-width: 74.5%;display: block;margin: auto" alt="">
+        <h5 class="mt-5">
+            Участвуйте также в нашей партнерской программе
+        </h5>
         <p>
             Участвуйте также в нашей партнерской программе
             Участвуйте также в нашей партнерской программе
