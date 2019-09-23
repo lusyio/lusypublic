@@ -1236,6 +1236,16 @@ span.icon a:visited {
     margin: auto;
 }
 
+.partners-li{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #f2f3f8;
+    display: inline-block;
+    width: 44px;
+    text-align: center;
+    margin-right: 15px;
+}
+
 @media (min-width: 768px) {
     .firstNav {
         margin-left: 0px !important;
