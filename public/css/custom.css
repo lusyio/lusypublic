@@ -1244,6 +1244,11 @@ span.icon a:visited {
 
 #marketing img {
     box-shadow: rgba(13, 28, 60, 0.10) 0px 4px 10px 0px;
+    transition: 0.4s all;
+}
+#marketing img:hover {
+    box-shadow: rgba(13, 28, 60, 0.25) 0px 5px 8px 0px;
+    transition: 0.1s all;
 }
 #tabLusyContent .tab-pane h4 {
     line-height: 1.8;
