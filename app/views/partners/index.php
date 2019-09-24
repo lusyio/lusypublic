@@ -186,6 +186,8 @@
                     <img src="/public/images/banners/v1_468x60_try.jpg" alt="">
                 </a>
             </div>
+        </div>
+        <div class="row mt-4">
             <div class="col-6">
                 <a href="/public/images/banners/v2_468x60_free.jpg" download>
                     <img src="/public/images/banners/v2_468x60_free.jpg" alt="">
@@ -208,6 +210,8 @@
                     <img src="/public/images/banners/v3_468x60_try.jpg" alt="">
                 </a>
             </div>
+        </div>
+        <div class="row mt-4">
             <div class="col-6">
                 <a href="/public/images/banners/v4_468x60_free.jpg" download>
                     <img src="/public/images/banners/v4_468x60_free.jpg" alt="">
@@ -238,6 +242,8 @@
                     <img src="/public/images/banners/v1_728x90_try.jpg" alt="">
                 </a>
             </div>
+        </div>
+        <div class="row mt-4">
             <div class="col-6">
                 <a href="/public/images/banners/v2_728x90_free.jpg" download>
                     <img src="/public/images/banners/v2_728x90_free.jpg" alt="">
@@ -260,6 +266,8 @@
                     <img src="/public/images/banners/v3_728x90_try.jpg" alt="">
                 </a>
             </div>
+        </div>
+        <div class="row mt-4">
             <div class="col-6">
                 <a href="/public/images/banners/v4_728x90_free.jpg" download>
                     <img src="/public/images/banners/v4_728x90_free.jpg" alt="">
