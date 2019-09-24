@@ -1233,6 +1233,7 @@ span.icon a:visited {
     padding-right: 110px;
     padding-left: 110px;
     margin: auto;
+    max-width: 900px;
 }
 
 #marketing{
