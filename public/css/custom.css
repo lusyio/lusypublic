@@ -1232,7 +1232,6 @@ span.icon a:visited {
     padding: 47px 80px;
     padding-right: 110px;
     padding-left: 110px;
-    width: 900px;
     margin: auto;
 }
 
@@ -1256,6 +1255,11 @@ span.icon a:visited {
     margin-right: 15px;
 }
 
+@media screen
+and (max-width: 991px){
+
+}
+
 @media (min-width: 768px) {
     .firstNav {
         margin-left: 0px !important;
@@ -1272,6 +1276,9 @@ span.icon a:visited {
 }
 
 @media (max-width: 768px) {
+    #tabLusyContent .tab-pane{
+        padding: 20px;
+    }
     .hidden-sm {
         display: none;
     }
