@@ -1236,6 +1236,16 @@ span.icon a:visited {
     margin: auto;
 }
 
+#marketing{
+    background-color: #f2f3f8 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+#marketing img{
+    box-shadow: rgba(13, 28, 60, 0.10) 0px 4px 10px 0px;
+}
+
 .partners-li{
     padding: 10px;
     border-radius: 50%;

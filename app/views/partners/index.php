@@ -36,7 +36,7 @@
         </p>
     </div>
     <div class="tab-pane" id="ways" role="tabpanel" aria-labelledby="waysTab">
-        <img src="/public/images/partners-ways.jpg" alt="">
+        <img src="/public/svg/partners-ways.svg" alt="">
         <h5 class="mt-5">
             Всё просто:
         </h5>
@@ -56,7 +56,7 @@
         </p>
     </div>
     <div class="tab-pane" id="rules" role="tabpanel" aria-labelledby="rulesTab">
-        <img src="/public/images/partners-rules.jpg" style="max-width: 74.5%;display: block;margin: auto" alt="">
+        <img src="/public/svg/partners-rules.svg" style="max-width: 74.5%;display: block;margin: auto" alt="">
         <div>
             <div class="partners-li">
                 1
@@ -83,14 +83,195 @@
         </div>
     </div>
     <div class="tab-pane" id="marketing" role="tabpanel" aria-labelledby="marketingTab">
-        <p>
-            Участвуйте также в нашей партнерской программе
-            Участвуйте также в нашей партнерской программе
-            Ваше вознаграждение выплачивается с каждой оплаты хостинга клиентом, которого вы привели, в том числе с
-            оплаты продлений.
-            Ваше вознаграждение выплачивается с каждой оплаты хостинга клиентом, которого вы привели, в том числе с
-            оплаты продлений.
-        </p>
+
+        <div class="row">
+            <div class="col">
+                <h5>
+                    Баннеры 234x30
+                </h5>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6">
+                <a href="/public/images/banners/v1_234x30.jpg" download>
+                    <img src="/public/images/banners/v1_234x30.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/public/images/banners/v2_234x30.jpg" download>
+                    <img src="/public/images/banners/v2_234x30.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-6">
+                <a href="/public/images/banners/v3_234x30.jpg" download>
+                    <img src="/public/images/banners/v3_234x30.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/public/images/banners/v4_234x30.jpg" download>
+                    <img src="/public/images/banners/v4_234x30.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <h5>
+                    Баннеры 200x300
+                </h5>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <a href="/public/images/banners/v1_200x300_free.jpg" download>
+                    <img src="/public/images/banners/v1_200x300_free.jpg" alt="">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/public/images/banners/v1_200x300_try.jpg" download>
+                    <img src="/public/images/banners/v1_200x300_try.jpg" alt="">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/public/images/banners/v2_200x300_free.jpg" download>
+                    <img src="/public/images/banners/v2_200x300_free.jpg" alt="">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/public/images/banners/v2_200x300_try.jpg" download>
+                    <img src="/public/images/banners/v2_200x300_try.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <a href="/public/images/banners/v3_200x300_free.jpg" download>
+                    <img src="/public/images/banners/v3_200x300_free.jpg" alt="">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/public/images/banners/v3_200x300_try.jpg" download>
+                    <img src="/public/images/banners/v3_200x300_try.jpg" alt="">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/public/images/banners/v4_200x300_free.jpg">
+                    <img src="/public/images/banners/v4_200x300_free.jpg" alt="">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/public/images/banners/v4_200x300_try.jpg" download>
+                    <img src="/public/images/banners/v4_200x300_try.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <h5>
+                    Баннеры 468x60
+                </h5>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6">
+                <a href="/public/images/banners/v1_468x60_free.jpg" download>
+                    <img src="/public/images/banners/v1_468x60_free.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/public/images/banners/v1_468x60_try.jpg" download>
+                    <img src="/public/images/banners/v1_468x60_try.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/public/images/banners/v2_468x60_free.jpg" download>
+                    <img src="/public/images/banners/v2_468x60_free.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/public/images/banners/v2_468x60_try.jpg" download>
+                    <img src="/public/images/banners/v2_468x60_try.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-6">
+                <a href="/public/images/banners/v3_468x60_free.jpg" download>
+                    <img src="/public/images/banners/v3_468x60_free.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/public/images/banners/v3_468x60_try.jpg" download>
+                    <img src="/public/images/banners/v3_468x60_try.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/public/images/banners/v4_468x60_free.jpg" download>
+                    <img src="/public/images/banners/v4_468x60_free.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/public/images/banners/v4_468x60_try.jpg" download>
+                    <img src="/public/images/banners/v4_468x60_try.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <h5>
+                    Баннеры 728x90
+                </h5>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6">
+                <a href="/public/images/banners/v1_728x90_free.jpg" download>
+                    <img src="/public/images/banners/v1_728x90_free.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/public/images/banners/v1_728x90_try.jpg" download>
+                    <img src="/public/images/banners/v1_728x90_try.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/public/images/banners/v2_728x90_free.jpg" download>
+                    <img src="/public/images/banners/v2_728x90_free.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/public/images/banners/v2_728x90_try.jpg" download>
+                    <img src="/public/images/banners/v2_728x90_try.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-6">
+                <a href="/public/images/banners/v3_728x90_free.jpg" download>
+                    <img src="/public/images/banners/v3_728x90_free.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/public/images/banners/v3_728x90_try.jpg" download>
+                    <img src="/public/images/banners/v3_728x90_try.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/public/images/banners/v4_728x90_free.jpg" download>
+                    <img src="/public/images/banners/v4_728x90_free.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/public/images/banners/v4_728x90_try.jpg" download>
+                    <img src="/public/images/banners/v4_728x90_try.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
     </div>
 </div>
 
