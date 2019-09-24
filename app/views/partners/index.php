@@ -26,14 +26,20 @@
     </div>
 </div>
 <div class="tab-content" id="tabLusyContent">
-    <div class="tab-pane show active" id="info" role="tabpanel" aria-labelledby="infoTab">
-        <p>
-            Участвуйте также в нашей партнерской программе
-            Ваше вознаграждение выплачивается с каждой оплаты хостинга клиентом, которого вы привели, в том числе с
-            оплаты продлений.
-            Ваше вознаграждение выплачивается с каждой оплаты хостинга клиентом, которого вы привели, в том числе с
-            оплаты продлений.
-        </p>
+    <div class="tab-pane show active pl-5 pr-5" id="info" role="tabpanel" aria-labelledby="infoTab">
+        <div class="row">
+            <div class="col-sm-8">
+                <h4 class="font-weight-bold">Пользоваться Premium-функционалом Lusy теперь еще проще</h4>
+                <p>Вы рекомендуете систему друзьям,
+                    посетителям Ваших сайтов или подписчикам из инстаграм, а мы за каждого активного привлеченного
+                    пользователя дарим 14 дней Premium-доступа.</p>
+                <p>Сгенерируйте личный промокод для друзей, подарите им возможность организовать дела и получайте за это
+                    расширенный функционал.</p>
+            </div>
+            <div class="col-sm-4">
+                <img class="mt-4" src="/public/svg/partner-prog.svg"/>
+            </div>
+        </div>
     </div>
     <div class="tab-pane" id="ways" role="tabpanel" aria-labelledby="waysTab">
         <img src="/public/images/partners-ways.jpg" alt="">
@@ -92,6 +98,11 @@
             оплаты продлений.
         </p>
     </div>
+    <div class="w-100 text-center mt-4">
+        <a class="btn btn-primary text-white font-weight-bold m-auto"
+           href="http://s.lusy.io/partnership/">Начать работу в партнерской программе</a>
+    </div>
+
 </div>
 
 <script>

@@ -1236,6 +1236,10 @@ span.icon a:visited {
     margin: auto;
 }
 
+#tabLusyContent .tab-pane h4 {
+    line-height: 1.8;
+}
+
 .partners-li{
     padding: 10px;
     border-radius: 50%;
