@@ -1241,8 +1241,11 @@ span.icon a:visited {
     padding: 0 !important;
 }
 
-#marketing img{
+#marketing img {
     box-shadow: rgba(13, 28, 60, 0.10) 0px 4px 10px 0px;
+}
+#tabLusyContent .tab-pane h4 {
+    line-height: 1.8;
 }
 
 .partners-li{
