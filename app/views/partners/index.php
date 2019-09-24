@@ -26,7 +26,7 @@
     </div>
 </div>
 <div class="tab-content" id="tabLusyContent">
-    <div class="tab-pane show active pl-5 pr-5" id="info" role="tabpanel" aria-labelledby="infoTab">
+    <div class="tab-pane container show active pl-5 pr-5" id="info" role="tabpanel" aria-labelledby="infoTab">
         <div class="row">
             <div class="col-sm-8">
                 <h4 class="font-weight-bold">Пользоваться Premium-функционалом Lusy теперь еще проще</h4>
