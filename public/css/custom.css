@@ -802,6 +802,14 @@ pricing-content {
     background-color: #cbddfd;
 }
 
+
+.chart-medal {
+    position: absolute;
+    width: 40px;
+    right: 15px;
+    top: 15px;
+}
+
 .my-chart {
     height: 45px !important;
     width: 90px !important;
@@ -1219,6 +1227,7 @@ span.icon a:visited {
     background-color: #f2f3f8;
     color: #1d1d1d;
 }
+
 
 #tabLusyContent{
     padding: 65px 20px;

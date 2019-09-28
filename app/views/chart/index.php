@@ -14,6 +14,20 @@
             <img src="/public/images/winner.jpg">
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body position-relative">
+                    <img class="chart-medal" src="/public/svg/medal.svg" />
+                    <span class="badge badge-primary mb-3">Сентябрь 2019 года</span>
+                    <h2 class="font-weight-bold">#бизнеслента</h2>
+                    <hr>
+                    <small>Победитель. Результат 22 балла.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
     <div class="charts-container">
         <div class="card card-body headchart">
             <div class="row">
