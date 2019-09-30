@@ -68,13 +68,13 @@ class Chart extends Model
 
     public function getChartWinners()
     {
-//        $startDate = date('Y-m', strtotime('first day of this month midnight -3 months'));
         $result = $this->db->allRows("SELECT cw.*, c.idcompany FROM chart_winners cw LEFT JOIN company c ON cw.company_id = c.id ORDER BY period DESC LIMIT 3");
         foreach ($result as $key => $row) {
             $dateArray = preg_split("~\-~", $row['period']);
             $result[$key]['year'] = $dateArray[0];
             $result[$key]['month'] = $dateArray[1];
         }
+//        $result = array_reverse($result); //раскомментировать, если победители должны перечисляться по возрастанию даты
         return $result;
     }
 
