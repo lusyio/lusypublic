@@ -15,17 +15,19 @@
         </div>
     </div>
     <div class="row">
+        <?php foreach ($chartWinners as $winnerCompany): ?>
         <div class="col-sm-4">
             <div class="card">
                 <div class="card-body position-relative">
                     <img class="chart-medal" src="/public/svg/medal.svg" />
-                    <span class="badge badge-primary mb-3">Сентябрь 2019 года</span>
-                    <h2 class="font-weight-bold">#бизнеслента</h2>
+                    <span class="badge badge-primary mb-3"> <?= \app\lib\Common::getMonthName($winnerCompany['month']) ?> <?= $winnerCompany['year'] ?> года</span>
+                    <h2 class="font-weight-bold"><?= $winnerCompany['idcompany'] ?></h2>
                     <hr>
-                    <small>Победитель. Результат 22 балла.</small>
+                    <small>Победитель. Результат <?= $winnerCompany['points'] ?> <?= \app\lib\Common::nWord($winnerCompany['points'], 'балл', 'балла', 'баллов') ?></small>
                 </div>
             </div>
         </div>
+        <?php endforeach; ?>
     </div>
     <hr>
     <div class="charts-container">

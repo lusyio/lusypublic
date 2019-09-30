@@ -11,7 +11,7 @@ class Chart extends Model
         parent::__construct();
     }
 
-    public function getStatsForAllCompanies()
+    public function getStatsForAllCompanies($filterActive = false)
     {
         $stats = [];
         $firstDay = strtotime('first day of this month midnight');
@@ -53,10 +53,29 @@ class Chart extends Model
         foreach ($stats as $companyId => $values) {
             $stats[$companyId]['score'] = floor($values['taskDone'] - 10 * $values['overdue'] + 0.1 * ($values['comment'] + $values['message']));
         }
+        if ($filterActive) {
+            foreach ($stats as $companyId => $data) {
+                if ($data['taskDone'] == 0 && $data['overdue'] == 0 && $data['comment'] == 0 && $data['message'] == 0) {
+                    unset($stats[$companyId]);
+                }
+            }
+        }
         usort($stats, function ($a, $b) {
-           return $b['score'] - $a['score'];
+            return $b['score'] - $a['score'];
         });
         return $stats;
+    }
+
+    public function getChartWinners()
+    {
+//        $startDate = date('Y-m', strtotime('first day of this month midnight -3 months'));
+        $result = $this->db->allRows("SELECT cw.*, c.idcompany FROM chart_winners cw LEFT JOIN company c ON cw.company_id = c.id ORDER BY period DESC LIMIT 3");
+        foreach ($result as $key => $row) {
+            $dateArray = preg_split("~\-~", $row['period']);
+            $result[$key]['year'] = $dateArray[0];
+            $result[$key]['month'] = $dateArray[1];
+        }
+        return $result;
     }
 
 }
