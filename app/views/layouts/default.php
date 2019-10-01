@@ -98,7 +98,7 @@
     <div class="underFooter">
         <div class="container">
             <div class="text-secondary">
-                <p class="small pt-3 pb-3 mb-0">ИП Ласковский Дмитрий Сергеевич <i class="far fa-copyright"></i>
+                <p class="small pt-3 pb-3 mb-0"><a href="https://richbee.ru/" target="_blank">Разработано командой RichBee</a> <i class="far fa-copyright"></i>
                     2019</p>
             </div>
         </div>
