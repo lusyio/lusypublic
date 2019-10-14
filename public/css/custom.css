@@ -731,6 +731,14 @@ pricing-content {
     transform: translateY(-5px);
     box-shadow: 0 2px 8px 0 rgba(136, 144, 195, 0.22), 0 8px 15px 0 rgba(37, 44, 97, 0.17);
 }
+.help-card {
+    transition: all 0.2s ease, transform 0.2s ease;
+}
+
+.help-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 8px 0 rgba(136, 144, 195, 0.22), 0 8px 15px 0 rgba(37, 44, 97, 0.17);
+}
 
 .blog-img {
     display: flex;
@@ -1271,6 +1279,34 @@ span.icon a:visited {
     width: 44px;
     text-align: center;
     margin-right: 15px;
+}
+
+.is-active-link::before {
+    background-color: #5156d8!important;
+}
+
+.toc-content h2 {
+    margin-top: 3rem;
+}
+
+.toc-content h3 {
+    margin-top: 3rem;
+}
+
+.toc-content p {
+    margin-top: 2rem;
+}
+
+.toc-bar li {
+    list-style-type: none;
+}
+
+.toc-bar {
+    font-size: 0.875rem;
+}
+
+.toc-link::before {
+    display: none;
 }
 
 @media screen
