@@ -1,11 +1,11 @@
 <div class="container pb-5 mb-5 content position-relative">
     <h1 class="text-center mb-5">Достижения</h1>
     <div class="row">
-        <div class="col-3">
+        <div class="col-lg-3 d-lg-block d-none">
             <a class="help-back-btn" href="/ru/help/"><i class="fas fa-arrow-left"></i></a>
             <div id="tocBar" class="pl-3 toc-bar position-absolute"></div>
         </div>
-        <div class="col-9 toc-content">
+        <div class="col-12 col-lg-9 toc-content">
             <div>
                 <h3 id="achievements">Достижения</h3>
                 <p>На странице отображается общий прогресс выполнения достижений.</p>
