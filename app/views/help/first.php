@@ -2,6 +2,7 @@
     <h1 class="text-center mb-5">Первое знакомство</h1>
     <div class="row">
         <div class="col-3">
+            <a class="help-back-btn" href="/ru/help/"><i class="fas fa-arrow-left"></i></a>
             <div id="tocBar" class="pl-3 toc-bar position-absolute"></div>
         </div>
         <div class="col-9 toc-content">

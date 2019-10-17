@@ -61,4 +61,12 @@ return [
         'controller' => 'help',
         'action' => 'ceo',
     ],
+    'help/communication' => [
+        'controller' => 'help',
+        'action' => 'communication',
+    ],
+    'help/questions' => [
+        'controller' => 'help',
+        'action' => 'questions',
+    ],
 ];

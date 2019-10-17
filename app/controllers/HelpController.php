@@ -27,4 +27,12 @@ class HelpController extends Controller
     {
         $this->view->render('Lusy - Помощь - Руководителю');
     }
+    public function communicationAction()
+    {
+        $this->view->render('Lusy - Помощь - Общение');
+    }
+    public function questionsAction()
+    {
+        $this->view->render('Lusy - Помощь - Частые вопросы');
+    }
 }

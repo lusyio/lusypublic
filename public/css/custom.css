@@ -371,6 +371,7 @@ img {
 .footer {
     background: #f9f9f9;
     padding: 40px 0px;
+    position: relative;
 }
 
 .underFooter {
@@ -731,8 +732,35 @@ pricing-content {
     transform: translateY(-5px);
     box-shadow: 0 2px 8px 0 rgba(136, 144, 195, 0.22), 0 8px 15px 0 rgba(37, 44, 97, 0.17);
 }
+
 .help-card {
     transition: all 0.2s ease, transform 0.2s ease;
+    min-height: 220px;
+}
+
+.help-back-btn {
+    color: #5156d8;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 200ms;
+    display: block;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+.help-back-btn:hover {
+    color: #5156d8;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.help-card i {
+    color: #5156d8;
 }
 
 .help-card:hover {
@@ -1218,7 +1246,7 @@ span.icon a:visited {
     margin-right: 0px !important;
 }
 
-.navs-lusy .nav-link{
+.navs-lusy .nav-link {
     padding: 10px 32px;
     line-height: 30px;
     color: #5156d8;
@@ -1227,22 +1255,22 @@ span.icon a:visited {
     border: 0;
 }
 
-.navs-lusy .nav-link:hover{
+.navs-lusy .nav-link:hover {
     background-color: #f6f7fb;
 }
 
-.navs-lusy .nav-link.active{
+.navs-lusy .nav-link.active {
     background-color: #f2f3f8;
     color: #1d1d1d;
 }
 
 
-#tabLusyContent{
+#tabLusyContent {
     padding: 65px 20px;
     background-color: #f2f3f8;
 }
 
-#tabLusyContent .tab-pane{
+#tabLusyContent .tab-pane {
     background-color: #fff;
     box-shadow: rgba(13, 28, 60, 0.10) 0px 4px 10px 0px;
     border-radius: 6px;
@@ -1253,7 +1281,7 @@ span.icon a:visited {
     max-width: 900px;
 }
 
-#marketing{
+#marketing {
     background-color: #f2f3f8 !important;
     box-shadow: none !important;
     padding: 0 !important;
@@ -1263,15 +1291,17 @@ span.icon a:visited {
     box-shadow: rgba(13, 28, 60, 0.10) 0px 4px 10px 0px;
     transition: 0.4s all;
 }
+
 #marketing img:hover {
     box-shadow: rgba(13, 28, 60, 0.25) 0px 5px 8px 0px;
     transition: 0.1s all;
 }
+
 #tabLusyContent .tab-pane h4 {
     line-height: 1.8;
 }
 
-.partners-li{
+.partners-li {
     padding: 10px;
     border-radius: 50%;
     background-color: #f2f3f8;
@@ -1282,7 +1312,7 @@ span.icon a:visited {
 }
 
 .is-active-link::before {
-    background-color: #5156d8!important;
+    background-color: #5156d8 !important;
 }
 
 .toc-content h2 {
@@ -1291,6 +1321,14 @@ span.icon a:visited {
 
 .toc-content h3 {
     margin-top: 3rem;
+}
+
+.help-top-block {
+    background: url(/public/svg/undraw_air_support_wy1q.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 5.7rem 0;
 }
 
 .toc-content p {
@@ -1303,14 +1341,17 @@ span.icon a:visited {
 
 .toc-bar {
     font-size: 0.875rem;
+    z-index: 0;
+    padding-top: 1rem;
 }
 
 .toc-link::before {
     display: none;
+    max-height: 28px;
 }
 
 @media screen
-and (max-width: 991px){
+and (max-width: 991px) {
 
 }
 
@@ -1330,9 +1371,10 @@ and (max-width: 991px){
 }
 
 @media (max-width: 768px) {
-    #tabLusyContent .tab-pane{
+    #tabLusyContent .tab-pane {
         padding: 20px;
     }
+
     .hidden-sm {
         display: none;
     }
