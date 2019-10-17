@@ -1,7 +1,7 @@
 <div class="container pb-5 mb-5 content">
     <h1 class="text-center mb-5">Помощь</h1>
     <div class="row">
-        <div class="col-sm-4 mb-5">
+        <div class="col-sm-4 mb-5 offset-4">
             <a href="/ru/help/first/" class="" style="text-decoration: none">
             <div class="card help-card">
                 <div class="card-body position-relative text-center">
@@ -12,7 +12,7 @@
             </div>
             </a>
         </div>
-        <div class="col-sm-4 mb-5">
+        <div class="col-sm-4 mb-5 d-none">
             <a href="/ru/help/tasks/" class="d-inline-block" style="text-decoration: none!important;">
             <div class="card help-card">
                 <div class="card-body position-relative text-center">
@@ -23,7 +23,7 @@
             </div>
             </a>
         </div>
-        <div class="col-sm-4 mb-5 text-center">
+        <div class="col-sm-4 mb-5 text-center d-none">
             <a href="/ru/help/tasks/achievements/" class="d-inline-block" style="text-decoration: none">
             <div class="card help-card">
                 <div class="card-body position-relative">
@@ -34,7 +34,7 @@
             </div>
             </a>
         </div>
-        <div class="col-sm-4 mb-5 text-center">
+        <div class="col-sm-4 mb-5 text-center d-none">
             <a href="/ru/help/ceo/" class="d-inline-block" style="text-decoration: none">
             <div class="card help-card">
                 <div class="card-body position-relative">

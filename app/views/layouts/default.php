@@ -49,6 +49,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/<?= $this->route['language']; ?>/price/">Стоимость</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/<?= $this->route['language']; ?>/help/">Помощь</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
