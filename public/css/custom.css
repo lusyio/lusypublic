@@ -715,6 +715,11 @@ pricing-content {
     margin-bottom: 15px;
 }
 
+.is-position-fixed{
+    position: sticky;
+    position: -webkit-sticky;
+}
+
 .blog-item {
     display: block;
     overflow: hidden;
