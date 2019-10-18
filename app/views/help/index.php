@@ -5,7 +5,7 @@
     </div>
 <div class="container pb-5 mb-5 content">
     <div class="row">
-        <div class="col-12 col-sm-6 col-lg-4 mb-5 text-center">
+        <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-5 text-center">
             <a href="/ru/help/first/" class="text-decoration-none">
             <div class="card help-card">
                 <div class="card-body position-relative">
@@ -16,7 +16,7 @@
             </div>
             </a>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4 mb-5 text-center">
+        <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-5 text-center">
             <a href="/ru/help/tasks/" class="text-decoration-none">
             <div class="card help-card">
                 <div class="card-body position-relative">
@@ -27,7 +27,7 @@
             </div>
             </a>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4 mb-5 text-center">
+        <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-5 text-center">
             <a href="/ru/help/achievements/" class="text-decoration-none">
             <div class="card help-card">
                 <div class="card-body position-relative">
@@ -38,7 +38,7 @@
             </div>
             </a>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4 mb-5 text-center">
+        <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-5 text-center">
             <a href="/ru/help/ceo/" class="text-decoration-none">
             <div class="card help-card">
                 <div class="card-body position-relative">
@@ -49,7 +49,7 @@
             </div>
             </a>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4 mb-5 text-center">
+        <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-5 text-center">
             <a href="/ru/help/communication/" class="text-decoration-none" >
                 <div class="card help-card">
                     <div class="card-body position-relative">
@@ -60,7 +60,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4 mb-5 text-center">
+        <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-5 text-center">
             <a href="/ru/help/questions/" class="text-decoration-none">
                 <div class="card help-card">
                     <div class="card-body position-relative">
