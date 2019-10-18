@@ -733,9 +733,16 @@ pricing-content {
     box-shadow: 0 2px 8px 0 rgba(136, 144, 195, 0.22), 0 8px 15px 0 rgba(37, 44, 97, 0.17);
 }
 
+a.toc-link{
+    transition: font-weight 150ms linear;
+}
+
+.ripple.help-card{
+    transition: background 0.8s, box-shadow 135ms cubic-bezier(.4,0,.2,1);
+}
+
 .ripple {
     background-position: center !important;
-    transition: background 0.8s !important;
 }
 
 .ripple:hover {
@@ -1367,6 +1374,7 @@ span.icon a:visited {
 .toc-link::before {
     display: none;
     max-height: 28px;
+    transition: background 150ms linear;
 }
 
 @media screen
