@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-5 text-center">
             <a href="/ru/help/first/" class="text-decoration-none">
-            <div class="card help-card">
+            <div class="card help-card ripple">
                 <div class="card-body position-relative">
                     <i class="far fa-handshake h1"></i>
                     <h2 class="font-weight-bold h4 text-dark">Первое знакомство</h2>
@@ -18,7 +18,7 @@
         </div>
         <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-5 text-center">
             <a href="/ru/help/tasks/" class="text-decoration-none">
-            <div class="card help-card">
+            <div class="card help-card ripple">
                 <div class="card-body position-relative">
                     <i class="far fa-clipboard h1"></i>
                     <h2 class="font-weight-bold h4 text-dark">Задачи</h2>
@@ -29,7 +29,7 @@
         </div>
         <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-5 text-center">
             <a href="/ru/help/achievements/" class="text-decoration-none">
-            <div class="card help-card">
+            <div class="card help-card ripple">
                 <div class="card-body position-relative">
                     <i class="fas fa-award h1"></i>
                     <h2 class="font-weight-bold h4 text-dark">Достижения</h2>
@@ -40,7 +40,7 @@
         </div>
         <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-5 text-center">
             <a href="/ru/help/ceo/" class="text-decoration-none">
-            <div class="card help-card">
+            <div class="card help-card ripple">
                 <div class="card-body position-relative">
                     <i class="fas fa-user-tie h1"></i>
                     <h2 class="font-weight-bold h4 text-dark">Руководителю</h2>
@@ -51,7 +51,7 @@
         </div>
         <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-5 text-center">
             <a href="/ru/help/communication/" class="text-decoration-none" >
-                <div class="card help-card">
+                <div class="card help-card ripple">
                     <div class="card-body position-relative">
                         <i class="fas fa-comments h1"></i>
                         <h2 class="font-weight-bold h4 text-dark">Общение</h2>
@@ -62,7 +62,7 @@
         </div>
         <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-5 text-center">
             <a href="/ru/help/questions/" class="text-decoration-none">
-                <div class="card help-card">
+                <div class="card help-card ripple">
                     <div class="card-body position-relative">
                         <i class="far fa-question-circle h1"></i>
                         <h2 class="font-weight-bold h4 text-dark">Частые вопросы</h2>
