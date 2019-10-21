@@ -19,7 +19,7 @@
     </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<link rel="stylesheet" href="/public/css/tocbot.css">
 <script>
     tocbot.init({
 
