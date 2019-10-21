@@ -21,6 +21,16 @@
                         </div>
                     </li>
                 </ol>
+                <h3  id="howToCreateRepeatTask">Как создавать повторяющиеся задачи?</h3>
+                <p>Выбирать отпцию повторения задач возможно только при самозадаче, т.е. когда вы являетесь отвественным, а соисполнители отсутствуют</p>
+                <ol>
+                    <li>Выбираем себя ответственным для задачи</li>
+                    <li>Ставим необходим интервал для ее повторения в поле "Повторение задачи", создаем задачу
+                        <div class="m-auto pt-3 pb-3">
+                            <img src="/public/images/kak-sozdat-povtoryayushchuyusya-zadachu.jpg" alt="kak-sozdat-povtoryayushchuyusya-zadachu">
+                        </div>
+                    </li>
+                </ol>
             </div>
         </div>
     </div>
