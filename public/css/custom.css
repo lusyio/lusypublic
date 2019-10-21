@@ -783,6 +783,7 @@ a.toc-link{
 }
 
 .help-back-btn:hover {
+    cursor: pointer;
     color: #5156d8;
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
