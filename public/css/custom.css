@@ -1379,7 +1379,7 @@ span.icon a:visited {
 
 .toc-link::before {
     display: none;
-    max-height: 28px;
+    max-height: 56px;
     transition: background 150ms linear;
 }
 
