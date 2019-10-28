@@ -41,5 +41,32 @@ return [
         'controller' => 'partners',
         'action' => 'index',
     ],
-
+    'help' => [
+        'controller' => 'help',
+        'action' => 'index',
+    ],
+    'help/first' => [
+        'controller' => 'help',
+        'action' => 'first',
+    ],
+    'help/tasks' => [
+        'controller' => 'help',
+        'action' => 'tasks',
+    ],
+    'help/achievements' => [
+        'controller' => 'help',
+        'action' => 'achievements',
+    ],
+    'help/ceo' => [
+        'controller' => 'help',
+        'action' => 'ceo',
+    ],
+    'help/communication' => [
+        'controller' => 'help',
+        'action' => 'communication',
+    ],
+    'help/questions' => [
+        'controller' => 'help',
+        'action' => 'questions',
+    ],
 ];
