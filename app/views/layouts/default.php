@@ -43,7 +43,7 @@
                             <li class="nav-item">
                                 <a class="nav-link firstNav" href="/<?= $this->route['language']; ?>/possibilities/">Возможности</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item d-none">
                                 <a class="nav-link" href="/<?= $this->route['language']; ?>/chart/">Чарт компаний</a>
                             </li>
                             <li class="nav-item">
