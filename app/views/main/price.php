@@ -58,7 +58,7 @@
         <form id="regForm2" method="post" action="https://s.lusy.io/reg/">
             <div class="input-group mb-5 mt-3 formreg m-auto">
                 <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
-                       aria-label="your_mail@domain.com" aria-describedby="button-addon2" data-toggle="tooltip" data-placement="bottom" title="Введен неверный email">
+                       aria-label="your_mail@domain.com" aria-describedby="button-addon2" data-toggle="tooltip" data-placement="bottom" title="Введен неверный email" disabled>
                 <div class="input-group-append">
                     <button class="btn btn-primary" type="button" id="button-addon2">Попробовать бесплатно</button>
                 </div>

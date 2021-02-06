@@ -31,7 +31,7 @@
                         <div class="input-group mb-3 mt-3 formreg">
                             <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
                                    aria-label="your_mail@domain.com" aria-describedby="button-addon1"
-                                   data-toggle="tooltip" data-placement="bottom" title="Введен неверный email">
+                                   data-toggle="tooltip" data-placement="bottom" title="Введен неверный email" disabled>
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="submit" id="button-addon1">Попробовать</button>
                             </div>
@@ -476,7 +476,7 @@
                     <div class="input-group pt-2 pb-2 formreg m-auto">
                         <input type="text" name="email" class="form-control" placeholder="your_mail@domain.com"
                                aria-label="your_mail@domain.com" aria-describedby="button-addon2" data-toggle="tooltip"
-                               data-placement="bottom" title="Введен неверный email">
+                               data-placement="bottom" title="Введен неверный email" disabled>
                         <div class="input-group-append">
                             <button class="btn btn-primary" type="button" id="button-addon3">Убедиться самому</button>
                         </div>

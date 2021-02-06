@@ -24,7 +24,7 @@ if (!empty($_POST['email'])) {
                                 У нас же быстрая регистрация! Просто введи e-mail и окажись в системе
                             </div>
                             <input id="emailAdmin" type="text" value="<?=$email?>" name="email" class="form-control required email"
-                                   placeholder="E-mail">
+                                   placeholder="E-mail" disabled>
                         </div>
                     </section>
                     <div class="row">
